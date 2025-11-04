@@ -16,6 +16,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
+
 const Hero = () => {
   // Sample images for the slider - replace with your actual images
   const sliderImages = ["/hero.png", "/hero4.jpg", "/hero3.jpg", "/hero2.jpg"];
@@ -48,7 +49,9 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-white py-16 lg:py-24">
+    <section className=" py-16 lg:py-24 bg-cover w-full bg-center bg-no-repeat"
+    style={{backgroundImage:"url('/harrybargh.png')"}}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           {/* Left Content Section */}
@@ -138,7 +141,7 @@ const Hero = () => {
           {/* Right Slider Section */}
           <div className="relative md:w-1/2 flex justify-center items-center">
             {/* Main Slider */}
-            <div className="relative w-[70%] max-w-[550px] h-[600px] z-20">
+            <div className="relative w-[70%] max-w-[350px] h-[400px] md:max-w-[450px] md:h-[500px] lg:max-w-[550px] lg:h-[600px] z-20">
               <Swiper
                 onSwiper={handleMainSliderReady}
                 onSlideChange={handleSlideChange}
@@ -176,8 +179,8 @@ const Hero = () => {
             </div>
 
             {/* Background Slider */}
-            <div className="absolute bottom-6 left-6 w-full max-w-[650px] h-[500px] bg-blue-100 rounded-lg z-10">
-              <div className="relative w-full max-w-[550px] h-[500px] z-20">
+            <div className="absolute bottom-6 left-6 w-full max-w-[320px] h-[300px] md:max-w-[420px] md:h-[400px]  lg:max-w-[650px] lg:h-[500px] bg-blue-100 rounded-lg z-10">
+              <div className="relative w-full max-w-[350px] h-[300px] md:max-w-[450px] md:h-[400px] lg:max-w-[550px] lg:h-[500px] z-20">
                 <Swiper
                   onSwiper={handleBackgroundSliderReady}
                   modules={[Autoplay]}
