@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const OurClientSay = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [sliderOn, setSliderOn] = useState(true);
 
   const data = [
     {
@@ -40,7 +41,7 @@ const OurClientSay = () => {
     },
   ];
 
-  // Define handleNext first using useCallback
+  /** Navigation Controls **/
   const handleNext = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % data.length);
   }, [data.length]);
@@ -49,24 +50,19 @@ const OurClientSay = () => {
     setCurrentIndex((prev) => (prev === 0 ? data.length - 1 : prev - 1));
   }, [data.length]);
 
-  // Auto-slide effect
+  /** Auto-slide **/
   useEffect(() => {
-    if (data.length === 0) return;
-    const interval = setInterval(() => {
-      handleNext();
-    }, 7000);
+    if (!sliderOn || data.length === 0) return;
+    const interval = setInterval(() => handleNext(), 7000);
     return () => clearInterval(interval);
-  }, [data.length, handleNext]);
+  }, [sliderOn, handleNext, data.length]);
 
-  // Get visible videos (always show 3)
+  /** Visible Videos **/
   const getVisibleVideos = () => {
     const videos = [];
     for (let i = 0; i < 3; i++) {
       const index = (currentIndex + i) % data.length;
-      videos.push({
-        ...data[index],
-        position: i,
-      });
+      videos.push({ ...data[index], position: i });
     }
     return videos;
   };
@@ -96,7 +92,6 @@ const OurClientSay = () => {
 
         {/* Video Carousel */}
         <div className="relative flex flex-col items-center">
-          {/* Slider Container */}
           <div className="relative w-full overflow-hidden">
             <div className="flex justify-center items-center gap-8 transition-all duration-500 ease-in-out">
               {visibleVideos.map((video, index) => (
@@ -107,26 +102,26 @@ const OurClientSay = () => {
                   }`}
                 >
                   <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300 group">
-                    {/* Label overlay */}
                     <span className="absolute top-3 left-3 bg-[#1A73E8] text-white text-xs font-semibold px-3 py-1 rounded-full z-10 shadow-md">
                       {video.title}
                     </span>
 
-                    {/* Video block */}
+                    {/* Optimized Video */}
                     <div className="relative w-full aspect-video bg-gray-100 overflow-hidden">
                       <video
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         controls
                         preload="metadata"
                         playsInline
-                        aria-label={`Testimonial video by ${video.name} from ${video.country} about ${video.title}`}
+                        onPlay={() => setSliderOn(false)}
+                        onPause={() => setSliderOn(true)}
+                        title={`Testimonial by ${video.name} from ${video.country}`}
                       >
                         <source src={video.url} type="video/mp4" />
                         Your browser does not support the video tag.
                       </video>
                     </div>
 
-                    {/* Info below video */}
                     <div className="p-4 text-center">
                       <h3 className="text-lg font-semibold text-gray-800 mb-1">
                         {video.name}
@@ -141,7 +136,7 @@ const OurClientSay = () => {
             </div>
           </div>
 
-          {/* Navigation Controls */}
+          {/* Controls */}
           <div className="flex items-center justify-center gap-6 mt-8">
             <Button
               aria-label="Previous testimonials"
