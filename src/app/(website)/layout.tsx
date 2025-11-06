@@ -5,6 +5,7 @@ import TanStackProvider from "@/provider/tanstackProvider";
 import TopHeader from "@/components/shared/TopHeader";
 import NavBar from "@/components/shared/NavBar";
 import Hero from "@/components/shared/Hero";
+import Footer from "@/components/shared/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,8 +35,9 @@ export default function RootLayout({
         <TanStackProvider>
           <TopHeader />
           <NavBar />
-          <Hero />
+
           {children}
+          <Footer />
         </TanStackProvider>
       </body>
     </html>

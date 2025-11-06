@@ -27,18 +27,8 @@ const OurClientSay = () => {
       country: "Oman",
       title: "Immigration Experience",
     },
-    {
-      url: "/video/video4.mp4",
-      name: "Priya Patel",
-      country: "India",
-      title: "Job Placement Abroad",
-    },
-    {
-      url: "/video/video3.MP4",
-      name: "Ramesh",
-      country: "Nepal",
-      title: "Permanent Residency Story",
-    },
+    
+    
   ];
 
   /** Navigation Controls **/

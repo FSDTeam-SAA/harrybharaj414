@@ -1,59 +1,25 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
-
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-// import required modules
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-
-
 const Hero = () => {
   // Sample images for the slider - replace with your actual images
-  const sliderImages = ["/hero.png", "/hero4.jpg", "/hero3.jpg", "/hero2.jpg"];
-  const sliderImages2 = ["/hero2.jpg", "/hero2.jpg", "/hero2.jpg", "/hero4.jpg"];
-
-  // Refs for both sliders
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const mainSliderRef = useRef<any>(null);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const backgroundSliderRef = useRef<any>(null);
-
-  // Handle slide change to sync both sliders
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleSlideChange = (swiper: any) => {
-    
-    const backgroundSlider = backgroundSliderRef.current?.swiper;
-    if (backgroundSlider && !backgroundSlider.destroyed) {
-      backgroundSlider.slideTo(swiper.activeIndex);
-    }
-  };
-
-  // Handle slider ready state
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleMainSliderReady = (swiper: any) => {
-    mainSliderRef.current = swiper;
-  };
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleBackgroundSliderReady = (swiper: any) => {
-    backgroundSliderRef.current = swiper;
-  };
 
   return (
-    <section className=" py-16 lg:py-24 bg-cover w-full bg-center bg-no-repeat"
-    style={{backgroundImage:"url('/harrybargh.png')"}}
+    <section
+      className=" py-16 lg:py-24 bg-cover w-full bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/harrybargh.png')" }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
           {/* Left Content Section */}
           <div className="flex-1 max-w-2xl">
             <div className="mb-8">
@@ -139,75 +105,29 @@ const Hero = () => {
           </div>
 
           {/* Right Slider Section */}
-          <div className="relative md:w-1/2 flex justify-center items-center">
-            {/* Main Slider */}
-            <div className="relative w-[70%] max-w-[350px] h-[400px] md:max-w-[450px] md:h-[500px] lg:max-w-[550px] lg:h-[600px] z-20">
-              <Swiper
-                onSwiper={handleMainSliderReady}
-                onSlideChange={handleSlideChange}
-                modules={[Pagination, Autoplay]}
-                spaceBetween={0}
-                slidesPerView={1}
-                pagination={{ 
-                  clickable: true,
-                  el: '.main-slider-pagination'
-                }}
-                autoplay={{ 
-                  delay: 4000,
-                  disableOnInteraction: false 
-                }}
-                loop={true}
-                className="w-full h-full rounded-lg shadow-xl"
-              >
-                {sliderImages.map((image, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="relative w-full h-full">
-                      <Image
-                        src={image}
-                        alt={`Slide ${index + 1}`}
-                        fill
-                        className="object-cover rounded-lg"
-                        priority={index === 0}
-                      />
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-              
-              {/* Custom pagination for main slider */}
-              <div className="main-slider-pagination absolute bottom-4 left-1/2 transform -translate-x-1/2 z-30 flex justify-center space-x-2" />
+          <div className="relative md:w-1/2 w-full flex justify-center items-center rounded-2xl">
+            {/* Main image */}
+            <div className="relative w-[80%] h-[500px] lg:h-[788px] bg-white z-20">
+              <div className="absolute -top-3 bg-blue-500 h-5 w-full rounded-t-xl"></div>
+              <Image
+                src={"/images/hero.png"}
+                alt="about"
+                fill
+                className="object-cover rounded-b-xl"
+              />
             </div>
 
-            {/* Background Slider */}
-            <div className="absolute bottom-6 left-6 w-full max-w-[320px] h-[300px] md:max-w-[420px] md:h-[400px]  lg:max-w-[650px] lg:h-[500px] bg-blue-100 rounded-lg z-10">
-              <div className="relative w-full max-w-[350px] h-[300px] md:max-w-[450px] md:h-[400px] lg:max-w-[550px] lg:h-[500px] z-20">
-                <Swiper
-                  onSwiper={handleBackgroundSliderReady}
-                  modules={[Autoplay]}
-                  spaceBetween={0}
-                  slidesPerView={1}
-                  autoplay={{ 
-                    delay: 4000,
-                    disableOnInteraction: false 
-                  }}
-                  loop={true}
-                  allowTouchMove={false}
-                  className="w-full h-full rounded-lg shadow-xl"
-                >
-                  {sliderImages2.map((image, index) => (
-                    <SwiperSlide key={index}>
-                      <div className="relative w-full h-full">
-                        <Image
-                          src={image}
-                          alt={`Background Slide ${index + 1}`}
-                          fill
-                          className="object-cover rounded-lg opacity-80"
-                        />
-                      </div>
-                    </SwiperSlide>
-                  ))}
-                </Swiper>
-              </div>
+            {/* Blue frame behind image */}
+            <div className="absolute   w-[95%] aspect-5/4 z-10 opacity-40  ">
+              <Image
+                src={"/images/hero.png"}
+                alt="background frame"
+                fill
+                className="object-cover rounded-xl"
+              />
+            </div>
+            <div>
+              
             </div>
           </div>
         </div>
