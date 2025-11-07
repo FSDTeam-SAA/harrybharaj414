@@ -6,6 +6,8 @@ import TopHeader from "@/components/shared/TopHeader";
 import NavBar from "@/components/shared/NavBar";
 import Hero from "@/components/shared/Hero";
 import Footer from "@/components/shared/Footer";
+import { Toaster } from "sonner";
+import LayoutVisibilityWrapper from "@/provider/layout-visibility-wraper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,13 +34,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <TanStackProvider>
-          <TopHeader />
-          <NavBar />
-
-          {children}
-          <Footer />
-        </TanStackProvider>
+        <LayoutVisibilityWrapper>
+          <TanStackProvider>
+            {children}
+            <Toaster position="top-center" richColors closeButton />
+          </TanStackProvider>
+        </LayoutVisibilityWrapper>
       </body>
     </html>
   );
