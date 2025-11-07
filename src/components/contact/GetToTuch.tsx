@@ -28,7 +28,9 @@ const GetToTuch = () => {
                 <Mail className="h-6 w-6 text-blue-600" />
               </div>
             </div>
-            <h3 className="text-xl font-semibold text-center text-gray-800 mb-2">Email</h3>
+            <h3 className="text-xl font-semibold text-center text-gray-800 mb-2">
+              Email
+            </h3>
             <p className="text-gray-600 mb-1">
               Our friendly team is happy to help.
             </p>
@@ -36,7 +38,7 @@ const GetToTuch = () => {
               href="mailto:example@example.com"
               className="text-blue-600 font-medium hover:text-blue-700 transition-colors text-[16px]"
             >
-              example@example.com
+              harrysingh@destinyabroad.ae
             </a>
           </div>
 
@@ -48,12 +50,17 @@ const GetToTuch = () => {
               </div>
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Office</h3>
-            <p className="text-gray-600 mb-1">
-              Come say hello at our headquarters.
+            <p className="text-gray-600 mb-1 text-center tracking-wide leading-[150%]">
+              office-Destiny Abroad FZ-LLC,having it&apos;s address at <br />{" "}
+              FDBC4169 Compass Building <br /> AL Shohada Road, <br />
+              Al Hamra Industrial Zone-Fz,
             </p>
-            <address className="text-blue-600 not-italic text-[16px] leading-relaxed">
-              360 Email Steve 
-              Goldingwood V-0-0094 A4
+
+            {/* <p className="text-gray-600 mb-1">
+              office-Destiny Abroad FZ-LLC,having it&apos;s address at 
+            </p> */}
+            <address className="text-blue-600 not-italic text-[16px] text-center leading-relaxed">
+              Ras AL Khaimah,United Arab Emirates
             </address>
           </div>
 
@@ -74,8 +81,6 @@ const GetToTuch = () => {
             </a>
           </div>
         </div>
-
-   
 
         {/* CTA Section */}
         {/* <div className="text-center">

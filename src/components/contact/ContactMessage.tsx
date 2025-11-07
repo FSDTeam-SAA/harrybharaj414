@@ -18,6 +18,8 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { toast } from "sonner";
+import { Instagram, Mail, Youtube } from "lucide-react";
+import Link from "next/link";
 
 // ✅ Schema: define correct field types
 const formSchema = z.object({
@@ -53,24 +55,22 @@ const ContactMessage = () => {
     { title: "Post Landing Assistance", id: "6" },
   ];
 
-   const  onSubmit =async (data: FormData) => {
-
-    try{
-      toast.success('Your Message has been Sented');
-      const res = await fetch('/api/contact',{
-        method:"POST",
-        headers:{
-          "content-type":'application/json',
+  const onSubmit = async (data: FormData) => {
+    try {
+      toast.success("Your Message has been Sented");
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
         },
-        body:JSON.stringify({...data}),
+        body: JSON.stringify({ ...data }),
       });
       return res;
       form.reset();
-
-    }catch(error){
+    } catch (error) {
       toast.error(`${error} || 'Failed to sent message`);
-    }finally{
-      console.log('nice');
+    } finally {
+      console.log("nice");
     }
     console.log("✅ Form Submitted:", data);
   };
@@ -80,17 +80,58 @@ const ContactMessage = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center">
           {/* Left Image */}
-          <div className="relative w-full h-full rounded-xl overflow-hidden">
+          <div className="relative w-[80%]  rounded-xl overflow-hidden ">
+            {/* Background Image */}
             <Image
               src="/images/contact1.jpeg"
               alt="Professional consultant smiling with camera"
-             width={768}
-             height={680}
-              className="object-contain"
+              width={768}
+              height={680}
+              className="object-cover "
               loading="lazy"
             />
-          </div>
 
+            <div className="  flex flex-col items-center justify-center gap-4 text-blue-400">
+              <h3 className="text-xl font-semibold  mt-5 tracking-wide">
+                Connect With Us
+              </h3>
+
+              <div className="flex gap-4">
+                {/* Email */}
+                <Link
+                  href="mailto:harrysingh@destinyabroad.ae"
+                  className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full border border-white/30 hover:bg-blue-600 transition-all"
+                  title="Email"
+                >
+                  <Mail className="w-6 h-6 text-white" />
+                </Link>
+
+                {/* Instagram */}
+                <Link
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full border border-white/30 hover:bg-blue-500 transition-all"
+                  title="Instagram"
+                >
+                  <Instagram className="w-6 h-6 text-white" />
+                </Link>
+
+                {/* YouTube */}
+                <Link
+                  href="https://www.youtube.com/@HARRYSINGHEUROPA"
+                  target="_blank"
+                  className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full border border-white/30 hover:bg-blue-600 transition-all"
+                  title="YouTube"
+                >
+                  <Youtube className="w-6 h-6 text-white" />
+                </Link>
+              </div>
+
+              {/* <p className="mt-4 text-sm opacity-90">
+                harrysingh@destinyabroad.ae
+              </p> */}
+            </div>
+          </div>
           {/* Right Form */}
           <div className="bg-gray-50 rounded-xl p-8 shadow-sm border border-gray-200">
             <Form {...form}>
