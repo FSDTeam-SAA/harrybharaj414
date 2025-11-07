@@ -13,67 +13,116 @@ const VideoResources = () => {
 
   const perPage = 6;
   const videos = [
-    {
-      id: 1,
-      title: "Poland",
-      videoUrl: "UTcPAXvw3pk",
-      description: "Poland is a beautiful country; explore for your future.",
-    },
-    {
-      id: 2,
-      title: "Poland",
-      videoUrl: "cnTMmma70p8",
-      description: "Discover work and study options in Poland.",
-    },
-    {
-      id: 3,
-      title: "Poland",
-      videoUrl: "ZBTJlYEAgZA",
-      description: "Why Poland is a top destination for students.",
-    },
-    {
-      id: 4,
-      title: "Poland",
-      videoUrl: "mCU6QuHFbtk",
-      description: "The process to apply for Poland visas explained.",
-    },
-    {
-      id: 5,
-      title: "Poland",
-      videoUrl: "ZBTJlYEAgZA",
-      description: "Tips to settle successfully in Poland.",
-    },
-    {
-      id: 6,
-      title: "Poland",
-      videoUrl: "AuZX4KR21OE",
-      description: "Explore Poland's work culture and opportunities.",
-    },
-    {
-      id: 7,
-      title: "Poland",
-      videoUrl: "pWXoeKdy5-c",
-      description: "Life in Poland for international students.",
-    },
-    {
-      id: 8,
-      title: "Poland",
-      videoUrl: "pWXoeKdy5-c",
-      description: "A guide to studying in Poland.",
-    },
-    {
-      id: 9,
-      title: "Poland",
-      videoUrl: "pfnfFB3lAoo",
-      description: "Find out how to work and live in Poland.",
-    },
-    {
-      id: 10,
-      title: "Denmark",
-      videoUrl: "gKvOzHFeXyM",
-      description: "Why Denmark is great for your career abroad.",
-    },
-  ];
+  {
+    id: 1,
+    title: "Poland Work Permit Visa",
+    videoUrl: "lII03D-7L-w",
+    description: "Everything you need to know about the Poland Work Permit Visa."
+  },
+  {
+    id: 2,
+    title: "Luxembourg Work Permit Visa",
+    videoUrl: "8BNcftSlt8g",
+    description: "Luxembourg Work Permit Visa explained, with tips and guidelines."
+  },
+  {
+    id: 3,
+    title: "Albania Work Permit Visa 99% Success",
+    videoUrl: "xJXGT2SkFn8",
+    description: "How to get an Albania Work Permit Visa with a 99% success rate."
+  },
+  {
+    id: 4,
+    title: "Europe Work Permit Visa",
+    videoUrl: "o_muYt6nh08",
+    description: "Get your Europe Work Permit Visa in a few simple steps."
+  },
+  {
+    id: 5,
+    title: "Italy Work Permit Visa",
+    videoUrl: "etlzKQTg6io",
+    description: "A complete guide to applying for an Italy Work Permit Visa."
+  },
+  {
+    id: 6,
+    title: "Latvia Work Permit Visa",
+    videoUrl: "Gvle35g7pno",
+    description: "Steps to get a Latvia Work Permit Visa easily."
+  },
+  {
+    id: 7,
+    title: "Denmark Work Permit Visa",
+    videoUrl: "qC15QSVwQQw",
+    description: "Why Denmark is one of the best countries for your career abroad."
+  },
+  {
+    id: 8,
+    title: "Poland Work Permit Visa",
+    videoUrl: "vqGNFNLt6xg",
+    description: "Find out how to work and live in Poland with this guide."
+  },
+  {
+    id: 9,
+    title: "Poland Study & Work Permit Visa",
+    videoUrl: "0UAQ6vUZh_o",
+    description: "A guide to studying and working in Poland at the same time."
+  },
+  {
+    id: 10,
+    title: "Australia Skill Shortage Subclass 482",
+    videoUrl: "PRu19h6uHGQ",
+    description: "Everything you need to know about the Australia Skill Shortage Subclass 482 Visa."
+  },
+  {
+    id: 11,
+    title: "VFS Free Work Permit Visa Application",
+    videoUrl: "6YgUewcjiCU",
+    description: "Why you should avoid VFS and apply directly for your work permit in certain countries."
+  },
+  {
+    id: 12,
+    title: "Poland Work Visa Explained",
+    videoUrl: "vHcvjzMyjaA",
+    description: "See how I helped someone get a free work permit for Poland, including tips and hacks."
+  },
+  {
+    id: 13,
+    title: "Germany Work Permit Visa",
+    videoUrl: "Cc34Zpnm_3M",
+    description: "How to get a Germany Work Permit Visa and live and work in Germany."
+  },
+  {
+    id: 14,
+    title: "How I Came to Europe – Job & Work Permit",
+    videoUrl: "7EtM8dzydec",
+    description: "My personal journey to Europe and how you can come here too!"
+  },
+  {
+    id: 15,
+    title: "Poland Work Permit Visa Process",
+    videoUrl: "PMB5P4fCm5M",
+    description: "A step-by-step guide to successfully applying for the Poland Work Permit Visa."
+  },
+  {
+    id: 16,
+    title: "Spain Work Permit Visa",
+    videoUrl: "PFC1edcu-TA",
+    description: "Learn all about the Spain Work Permit Visa process and how to apply."
+  },
+  {
+    id: 17,
+    title: "Luxembourg Work Permit Visa for Subscribers",
+    videoUrl: "AnHaTWq_ee8",
+    description: "Lucky subscribers get a chance for a free work visa process for Luxembourg."
+  },
+  {
+    id: 18,
+    title: "Latvia Work Permit Visa",
+    videoUrl: "trawHdWWIPY",
+    description: "The ultimate guide to obtaining a Latvia Work Permit Visa and finding a job."
+  }
+];
+
 
   const totalPages = Math.ceil(videos.length / perPage);
   const lastIndex = currentPage * perPage;
