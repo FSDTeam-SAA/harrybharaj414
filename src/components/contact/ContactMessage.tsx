@@ -17,6 +17,7 @@ import { Textarea } from "../ui/textarea";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { toast } from "sonner";
 
 // ✅ Schema: define correct field types
 const formSchema = z.object({
@@ -52,7 +53,25 @@ const ContactMessage = () => {
     { title: "Post Landing Assistance", id: "6" },
   ];
 
-  const onSubmit = (data: FormData) => {
+   const  onSubmit =async (data: FormData) => {
+
+    try{
+      toast.success('Your Message has been Sented');
+      const res = await fetch('/api/contact',{
+        method:"POST",
+        headers:{
+          "content-type":'application/json',
+        },
+        body:JSON.stringify({...data}),
+      });
+      return res;
+      form.reset();
+
+    }catch(error){
+      toast.error(`${error} || 'Failed to sent message`);
+    }finally{
+      console.log('nice');
+    }
     console.log("✅ Form Submitted:", data);
   };
 
@@ -61,13 +80,13 @@ const ContactMessage = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center">
           {/* Left Image */}
-          <div className="relative w-full aspect-square rounded-xl overflow-hidden">
+          <div className="relative w-full h-full rounded-xl overflow-hidden">
             <Image
-              src="/images/contact.jpeg"
+              src="/images/contact1.jpeg"
               alt="Professional consultant smiling with camera"
              width={768}
              height={680}
-              className="object-cover"
+              className="object-contain"
               loading="lazy"
             />
           </div>

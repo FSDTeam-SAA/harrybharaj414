@@ -1,17 +1,40 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Plus, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import { useBookingCounter } from "@/lib/api";
+
 const Hero = () => {
   // Sample images for the slider - replace with your actual images
+  const { data, error } = useBookingCounter();
+  const [booking, setBooking] = useState(0);
+
+  //  console.log('data',data.count)
+  const countdata = data?.count || 2015;
+  useEffect(() => {
+    if (!countdata) return;
+    let current = 0;
+
+    const interval = setInterval(() => {
+      current++;
+      setBooking(current);
+
+      if (current >= countdata) {
+        clearInterval(interval);
+      }
+    }, 5);
+
+    return () => clearInterval(interval);
+  }, [countdata]);
 
   return (
     <section
@@ -105,9 +128,9 @@ const Hero = () => {
           </div>
 
           {/* Right Slider Section */}
-          <div className="relative md:w-1/2 w-full flex justify-center items-center rounded-2xl">
+          <div className="relative md:w-[70%] lg:w-1/2 w-full flex justify-center items-center rounded-2xl">
             {/* Main image */}
-            <div className="relative w-[80%] h-[500px] lg:h-[788px] bg-white z-20">
+            <div className="relative w-[80%]  h-[500px] md:w-[90%] md:h-[600px] lg:h-[788px] bg-white z-20">
               <div className="absolute -top-3 bg-blue-500 h-5 w-full rounded-t-xl"></div>
               <Image
                 src={"/images/hero.png"}
@@ -118,7 +141,7 @@ const Hero = () => {
             </div>
 
             {/* Blue frame behind image */}
-            <div className="absolute   w-[95%] aspect-5/4 z-10 opacity-40  ">
+            <div className="absolute   w-[95%] aspect-5/4 md:aspect-square z-10 opacity-40  ">
               <Image
                 src={"/images/hero.png"}
                 alt="background frame"
@@ -126,9 +149,43 @@ const Hero = () => {
                 className="object-cover rounded-xl"
               />
             </div>
-            <div>
-              
+
+            <div className="absolute bottom-1/2 left-0 shadow-2xl bg-white rounded-2xl w-[180px] py-6 flex flex-col items-center justify-center z-30 border border-blue-100">
+              <motion.p
+                key={booking} // re-trigger animation on booking change
+                initial={{ scale: 0.8, opacity: 1 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.3, ease: "easeOut" }}
+                className="text-4xl font-bold text-gray-700 z-50 flex gap-1 items-center"
+              >
+                {booking} <Plus />
+              </motion.p> 
+
+              <motion.p
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.1, duration: 0.4, ease: "easeOut" }}
+                className="text-xs md:text-xl text-gray-700 mt-2 tracking-wide"
+              >
+                Bookings
+              </motion.p>
+
+              {/* Optional glowing pulse ring */}
+              <motion.div
+                className="absolute inset-0 rounded-2xl border-2 border-blue-200"
+                animate={{
+                  scale: [1, 1.1, 1],
+                  opacity: [0.4, 0.8, 0.4],
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              />
             </div>
+
+            <div></div>
           </div>
         </div>
       </div>
