@@ -134,7 +134,7 @@ const VideoResources = () => {
     if (isAutoPlaying && !anyVideoPlaying && totalPages > 1) {
       autoPlayRef.current = setInterval(() => {
         setCurrentPage((prev) => (prev >= totalPages ? 1 : prev + 1));
-      }, 2000); // Change slide every 5 seconds
+      }, 5000); // Change slide every 5 seconds
     }
 
     return () => {

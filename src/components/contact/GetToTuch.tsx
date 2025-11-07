@@ -20,7 +20,7 @@ const GetToTuch = () => {
         </header>
 
         {/* Contact Info Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12 text-center md:text-left">
           {/* Email */}
           <div className="flex flex-col items-center md:items-center">
             <div className="flex items-center justify-center md:justify-start mb-4">
@@ -65,7 +65,7 @@ const GetToTuch = () => {
           </div>
 
           {/* Phone */}
-          <div className="flex flex-col items-center md:items-center">
+          {/* <div className="flex flex-col items-center md:items-center">
             <div className="flex items-center justify-center md:justify-start mb-4">
               <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                 <Phone className="h-6 w-6 text-blue-600" />
@@ -79,7 +79,7 @@ const GetToTuch = () => {
             >
               +1 (066) 605-0850
             </a>
-          </div>
+          </div> */}
         </div>
 
         {/* CTA Section */}

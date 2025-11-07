@@ -40,7 +40,7 @@ const Location = () => {
           <iframe
             title="Our Office Location on Google Maps"
             className="rounded-b-xl lg:rounded-b-none lg:rounded-r-xl w-full"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1888472.9890948925!2d70.007682640708!3d22.413069036369826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1762288202210!5m2!1sen!2sbd"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3596.1890042550017!2d55.78368562612026!3d25.665028662591766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1762549076162!5m2!1sen!2sbd"
             height="230"
             style={{ border: 0 }}
             allowFullScreen
@@ -54,3 +54,4 @@ const Location = () => {
 };
 
 export default Location;
+{/* <iframe src=""  height="230" style={{"border:0;"}} allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}

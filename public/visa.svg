@@ -1,0 +1,70 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+	<g>
+		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M40.123,25.061h381.551c16.568,0,30.122,13.555,30.122,30.122&#10;&#9;&#9;&#9;v341.388c0,16.568-13.555,30.122-30.122,30.122H40.123C23.555,426.694,10,413.139,10,396.572V55.184&#10;&#9;&#9;&#9;C10,38.617,23.555,25.061,40.123,25.061z"/>
+		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#D2DCFD;" d="M451.796,267.071v129.5c0,16.568-13.555,30.122-30.122,30.122&#10;&#9;&#9;&#9;H279.446c-2.199-9.688-3.364-19.769-3.364-30.123c0-74.863,60.688-135.551,135.551-135.551&#10;&#9;&#9;&#9;C425.616,261.021,439.105,263.139,451.796,267.071z"/>
+		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#B1D952;" d="M411.633,486.939c49.773,0,90.367-40.595,90.367-90.367&#10;&#9;&#9;&#9;s-40.595-90.367-90.367-90.367s-90.367,40.595-90.367,90.367S361.86,486.939,411.633,486.939z"/>
+		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#FDBEB9;" d="M126.363,325.339c13.565,0,24.628-11.064,24.628-24.629&#10;&#9;&#9;&#9;s-11.063-24.629-24.628-24.629s-24.629,11.064-24.629,24.629S112.798,325.339,126.363,325.339z"/>
+		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#67CCD1;" d="M80.896,370.807c0-25.111,20.356-45.468,45.468-45.468&#10;&#9;&#9;&#9;s45.468,20.356,45.468,45.468v5.684H80.896V370.807z"/>
+		<path style="fill-rule:evenodd;clip-rule:evenodd;fill:#BC9AF4;" d="M10,55.184v170.694h441.796V55.184&#10;&#9;&#9;&#9;c0-16.568-13.555-30.122-30.122-30.122H40.123C23.555,25.061,10,38.616,10,55.184z"/>
+	</g>
+	<g>
+		<g>
+			
+				<line style="fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#6864F7;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" x1="222.255" y1="281.103" x2="301.578" y2="281.103"/>
+			
+				<line style="fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#6864F7;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" x1="222.255" y1="326.286" x2="352.505" y2="326.286"/>
+			
+				<line style="fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#6864F7;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" x1="222.255" y1="371.47" x2="318.772" y2="371.47"/>
+		</g>
+		<g>
+			
+				<path style="fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#052A75;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" d="&#10;&#9;&#9;&#9;&#9;M321.394,426.694H40.123C23.555,426.694,10,413.139,10,396.572V55.184c0-16.568,13.555-30.122,30.123-30.122h381.551&#10;&#9;&#9;&#9;&#9;c16.568,0,30.122,13.555,30.122,30.122v255.401"/>
+			
+				<path style="fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#052A75;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" d="&#10;&#9;&#9;&#9;&#9;M411.633,486.939c49.773,0,90.367-40.595,90.367-90.367s-40.595-90.367-90.367-90.367s-90.367,40.595-90.367,90.367&#10;&#9;&#9;&#9;&#9;S361.86,486.939,411.633,486.939z"/>
+		</g>
+		<g>
+			
+				<polyline style="fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#FFFFFF;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" points="&#10;&#9;&#9;&#9;&#9;445.52,373.979 400.336,419.163 377.744,396.571 &#9;&#9;&#9;"/>
+			
+				<path style="fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#FFFFFF;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" d="&#10;&#9;&#9;&#9;&#9;M341.454,135.509h-36.649 M303.173,165.633v-60.245c0-11.045,9.037-20.082,20.082-20.082l0,0&#10;&#9;&#9;&#9;&#9;c11.045,0,20.082,9.037,20.082,20.082v60.245"/>
+			
+				<line style="fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#FFFFFF;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256;" x1="195.136" y1="85.306" x2="195.136" y2="165.633"/>
+			
+				<path style="fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#FFFFFF;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.6131;" d="&#10;&#9;&#9;&#9;&#9;M264.256,89.012l-5.339-2.211c-10.026-4.152-21.627,0.651-25.779,10.678c-4.153,10.026,0.652,21.626,10.677,25.779l5.339,2.211&#10;&#9;&#9;&#9;&#9;l5.339,2.211c10.025,4.153,14.83,15.753,10.677,25.779c-4.152,10.027-15.753,14.831-25.779,10.679l-5.339-2.211"/>
+			
+				<polyline style="fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#FFFFFF;stroke-width:20;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:22.9256;" points="&#10;&#9;&#9;&#9;&#9;118.459,85.306 138.542,165.633 158.624,85.306 &#9;&#9;&#9;"/>
+		</g>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>

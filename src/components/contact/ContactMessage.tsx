@@ -52,7 +52,7 @@ const ContactMessage = () => {
     { title: "Immigration & Settlement Services", id: "3" },
     { title: "Career & CV Guidance", id: "4" },
     { title: "Documentation & Application Support", id: "5" },
-    { title: "Post Landing Assistance", id: "6" },
+    // { title: "Post Landing Assistance", id: "6" },
   ];
 
   const onSubmit = async (data: FormData) => {
@@ -80,7 +80,7 @@ const ContactMessage = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 items-center">
           {/* Left Image */}
-          <div className="relative w-[80%]  rounded-xl overflow-hidden ">
+          <div className="relative w-[80%] mx-auto rounded-xl overflow-hidden ">
             {/* Background Image */}
             <Image
               src="/images/contact1.jpeg"
@@ -98,19 +98,19 @@ const ContactMessage = () => {
 
               <div className="flex gap-4">
                 {/* Email */}
-                <Link
+                {/* <Link
                   href="mailto:harrysingh@destinyabroad.ae"
                   className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full border border-white/30 hover:bg-blue-600 transition-all"
                   title="Email"
                 >
                   <Mail className="w-6 h-6 text-white" />
-                </Link>
+                </Link> */}
 
                 {/* Instagram */}
                 <Link
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/harry_bharaj34"
                   target="_blank"
-                  className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full border border-white/30 hover:bg-blue-500 transition-all"
+                  className="flex items-center justify-center w-10 h-10  bg-pink-600 hover:bg-pink-700 rounded-full transition-colors group"
                   title="Instagram"
                 >
                   <Instagram className="w-6 h-6 text-white" />
@@ -120,7 +120,7 @@ const ContactMessage = () => {
                 <Link
                   href="https://www.youtube.com/@HARRYSINGHEUROPA"
                   target="_blank"
-                  className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full border border-white/30 hover:bg-blue-600 transition-all"
+                  className="flex items-center justify-center w-10 h-10 bg-red-600 hover:bg-red-700 rounded-full transition-colors group"
                   title="YouTube"
                 >
                   <Youtube className="w-6 h-6 text-white" />

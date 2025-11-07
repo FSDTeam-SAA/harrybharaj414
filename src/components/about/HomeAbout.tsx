@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const HomeAbout = () => {
   return (
@@ -40,7 +41,8 @@ const HomeAbout = () => {
               Destiny Abroad FZ-LLC is a licensed UAE-based immigration and
               career consulting firm dedicated to helping individuals from
               India, Nepal, and GCC countries achieve global opportunities. We
-              specialize in guiding clients toward work, study, and settlement
+              specialize in guiding clients toward
+              {/* work, study, and settlement */}
               pathways in Europe with trusted consultation and seamless
               documentation support.
             </p>
@@ -59,10 +61,11 @@ const HomeAbout = () => {
               </li>
               <li>Trusted by Clients Across India, Nepal & GCC Countries.</li>
             </ul>
-
-            <Button className="border-2 border-blue-500 text-blue-600 bg-transparent hover:text-white transition-all duration-300">
-              More Info
-            </Button>
+            <Link href={"/about"}>
+              <Button className="border-2 border-blue-500 text-blue-600 hover:bg-white cursor-pointer bg-transparent hover:scale-105 transition-all duration-300">
+                More Info
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
