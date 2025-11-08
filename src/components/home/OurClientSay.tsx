@@ -11,25 +11,32 @@ const OurClientSay = () => {
 
   const data = [
     {
-      url: "/video/video1.MP4",
-      name: "Rahul Sharma",
-      country: "India",
-      title: "Work Visa Success",
-       image:'/india.svg'
-    },
-    {
       url: "/video/video2.MP4",
       name: "Vishal",
       country: "India",
       title: "Work Visa",
-       image:'/india.svg'
+      image: "/india.svg",
     },
     {
       url: "/video/video3.MP4",
       name: "Patel Anjali mahendrabhai",
       country: "India",
       title: "Study Abrod",
-      image:'/india.svg'
+      image: "/india.svg",
+    },
+    {
+      url: "/video/video4.MP4",
+      name: "Rishabh",
+      country: "India",
+      title: "Work Visa",
+      image: "/india.svg",
+    },
+    {
+      url: "/video/video1.mp4",
+      name: "Chetan",
+      country: "India",
+      title: "Work Visa",
+      image: "/india.svg",
     },
   ];
 
@@ -131,7 +138,13 @@ const OurClientSay = () => {
                       <p className="text-gray-600 text-sm font-medium flex gap-2 justify-center items-center pt-1">
                         From{" "}
                         <span className="font-normal">{video.country}</span>
-                        <Image src={video.image} alt="country" width={20} height={20} className="object-cover" />
+                        <Image
+                          src={video.image}
+                          alt="country"
+                          width={20}
+                          height={20}
+                          className="object-cover"
+                        />
                       </p>
                     </div>
                   </div>
