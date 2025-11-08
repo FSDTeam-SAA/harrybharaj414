@@ -41,15 +41,14 @@ const MeetOurTeams = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <header className="text-center mb-14  mx-auto">
-          {/* <p className="text-blue-600 font-semibold uppercase tracking-wide">
-            
-          </p> */}
+          <p className="text-blue-600 font-semibold uppercase tracking-wide">
+            Partnered Companies
+          </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
-            Meet Our Clients
+         Companies We Work With
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            The dedicated professionals guiding your journey towards successful
-            immigration, work, and study opportunities abroad.
+            Partnering with trusted companies across Europe, UAE, India, Nepal, and GCC to offer reliable overseas opportunities.
           </p>
         </header>
 
