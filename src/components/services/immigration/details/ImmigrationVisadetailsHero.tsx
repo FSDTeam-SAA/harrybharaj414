@@ -1,7 +1,9 @@
+
+
 import Image from "next/image";
 import React from "react";
 
-const StudyVisadetailsHero = () => {
+const ImmigrationVisadetailsHero = () => {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
@@ -22,7 +24,7 @@ const StudyVisadetailsHero = () => {
         {/* Banner Image */}
         <div className="mb-12">
           <Image
-            src="/images/study.jpg" 
+            src="/images/Immigration.jpg" 
             alt="Work visa consulting overview"
             width={1536}
             height={400}
@@ -79,4 +81,4 @@ const StudyVisadetailsHero = () => {
   );
 };
 
-export default StudyVisadetailsHero;
+export default ImmigrationVisadetailsHero;
