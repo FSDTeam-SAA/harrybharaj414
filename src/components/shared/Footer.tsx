@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-[#E8F1FD] mt-60 lg:mt-48 relative" role="contentinfo">
       <div className="container mx-auto">
         {/* Location Box */}
-        <div className="lg:pt-0 absolute -top-52 lg:-top-36 left-[13%] lg:left-[25%] w-[70%] lg:w-[50%] mx-auto">
+        <div className="lg:pt-0 absolute -top-52 lg:-top-36 left-[16%] lg:left-[25%] w-[70%] lg:w-[50%] mx-auto">
           <Location />
         </div>
 
@@ -30,7 +30,7 @@ const Footer = () => {
             <ul className="flex text-[#1A73E8] items-center justify-center gap-8">
               <li>
                 <a
-                  href="#"
+                  href={'/'}
                   className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-500"
                 >
                   Home
@@ -38,7 +38,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href={'/services'}
                   className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-500"
                 >
                   Services
@@ -46,7 +46,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href={'/about'}
                   className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-500"
                 >
                   About Us
@@ -54,7 +54,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href={'/contact'}
                   className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-500"
                 >
                   Contact Us

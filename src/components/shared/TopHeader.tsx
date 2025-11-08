@@ -22,7 +22,8 @@ export default function TopHeader() {
           <div className="message text-center md:text-left px-2">
             <p className="text-xs md:text-sm">
               Book a FREE Consultation with an Immigration Advisor to Start Your
-              Work, Study, or Settlement Journey Abroad!
+              {/* Work, Study, or Settlement */}
+              Journey Abroad!
             </p>
           </div>
           <div className="phone-number flex flex-row items-center gap-2 md:gap-3 mt-1 md:mt-0">

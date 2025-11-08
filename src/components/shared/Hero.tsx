@@ -2,7 +2,14 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Plus, Twitter, Youtube } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Linkedin,
+  Plus,
+  Twitter,
+  Youtube,
+} from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -61,17 +68,20 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <Button
                   size="lg"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg font-semibold rounded-lg transition-colors"
+                  className="border-2 border-blue-500 text-blue-600 hover:bg-white cursor-pointer bg-transparent hover:scale-105 transition-all duration-300 "
                 >
                   More Info
                 </Button>
+                <Link href={'https://topmate.io/harry_singh12'}>
+                
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 text-lg font-semibold rounded-lg transition-colors"
+                  className="border-2 border-blue-500 text-white  cursor-pointer bg-[#1A73E8] hover:scale-105 transition-all duration-300"
                 >
                   Book a Consultation
                 </Button>
+                </Link>
               </div>
             </div>
 
@@ -82,44 +92,48 @@ const Hero = () => {
               </h4>
               <div>
                 <ul className="flex gap-4">
-                  <li>
+                  {/* <li>
                     <Link
                       href="#"
                       className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-blue-600 rounded-full transition-colors group"
                     >
                       <Facebook className="w-5 h-5 text-gray-600 group-hover:text-white" />
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
-                      href="#"
-                      className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-pink-600 rounded-full transition-colors group"
+                      href="https://www.instagram.com/harry_bharaj34"
+                      target="_blank"
+                      className="flex items-center justify-center w-10 h-10  bg-pink-600 hover:bg-pink-700 rounded-full transition-colors group"
+                      title="Instagram"
                     >
-                      <Instagram className="w-5 h-5 text-gray-600 group-hover:text-white" />
+                      <Instagram className="w-6 h-6 text-white" />
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="#"
                       className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-blue-700 rounded-full transition-colors group"
                     >
                       <Linkedin className="w-5 h-5 text-gray-600 group-hover:text-white" />
                     </Link>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <Link
                       href="#"
                       className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-blue-400 rounded-full transition-colors group"
                     >
                       <Twitter className="w-5 h-5 text-gray-600 group-hover:text-white" />
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
-                      href="#"
-                      className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-red-600 rounded-full transition-colors group"
+                      href="https://www.youtube.com/@HARRYSINGHEUROPA"
+                      target="_blank"
+                      className="flex items-center justify-center w-10 h-10 bg-red-600 hover:bg-red-700 rounded-full transition-colors group"
+                      title="YouTube"
                     >
-                      <Youtube className="w-5 h-5 text-gray-600 group-hover:text-white" />
+                      <Youtube className="w-6 h-6 text-white" />
                     </Link>
                   </li>
                 </ul>
@@ -159,7 +173,7 @@ const Hero = () => {
                 className="text-4xl font-bold text-gray-700 z-50 flex gap-1 items-center"
               >
                 {booking} <Plus />
-              </motion.p> 
+              </motion.p>
 
               <motion.p
                 initial={{ y: 10, opacity: 0 }}

@@ -7,37 +7,37 @@ const HomeServices = () => {
       title: "Work Visa Consulting",
       description:
         "Expert guidance to secure legal overseas employment with full documentation support and visa processing assistance.",
-      icon: "/icons/work-visa.png",
+      icon: "/employee.svg",
     },
     {
       title: "Study Abroad Guidance",
       description:
         "Personalized counseling and admission support for students pursuing international education.",
-      icon: "/icons/study-abroad.png",
+      icon: "/guidance.svg",
     },
     {
       title: "PR & Immigration Services",
       description:
         "Comprehensive permanent residency and immigration application support to start your new life abroad.",
-      icon: "/icons/immigration.png",
+      icon: "/communication.svg",
     },
     {
       title: "Tourist Visa Assistance",
       description:
         "Quick and reliable tourist visa application help for smooth international travel.",
-      icon: "/icons/tourist-visa.png",
+      icon: "/tourist.svg",
     },
     {
-      title: "Job Placement Support",
+      title: "Documentation Support",
       description:
-        "Career consultation and global job placement services for skilled professionals.",
-      icon: "/icons/job-support.png",
+        "Documentation Support for Work visa filing",
+      icon: "/project-management.svg",
     },
     {
       title: "Language Test Preparation",
       description:
         "Coaching and resources for IELTS, TOEFL, and other proficiency exams.",
-      icon: "/icons/language-test.png",
+      icon: "/test-cases.svg",
     },
   ];
 
@@ -75,7 +75,7 @@ const HomeServices = () => {
                   alt={`${item.title} icon`}
                   width={60}
                   height={60}
-                  className="rounded-full object-contain"
+                  className="rounded-xl object-contain"
                   loading="lazy"
                 />
               </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 const WhyChooseUs = () => {
   return (
@@ -9,8 +10,6 @@ const WhyChooseUs = () => {
       id="why-choose-us"
       className="py-16 lg:py-24 bg-gradient-to-b from-white to-blue-50"
     >
-
-
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <header className="text-center mb-14 max-w-2xl mx-auto">
@@ -53,8 +52,9 @@ const WhyChooseUs = () => {
                 <p className="font-medium">
                   Personalized Approach:{" "}
                   <span className="font-normal">
-                    Tailored solutions for work, study, and settlement based on
-                    individual goals and circumstances.
+                    Tailored solutions for work, study, and
+                    {/* settlement  */}
+                    based on individual goals and circumstances.
                   </span>
                 </p>
               </li>
@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
                 </p>
               </li>
 
-              <li className="flex items-start gap-3">
+              {/* <li className="flex items-start gap-3">
                 <Check className="text-[#1A73E8] mt-1 shrink-0" />
                 <p className="font-medium">
                   End-to-End Support:{" "}
@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
                     you at every step.
                   </span>
                 </p>
-              </li>
+              </li> */}
 
               <li className="flex items-start gap-3">
                 <Check className="text-[#1A73E8] mt-1 shrink-0" />
@@ -92,13 +92,15 @@ const WhyChooseUs = () => {
                 </p>
               </li>
             </ul>
-
+            <Link href={'https://topmate.io/harry_singh12'}>
+            
             <Button
               className="mt-8 border-2 border-blue-600 bg-[#1A73E8] text-white font-semibold hover:bg-blue-700 transition-all duration-300"
               aria-label="Book a consultation with our visa experts"
             >
               Book a Consultation
             </Button>
+            </Link>
           </div>
 
           {/* Right Image */}
