@@ -13,7 +13,6 @@ const MyAchievement = () => {
     "/badge6.png",
     "/badge7.png",
     "/bagde4.png",
-
   ];
 
   return (
@@ -28,7 +27,7 @@ const MyAchievement = () => {
           id="achievements-title"
           className="text-3xl lg:text-4xl font-bold text-gray-800 mb-10"
         >
-          Our Achievements
+          India&apos;s Top-Ranked Consulting Partner — Book Your Session Today
         </h2>
 
         {/* Marquee Animation */}
@@ -72,8 +71,8 @@ const MyAchievement = () => {
         {/* Section description for SEO */}
         <p className="text-gray-600 mt-8 max-w-2xl mx-auto leading-relaxed">
           Celebrating our certifications, partnerships, and global recognition —
-          each milestone reflects our dedication to excellence and client
-          success across the world.
+          every milestone reflects our commitment to excellence and client
+          success worldwide.
         </p>
       </div>
     </section>

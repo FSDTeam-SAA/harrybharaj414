@@ -57,8 +57,9 @@ const SuccessStory = () => {
                     Destiny Abroad FZ-LLC is a licensed UAE-based immigration
                     and career consulting firm dedicated to helping individuals
                     from India, Nepal, and GCC countries achieve global
-                    opportunities. We specialize in guiding clients toward work,
-                    study, and settlement pathways in Europe with trusted
+                    opportunities. We specialize in guiding clients toward 
+                    {/* work,study, and settlement  */}
+                    pathways in Europe with trusted
                     consultation and seamless documentation support.
                   </p>
                   <p className="text-[#6C757D] leading-relaxed">
