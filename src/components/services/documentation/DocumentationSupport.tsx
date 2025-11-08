@@ -22,7 +22,7 @@ const DocumentationSupport = () => {
         icon="/service/visa.svg"
         button="More Info"
         imgchange
-        btnlink='/'
+        btnlink='/services/documentationvisadetails'
       />
     </div>
   )

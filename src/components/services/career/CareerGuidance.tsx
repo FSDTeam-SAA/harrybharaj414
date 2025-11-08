@@ -21,7 +21,7 @@ const CareerGuidance = () => {
         image="/images/career.jpg"
         icon="/service/visa.svg"
         button="More Info"
-        btnlink="/"
+        btnlink="/services/careervisadetails"
       />
     </div>
   );

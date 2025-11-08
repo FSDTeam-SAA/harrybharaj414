@@ -21,7 +21,7 @@ const LanguageTest = () => {
         image="/images/language.jpg"
         icon="/service/visa.svg"
         button="More Info"
-        btnlink="/"
+        btnlink="/services/languagevisadetails"
       />
     </div>
   );
