@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
 const AdminBookingPage = () => {
-  const [count, setCount] = useState<number>(3);
+  const [count, setCount] = useState<number>(2050);
   const [loading, setLoading] = useState(false);
 
   // ✅ handle submit
