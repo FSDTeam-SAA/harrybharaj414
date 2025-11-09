@@ -19,7 +19,7 @@ function ensureFile() {
 // ✅ GET — get booking counter
 export async function GET() {
   try {
-    ensureFile(); // 👈 makes sure file exists
+    ensureFile(); 
     const fileData = fs.readFileSync(filePath, "utf-8");
     const { count } = JSON.parse(fileData);
     return NextResponse.json({ count });
@@ -35,7 +35,7 @@ export async function GET() {
 // ✅ POST — update booking counter
 export async function POST(request:Request) {
   try {
-    ensureFile(); // 👈 ensure before writing
+    ensureFile(); 
     const body = await request.json();
     const { count } = body;
 
