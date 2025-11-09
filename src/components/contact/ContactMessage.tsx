@@ -23,7 +23,7 @@ const ContactMessage = () => {
           <div className="flex flex-col items-center">
             <div className="relative w-full  rounded-xl overflow-hidden">
               <Image
-                src="/images/contact1.jpeg"
+                src="/images/contact.png"
                 alt="Professional immigration consultant"
                 width={768}
                 height={680}
