@@ -2,11 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import {
-  Instagram,
-  Plus,
-  Youtube,
-} from "lucide-react";
+import { Instagram, Plus, Youtube } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -69,15 +65,14 @@ const Hero = () => {
                 >
                   More Info
                 </Button>
-                <Link href={'https://topmate.io/harry_singh12'}>
-                
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-blue-500 text-white  cursor-pointer bg-[#1A73E8] hover:scale-105 transition-all duration-300"
-                >
-                  Book a Consultation
-                </Button>
+                <Link href={"https://topmate.io/harry_singh12"}>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-blue-500 text-white  cursor-pointer bg-[#1A73E8] hover:scale-105 transition-all duration-300"
+                  >
+                    Book a Consultation
+                  </Button>
                 </Link>
               </div>
             </div>
@@ -89,14 +84,6 @@ const Hero = () => {
               </h4>
               <div>
                 <ul className="flex gap-4">
-                  {/* <li>
-                    <Link
-                      href="#"
-                      className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-blue-600 rounded-full transition-colors group"
-                    >
-                      <Facebook className="w-5 h-5 text-gray-600 group-hover:text-white" />
-                    </Link>
-                  </li> */}
                   <li>
                     <Link
                       href="https://www.instagram.com/harry_bharaj34"
@@ -107,22 +94,6 @@ const Hero = () => {
                       <Instagram className="w-6 h-6 text-white" />
                     </Link>
                   </li>
-                  {/* <li>
-                    <Link
-                      href="#"
-                      className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-blue-700 rounded-full transition-colors group"
-                    >
-                      <Linkedin className="w-5 h-5 text-gray-600 group-hover:text-white" />
-                    </Link>
-                  </li> */}
-                  {/* <li>
-                    <Link
-                      href="#"
-                      className="flex items-center justify-center w-10 h-10 bg-gray-100 hover:bg-blue-400 rounded-full transition-colors group"
-                    >
-                      <Twitter className="w-5 h-5 text-gray-600 group-hover:text-white" />
-                    </Link>
-                  </li> */}
                   <li>
                     <Link
                       href="https://www.youtube.com/@HARRYSINGHEUROPA"
@@ -141,7 +112,7 @@ const Hero = () => {
           {/* Right  Section */}
           <div className="relative md:w-[70%] lg:w-1/2 w-full flex justify-center items-center rounded-2xl">
             {/* Main image */}
-            <div className="relative w-[80%]  h-[500px] md:w-[90%] md:h-[600px] lg:h-[788px] bg-white z-20">
+            <div className="relative w-[80%]  h-[500px] md:w-[90%] md:h-[600px] lg:h-[880px] bg-white z-20">
               <div className="absolute -top-3 bg-blue-500 h-5 w-full rounded-t-xl"></div>
               <Image
                 src={"/images/hero.png"}
