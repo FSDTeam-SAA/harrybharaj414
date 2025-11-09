@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-[#E8F1FD] mt-60 lg:mt-48 relative" role="contentinfo">
       <div className="container mx-auto">
         {/* Location Box */}
-        <div className="lg:pt-0 absolute -top-52 lg:-top-36 left-[16%] lg:left-[25%] w-[70%] lg:w-[50%] mx-auto">
+        <div className="lg:pt-0 absolute -top-52 md:-top-46 lg:-top-36 left-[5%]  xl:left-[25%] w-[90%] sm-w-[90%] xl:w-[50%] mx-auto">
           <Location />
         </div>
 

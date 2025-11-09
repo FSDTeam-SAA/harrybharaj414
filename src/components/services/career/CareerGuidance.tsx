@@ -18,7 +18,7 @@ const CareerGuidance = () => {
         interview preparation to increase your chances of approval. With our
         tailored approach, we help you successfully unlock global work
         opportunities and start your professional journey overseas."
-        image="/images/career.jpg"
+        image="/images/service1.jpeg"
         icon="/service/visa.svg"
         button="More Info"
         btnlink="/services/careervisadetails"

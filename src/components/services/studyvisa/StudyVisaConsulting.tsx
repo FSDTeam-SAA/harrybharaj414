@@ -18,7 +18,7 @@ const StudyVisaConsulting = () => {
         interview preparation to increase your chances of approval. With our
         tailored approach, we help you successfully unlock global work
         opportunities and start your professional journey overseas."
-        image="/images/study.jpg"
+        image="/images/service3.jpeg"
         icon="/service/visa.svg"
         button="More Info"
         btnlink="/services/studyvisadetails"

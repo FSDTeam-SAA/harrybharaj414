@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
   return (
     <section
       id="why-choose-us"
-      className="py-16 lg:py-24 bg-gradient-to-b from-white to-blue-50"
+      className="mt-8 md:mt-0 md:py-16 lg:py-24 bg-gradient-to-b from-white to-blue-50"
     >
       <div className="container mx-auto px-4">
         {/* Section Header */}
@@ -35,10 +35,10 @@ const WhyChooseUs = () => {
               Key Features
             </h3>
 
-            <ul className="space-y-4 text-gray-700">
+            <ul className="space-y-4 text-gray-700 text-sm md:text-xl">
               <li className="flex items-start gap-3">
-                <Check className="text-[#1A73E8] mt-1 shrink-0" />
-                <p className="font-medium">
+                <Check className="text-[#1A73E8] w-5 h-5 md:w-6 md:h-6 mt-1 shrink-0" />
+                <p className="font-medium text-base md:text-xl">
                   Experienced Consultants:{" "}
                   <span className="font-normal">
                     Expert guidance from licensed professionals with years of
@@ -48,8 +48,8 @@ const WhyChooseUs = () => {
               </li>
 
               <li className="flex items-start gap-3">
-                <Check className="text-[#1A73E8] mt-1 shrink-0" />
-                <p className="font-medium">
+                <Check className="text-[#1A73E8] mt-1 w-5 h-5 md:w-6 md:h-6 shrink-0" />
+                <p className="font-medium text-base md:text-xl">
                   Personalized Approach:{" "}
                   <span className="font-normal">
                     Tailored solutions for work, study, and
@@ -60,8 +60,8 @@ const WhyChooseUs = () => {
               </li>
 
               <li className="flex items-start gap-3">
-                <Check className="text-[#1A73E8] mt-1 shrink-0" />
-                <p className="font-medium">
+                <Check className="text-[#1A73E8] mt-1 w-5 h-5 md:w-6 md:h-6 shrink-0" />
+                <p className="font-medium text-base md:text-xl">
                   Trusted & Transparent:{" "}
                   <span className="font-normal">
                     Clear process, honest advice, and full support at every
@@ -106,7 +106,7 @@ const WhyChooseUs = () => {
           {/* Right Image */}
           <div className="relative w-full h-[400px] lg:h-[550px]">
             <Image
-              src="/whychoos.jpg"
+              src="/images/international.png"
               alt="Experienced immigration consultants assisting clients"
               fill
               className="object-cover rounded-2xl shadow-lg"

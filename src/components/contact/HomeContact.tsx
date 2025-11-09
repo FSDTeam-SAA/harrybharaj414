@@ -1,83 +1,36 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "../ui/form";
-import { Input } from "../ui/input";
+import React, { useState } from "react";
+
 import { Button } from "../ui/button";
 import { Checkbox } from "../ui/checkbox";
-import { Textarea } from "../ui/textarea";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
-import { toast } from "sonner";
-
-// ✅ Validation schema
-const formSchema = z.object({
-  firstName: z.string().min(2, "First name is required"),
-  lastName: z.string().min(2, "Last name is required"),
-  email: z.string().email("Enter a valid email"),
-  phone: z.string().min(10, "Enter a valid phone number"),
-  message: z.string().min(10, "Message should be at least 10 characters"),
-  services: z.array(z.string()).min(1, "Please select at least one service"),
-});
-
-type FormData = z.infer<typeof formSchema>;
+import Link from "next/link";
+import { Label } from "../ui/label";
+import { Mail } from "lucide-react";
 
 const HomeContact = () => {
- const form = useForm<FormData>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      message: "",
-      services: [],
-    },
-  });
+  const [selectedServices, setSelectedServices] = useState<string[]>([]);
 
   const services = [
+    { title: "Book a Consultation for Your Business", id: "6" },
     { title: "Work Visa Consulting", id: "1" },
     { title: "Study Visa Consulting", id: "2" },
     { title: "Immigration & Settlement Services", id: "3" },
     { title: "Career & CV Guidance", id: "4" },
     { title: "Documentation & Application Support", id: "5" },
-    // { title: "Post Landing Assistance", id: "6" },
   ];
 
-  const onSubmit = async (data: FormData) => {
-    try {
-      toast.success("Your Message has been Sented");
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({ ...data }),
-      });
-      return res;
-      form.reset();
-    } catch (error) {
-      toast.error(`${error} || 'Failed to sent message`);
-    } finally {
-      console.log("nice");
-    }
-    console.log("✅ Form Submitted:", data);
+  const handleCheckboxChange = (title: string, checked: boolean) => {
+    setSelectedServices((prev) =>
+      checked ? [...prev, title] : prev.filter((t) => t !== title)
+    );
   };
-
 
   return (
     <section
       id="contact"
-      className="py-20 bg-white"
+      className="py-10 sm:py-16 md:py-20 bg-gray-200"
       aria-labelledby="contact-heading"
     >
       <div className="container mx-auto">
@@ -88,176 +41,77 @@ const HomeContact = () => {
           </p>
           <h2
             id="contact-heading"
-            className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4"
+            className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4"
           >
-            Trusted Immigration & Visa Consulting
+            Trusted Immigration & Visa Experts
           </h2>
-          <p className="text-gray-600 leading-relaxed">
-            We assist clients from India, Nepal, and GCC countries with reliable
-            visa, study, and immigration services to help them build a
-            successful future abroad.
+          <p className="text-sm md:text-lg px-4 md:px-0 text-gray-600 leading-relaxed">
+            We offer expert immigration, study, and visa consulting services for
+            clients from India, Nepal, and GCC countries — helping you take the
+            next confident step toward your global future.
           </p>
         </header>
 
-        {/* Main */}
+        {/* Main Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Image */}
-          <div className="rounded-xl overflow-hidden w-full aspect-5/4">
+          <div className="rounded-xl overflow-hidden w-[95%] mx-auto sm:w-full">
             <Image
-              src="/contact.jpg"
-              alt="Professional consultant smiling with camera"
+              src="/images/whychoose.jpeg"
+              alt="Immigration consultant discussing with a client"
               width={775}
               height={570}
-              className="object-cover w-full h-full"
+              className="object-contain w-full aspect-5/5 rounded-2xl"
               loading="lazy"
             />
           </div>
 
-          {/* Right Form */}
-           <div className="bg-gray-50 rounded-xl p-8 shadow-sm border border-gray-200">
-                      <Form {...form}>
-                        <form
-                          onSubmit={form.handleSubmit(onSubmit)}
-                          className="space-y-6"
-                          aria-label="Contact consultation form"
-                        >
-                          {/* First / Last Name */}
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <FormField
-                              control={form.control}
-                              name="firstName"
-                              render={({ field }) => (
-                                <FormItem>
-                                  <FormLabel>First Name</FormLabel>
-                                  <FormControl>
-                                    <Input placeholder="First name" {...field} />
-                                  </FormControl>
-                                  <FormMessage />
-                                </FormItem>
-                              )}
-                            />
-                            <FormField
-                              control={form.control}
-                              name="lastName"
-                              render={({ field }) => (
-                                <FormItem>
-                                  <FormLabel>Last Name</FormLabel>
-                                  <FormControl>
-                                    <Input placeholder="Last name" {...field} />
-                                  </FormControl>
-                                  <FormMessage />
-                                </FormItem>
-                              )}
-                            />
-                          </div>
-          
-                          {/* Email */}
-                          <FormField
-                            control={form.control}
-                            name="email"
-                            render={({ field }) => (
-                              <FormItem>
-                                <FormLabel>Email</FormLabel>
-                                <FormControl>
-                                  <Input
-                                    type="email"
-                                    placeholder="you@company.com"
-                                    {...field}
-                                  />
-                                </FormControl>
-                                <FormMessage />
-                              </FormItem>
-                            )}
-                          />
-          
-                          {/* Phone */}
-                          <FormField
-                            control={form.control}
-                            name="phone"
-                            render={({ field }) => (
-                              <FormItem>
-                                <FormLabel>Phone Number</FormLabel>
-                                <FormControl>
-                                  <Input
-                                    type="tel"
-                                    placeholder="+1 (555) 000-0000"
-                                    {...field}
-                                  />
-                                </FormControl>
-                                <FormMessage />
-                              </FormItem>
-                            )}
-                          />
-          
-                          {/* Message */}
-                          <FormField
-                            control={form.control}
-                            name="message"
-                            render={({ field }) => (
-                              <FormItem>
-                                <FormLabel>Message</FormLabel>
-                                <FormControl>
-                                  <Textarea
-                                    placeholder="Write your message here..."
-                                    rows={4}
-                                    {...field}
-                                  />
-                                </FormControl>
-                                <FormMessage />
-                              </FormItem>
-                            )}
-                          />
-          
-                          {/* ✅ Services */}
-                          <FormField
-                            control={form.control}
-                            name="services"
-                            render={({ field }) => (
-                              <FormItem>
-                                <FormLabel>Select Services</FormLabel>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
-                                  {services.map((item) => {
-                                    const checked = field.value.includes(item.title);
-                                    return (
-                                      <div
-                                        key={item.id}
-                                        className="flex items-start space-x-3"
-                                      >
-                                        <FormControl>
-                                          <Checkbox
-                                            checked={checked}
-                                            onCheckedChange={(isChecked) => {
-                                              const newValue = isChecked
-                                                ? [...field.value, item.title]
-                                                : field.value.filter(
-                                                    (val) => val !== item.title
-                                                  );
-                                              field.onChange(newValue);
-                                            }}
-                                          />
-                                        </FormControl>
-                                        <div className="leading-tight text-sm">
-                                          <p>{item.title}</p>
-                                        </div>
-                                      </div>
-                                    );
-                                  })}
-                                </div>
-                                <FormMessage />
-                              </FormItem>
-                            )}
-                          />
-          
-                          {/* Submit Button */}
-                          <Button
-                            type="submit"
-                            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold"
-                          >
-                            Book a Consultation
-                          </Button>
-                        </form>
-                      </Form>
+          {/* Right Section */}
+        <div className="space-y-6">
+            {/* Email Contact Card */}
+            <div className="bg-gray-50 rounded-xl p-6 shadow-sm border border-gray-200">
+              <p className="text-lg font-semibold text-gray-800 mb-4">
+                Book a Consultation for Your Business / Queries
+              </p>
+              <Link
+                href="mailto:harrysingh@destinyabroad.ae"
+                className="flex items-center gap-3 text-blue-600 hover:text-blue-700 transition-colors w-fit"
+              >
+                <div className="flex items-center justify-center w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full transition">
+                  <Mail className="w-5 h-5 text-white" />
+                </div>
+                <span className="font-medium">harrysingh@destinyabroad.ae</span>
+              </Link>
+            </div>
+
+            {/* Services Card */}
+            <div className="bg-gray-50 rounded-xl p-6 shadow-sm border border-gray-200">
+              <p className="font-semibold text-gray-700 text-lg mb-4">
+                Our Services
+              </p>
+
+              <ul className="space-y-3">
+                {services.map((item) => (
+                  <li
+                    key={item.id}
+                    className="bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-all duration-300 cursor-default hover:border-blue-200"
+                  >
+                    <div className="flex items-center">
+                      <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                      <span className="text-gray-700 font-medium">{item.title}</span>
                     </div>
+                  </li>
+                ))}
+              </ul>
+
+              {/* Submit Button */}
+              <Link href={"https://topmate.io/harry_singh12"} target="_blank" className="block mt-6">
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 text-lg transition-all duration-300 hover:shadow-lg">
+                  Book a Consultation
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </section>
