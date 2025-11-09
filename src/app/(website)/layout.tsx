@@ -2,10 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import TanStackProvider from "@/provider/tanstackProvider";
-import TopHeader from "@/components/shared/TopHeader";
-import NavBar from "@/components/shared/NavBar";
-import Hero from "@/components/shared/Hero";
-import Footer from "@/components/shared/Footer";
 import { Toaster } from "sonner";
 import LayoutVisibilityWrapper from "@/provider/layout-visibility-wraper";
 

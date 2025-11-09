@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { PhoneForwarded, X } from "lucide-react";
+import { X } from "lucide-react";
 
 export default function TopHeader() {
   const [isVisible, setIsVisible] = useState(true);

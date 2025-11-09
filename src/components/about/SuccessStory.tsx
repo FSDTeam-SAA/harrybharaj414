@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useBookingCounter } from "@/lib/api";
 
 const SuccessStory = () => {
-    const { data, error } = useBookingCounter();
+    const { data } = useBookingCounter();
   const stats = [
     { number: "400+", label: "Successful Visa Applications Processed" },
     {

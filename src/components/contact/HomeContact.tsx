@@ -4,13 +4,10 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 import { Button } from "../ui/button";
-import { Checkbox } from "../ui/checkbox";
 import Link from "next/link";
-import { Label } from "../ui/label";
 import { Mail } from "lucide-react";
 
 const HomeContact = () => {
-  const [selectedServices, setSelectedServices] = useState<string[]>([]);
 
   const services = [
     { title: "Book a Consultation for Your Business", id: "6" },
@@ -21,11 +18,11 @@ const HomeContact = () => {
     { title: "Documentation & Application Support", id: "5" },
   ];
 
-  const handleCheckboxChange = (title: string, checked: boolean) => {
-    setSelectedServices((prev) =>
-      checked ? [...prev, title] : prev.filter((t) => t !== title)
-    );
-  };
+  // const handleCheckboxChange = (title: string, checked: boolean) => {
+  //   setSelectedServices((prev) =>
+  //     checked ? [...prev, title] : prev.filter((t) => t !== title)
+  //   );
+  // };
 
   return (
     <section

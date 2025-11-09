@@ -93,7 +93,7 @@ const OurClientSay = () => {
         <div className="relative flex flex-col items-center">
           <div className="relative w-full overflow-hidden">
             <div className="flex justify-center items-center gap-8 transition-all duration-500 ease-in-out">
-              {visibleVideos.map((video, index) => (
+              {visibleVideos.map((video) => (
                 <article
                   key={`${video.url}-${video.position}`}
                   className={`flex-shrink-0 w-full max-w-sm transition-all duration-500 ease-in-out ${

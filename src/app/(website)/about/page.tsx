@@ -1,5 +1,4 @@
 import BookingToConsultation from '@/components/about/BookingToConsultation'
-import MeetOurTeams from '@/components/about/MeetOurTeams'
 import SuccessStory from '@/components/about/SuccessStory'
 import MyAchievement from '@/components/home/MyAchievement'
 import WhyChooseUs from '@/components/home/WhyChooseUs'
