@@ -67,11 +67,11 @@ const HomeContact = () => {
           </div>
 
           {/* Right Section */}
-        <div className="space-y-6">
+          <div className="space-y-6">
             {/* Email Contact Card */}
             <div className="bg-gray-50 rounded-xl p-6 shadow-sm border border-gray-200">
               <p className="text-lg font-semibold text-gray-800 mb-4">
-                Book a Consultation for Your Business / Queries
+                Email Only for Business Queries & Collaboration | Book a Call for Visa Assistance
               </p>
               <Link
                 href="mailto:harrysingh@destinyabroad.ae"
@@ -98,14 +98,20 @@ const HomeContact = () => {
                   >
                     <div className="flex items-center">
                       <div className="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
-                      <span className="text-gray-700 font-medium">{item.title}</span>
+                      <span className="text-gray-700 font-medium">
+                        {item.title}
+                      </span>
                     </div>
                   </li>
                 ))}
               </ul>
 
               {/* Submit Button */}
-              <Link href={"https://topmate.io/harry_singh12"} target="_blank" className="block mt-6">
+              <Link
+                href={"https://topmate.io/harry_singh12"}
+                target="_blank"
+                className="block mt-6"
+              >
                 <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 text-lg transition-all duration-300 hover:shadow-lg">
                   Book a Consultation
                 </Button>
