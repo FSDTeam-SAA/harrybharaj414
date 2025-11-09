@@ -1,5 +1,3 @@
-
-
 import Image from "next/image";
 import React from "react";
 
@@ -13,7 +11,7 @@ const LanguageVisadetailsHero = () => {
             Services We Provide
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
-            Explore Our Services
+            Language Test Preparation
           </h2>
           <p className="text-gray-600 leading-relaxed">
             Professional consulting solutions designed to support your work,
