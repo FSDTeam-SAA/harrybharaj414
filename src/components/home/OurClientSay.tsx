@@ -26,14 +26,14 @@ const OurClientSay = () => {
     },
     {
       url: "/video/video4.MP4",
-      name: "Rishabh",
+      name: "Chetan",
       country: "India",
       title: "Work Permit",
       image: "/india.svg",
     },
     {
       url: "/video/video1.mp4",
-      name: "Chetan",
+      name: "Rishabh",
       country: "India",
       title: "Work Permit",
       image: "/india.svg",

@@ -23,7 +23,7 @@ const HomeAbout = () => {
           {/* Left Content */}
           <div className="relative w-[95%] rounded-2xl mx-auto aspect-square">
             <Image
-              src="/images/about.jpeg"
+              src="/images/habout.png"
               alt="About Destiny Abroad"
               fill
               className="object-contain  rounded-2xl"
