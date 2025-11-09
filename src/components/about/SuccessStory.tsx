@@ -1,11 +1,11 @@
-'use client'
+"use client";
 import React from "react";
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
 import { useBookingCounter } from "@/lib/api";
 
 const SuccessStory = () => {
-    const { data } = useBookingCounter();
+  const { data } = useBookingCounter();
   const stats = [
     { number: "400+", label: "Successful Visa Applications Processed" },
     {
@@ -45,8 +45,13 @@ const SuccessStory = () => {
 
         {/* Main Content */}
         <div className="grid grid-cols-1 items-center lg:grid-cols-2">
-          <div className=" relative w-full aspect-square">
-            <Image src={"/images/international.png"} alt="about" fill  className="rounded-2xl"/>
+          <div className=" relative w-full aspect-5/6">
+            <Image
+              src={"/images/about.png"}
+              alt="about"
+              fill
+              className="rounded-2xl object-cover"
+            />
           </div>
           <div>
             <p className="text-[#1A73E8] text-[24px] pl-8 font-bold uppercase tracking-wide mt-8">
@@ -60,10 +65,10 @@ const SuccessStory = () => {
                     Destiny Abroad FZ-LLC is a licensed UAE-based immigration
                     and career consulting firm dedicated to helping individuals
                     from India, Nepal, and GCC countries achieve global
-                    opportunities. We specialize in guiding clients toward 
+                    opportunities. We specialize in guiding clients toward
                     {/* work,study, and settlement  */}
-                    pathways in Europe with trusted
-                    consultation and seamless documentation support.
+                    pathways in Europe with trusted consultation and seamless
+                    documentation support.
                   </p>
                   <p className="text-[#6C757D] leading-relaxed">
                     With a personalized and transparent approach, we simplify
