@@ -14,28 +14,28 @@ const OurClientSay = () => {
       url: "/video/video2.MP4",
       name: "Vishal",
       country: "India",
-      title: "Work Visa",
+      title: "Work Permit",
       image: "/india.svg",
     },
     {
       url: "/video/video3.MP4",
       name: "Patel Anjali mahendrabhai",
       country: "India",
-      title: "Study Abrod",
+      title: "Work Permit",
       image: "/india.svg",
     },
     {
       url: "/video/video4.MP4",
       name: "Rishabh",
       country: "India",
-      title: "Work Visa",
+      title: "Work Permit",
       image: "/india.svg",
     },
     {
       url: "/video/video1.mp4",
       name: "Chetan",
       country: "India",
-      title: "Work Visa",
+      title: "Work Permit",
       image: "/india.svg",
     },
   ];
@@ -93,7 +93,7 @@ const OurClientSay = () => {
         <div className="relative flex flex-col items-center">
           <div className="relative w-full overflow-hidden">
             <div className="flex justify-center items-center gap-8 transition-all duration-500 ease-in-out">
-              {visibleVideos.map((video, index) => (
+              {visibleVideos.map((video) => (
                 <article
                   key={`${video.url}-${video.position}`}
                   className={`flex-shrink-0 w-full max-w-sm transition-all duration-500 ease-in-out ${

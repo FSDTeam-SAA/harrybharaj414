@@ -3,11 +3,8 @@ import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import {
-  Facebook,
   Instagram,
-  Linkedin,
   Plus,
-  Twitter,
   Youtube,
 } from "lucide-react";
 import Image from "next/image";
@@ -22,7 +19,7 @@ import { useBookingCounter } from "@/lib/api";
 
 const Hero = () => {
   // Sample images for the slider - replace with your actual images
-  const { data, error } = useBookingCounter();
+  const { data } = useBookingCounter();
   const [booking, setBooking] = useState(0);
 
   //  console.log('data',data.count)
