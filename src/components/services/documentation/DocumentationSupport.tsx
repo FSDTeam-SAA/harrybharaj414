@@ -18,7 +18,7 @@ const DocumentationSupport = () => {
         interview preparation to increase your chances of approval. With our
         tailored approach, we help you successfully unlock global work
         opportunities and start your professional journey overseas."
-        image="/images/documentation.jpg"
+        image="/images/about.jpeg"
         icon="/service/visa.svg"
         button="More Info"
         imgchange

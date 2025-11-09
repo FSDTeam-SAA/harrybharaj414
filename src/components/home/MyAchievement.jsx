@@ -18,14 +18,14 @@ const MyAchievement = () => {
   return (
     <section
       id="achievements"
-      className="py-16 bg-gradient-to-r from-blue-50 to-white overflow-hidden"
+      className="py-8 sm:py-16 bg-gradient-to-r from-blue-50 to-white overflow-hidden"
       aria-labelledby="achievements-title"
     >
       <div className="container mx-auto text-center">
         {/* Heading for SEO */}
         <h2
           id="achievements-title"
-          className="text-3xl lg:text-4xl font-bold text-gray-800 mb-10"
+          className="text-2xl px-3 lg:px-0 md:text-3xl lg:text-4xl font-bold text-gray-800 mb-10"
         >
           India&apos;s Top-Ranked Consulting Partner — Book Your Session Today
         </h2>
@@ -69,7 +69,7 @@ const MyAchievement = () => {
         </noscript>
 
         {/* Section description for SEO */}
-        <p className="text-gray-600 mt-8 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-sm px-5 lg:px-0 md:text-base text-gray-600 mt-8 max-w-2xl mx-auto leading-relaxed">
           Celebrating our certifications, partnerships, and global recognition —
           every milestone reflects our commitment to excellence and client
           success worldwide.

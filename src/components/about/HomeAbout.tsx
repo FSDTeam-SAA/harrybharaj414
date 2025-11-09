@@ -5,14 +5,14 @@ import Link from "next/link";
 
 const HomeAbout = () => {
   return (
-    <section className="py-16 lg:py-16 ">
+    <section className="py-8 sm:py-16 lg:py-16 ">
       <div className="container mx-auto ">
-        <div className="text-center mb-[60px]">
+        <div className="text-center mb-6 lg:mb-10">
           <p className="text-blue-600 font-semibold mb-2">About Us</p>
-          <h3 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
             About Destiny Abroad
           </h3>
-          <p className="text-gray-600 mb-6 leading-relaxed">
+          <p className="text-sm md:text-gray-600 mb-6 leading-relaxed">
             Guiding individuals from India, Nepal, and GCC countries with
             trusted immigration, work, and study visa consulting to build a
             successful future abroad.
@@ -21,23 +21,23 @@ const HomeAbout = () => {
 
         <div className=" grid grid-cols-1 lg:grid-cols-2 gap-12 items-center justify-center mx-auto">
           {/* Left Content */}
-          <div className="relative w-full h-[400px] lg:h-[550px]">
+          <div className="relative w-[95%] rounded-2xl mx-auto aspect-square">
             <Image
-              src="/about.jpg"
+              src="/images/about.jpeg"
               alt="About Destiny Abroad"
               fill
-              className="object-cover rounded-2xl shadow-lg"
+              className="object-contain  rounded-2xl"
               sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
           </div>
 
           {/* Right Image */}
-          <div>
-            <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800 mb-4">
+          <div className="px-4">
+            <h2 className="text-2xl  lg:text-3xl font-semibold text-gray-800 mb-4">
               Shaping Futures Beyond Borders
             </h2>
-            <p className="text-gray-600 mb-4 leading-relaxed">
+            <p className="text-sm md:text-base text-gray-600 mb-4 leading-relaxed">
               Destiny Abroad FZ-LLC is a licensed UAE-based immigration and
               career consulting firm dedicated to helping individuals from
               India, Nepal, and GCC countries achieve global opportunities. We

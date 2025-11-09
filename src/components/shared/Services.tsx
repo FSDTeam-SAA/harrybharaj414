@@ -35,8 +35,8 @@ const Services = ({
           <Image src={icon} alt="icon" width={28} height={28} />
           <h2 className="text-2xl font-semibold text-gray-800">{tittle}</h2>
         </div>
-        <p className="text-gray-600 mb-3">{dis1}</p>
-        <p className="text-gray-600 mb-6">{dis2}</p>
+        <p className="text-sm md:text-base text-gray-600 mb-3">{dis1}</p>
+        <p className="text-sm md:text-base text-gray-600 mb-6">{dis2}</p>
         {button && (
           <Link href={btnlink}>
             <Button className="border-2 border-blue-500 text-blue-600 hover:bg-gray-200 cursor-pointer bg-transparent hover:scale-105 transition-all duration-300 ">
@@ -51,7 +51,7 @@ const Services = ({
           alt="side image"
           width={744}
           height={484}
-          className="object-cover rounded-2xl"
+          className="object-contain w-full aspect-5/5 md:aspect-square   rounded-2xl"
         />
       </div>
     </div>
