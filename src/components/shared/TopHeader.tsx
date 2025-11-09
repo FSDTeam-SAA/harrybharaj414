@@ -21,14 +21,9 @@ export default function TopHeader() {
         <div className="flex text-[#6C757D] flex-col md:flex-row justify-between items-center py-2 md:py-4 text-sm md:text-base gap-1 md:gap-0">
           <div className="message text-center md:text-left px-2">
             <p className="text-xs md:text-sm">
-              Book a FREE Consultation with an Immigration Advisor to Start Your
-              {/* Work, Study, or Settlement */}
-              Journey Abroad!
+              Consult with a certified immigration expert and take the first
+              step toward your global future.
             </p>
-          </div>
-          <div className="phone-number flex flex-row items-center gap-2 md:gap-3 mt-1 md:mt-0">
-            <PhoneForwarded className="text-[#6C757D] w-3 h-3 md:w-4 md:h-4" />
-            <p className="text-xs md:text-sm">90860-6745678</p>
           </div>
         </div>
       </div>

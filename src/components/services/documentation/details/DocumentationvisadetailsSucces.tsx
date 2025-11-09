@@ -1,41 +1,72 @@
-
-
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const DocumentationvisadetailsSucces = () => {
   const slides = [
-    [
-      "/service/work/visa1.jpg",
-      "/service/work/visa2.jpg",
-      "/service/work/visa3.jpg",
-      "/service/work/visa4.jpg",
-      "/service/work/visa5.jpg",
-      "/service/work/visa6.jpg",
-    ],
-    [
-      "/service/work/visa1.jpg",
-      "/service/work/visa2.jpg",
-      "/service/work/visa3.jpg",
-      "/service/work/visa4.jpg",
-    ],
+    "/visa/visa1.png",
+    "/visa/visa2.png",
+    "/visa/visa3.png",
+    "/visa/visa4.png",
+    "/visa/visa5.png",
+    "/visa/visa6.png",
+    "/visa/visa7.png",
+    "/visa/visa8.jpg",
+    "/visa/visa9.jpg",
+    "/visa/visa10.jpg",
+    "/visa/visa11.jpg",
+    "/visa/visa12.jpg",
   ];
 
   const [current, setCurrent] = useState(0);
+  const [slidesPerView, setSlidesPerView] = useState(3);
 
+  // Responsive slides per view
+  useEffect(() => {
+    const updateSlidesPerView = () => {
+      if (window.innerWidth < 640) {
+        setSlidesPerView(1); // Mobile
+      } else if (window.innerWidth < 1024) {
+        setSlidesPerView(2); // Tablet
+      } else {
+        setSlidesPerView(3); // PC/Laptop
+      }
+    };
+
+    updateSlidesPerView();
+    window.addEventListener("resize", updateSlidesPerView);
+    return () => window.removeEventListener("resize", updateSlidesPerView);
+  }, []);
+
+  // Next / Prev logic
   const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % slides.length);
+    if (current + slidesPerView >= slides.length) {
+      setCurrent(0);
+    } else {
+      setCurrent(prev => prev + 1);
+    }
   };
 
   const prevSlide = () => {
-    setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
+    if (current === 0) {
+      setCurrent(slides.length - slidesPerView);
+    } else {
+      setCurrent(prev => prev - 1);
+    }
   };
 
+  // Auto-slide every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 5000);
+    return () => clearInterval(interval);
+  }, [current, slidesPerView]);
+
+  // Calculate slide width based on slides per view
+  const slideWidth = `${100 / slidesPerView}%`;
+
   return (
-    <section className="py-16 bg-white text-center">
+    <section className="py-16 bg-white text-center relative">
       {/* Header */}
       <div className="mb-10">
         <p className="text-blue-600 font-semibold text-sm uppercase tracking-wide">
@@ -45,66 +76,74 @@ const DocumentationvisadetailsSucces = () => {
           Real Success, Real Results
         </h2>
         <p className="text-gray-500 mt-2 max-w-2xl mx-auto text-sm md:text-base">
-          A glimpse of our clients’ successful journeys abroad — verified
+          A glimpse of our clients successful journeys abroad — verified
           passports and approvals from India, Nepal, and GCC countries.
         </p>
       </div>
 
       {/* Slider */}
-      <div className="relative w-full max-w-6xl mx-auto overflow-hidden">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={current}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -50 }}
-            transition={{ duration: 0.6 }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
-          >
-            {slides[current].map((src, i) => (
-              <div
-                key={i}
-                className="border-2 border-gray-100 rounded-xl shadow-md hover:shadow-lg transition p-2"
-              >
+      <div className="relative w-full max-w-6xl mx-auto overflow-hidden px-4">
+        {/* Horizontal sliding effect */}
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{
+            transform: `translateX(-${current * (100 / slidesPerView)}%)`,
+          }}
+        >
+          {slides.map((src, i) => (
+            <div
+              key={i}
+              className="flex-shrink-0 p-2 transition-all duration-300"
+              style={{ width: slideWidth }}
+            >
+              <div className="border-2 border-gray-100 rounded-xl shadow-md hover:shadow-lg transition p-2 h-full">
                 <Image
                   src={src}
                   alt={`Visa ${i + 1}`}
                   width={400}
                   height={300}
-                  className="rounded-lg object-cover"
+                  className="rounded-lg object-cover w-full h-64 md:h-72"
                 />
               </div>
-            ))}
-          </motion.div>
-        </AnimatePresence>
-      </div>
-      <div className=" relative container mx-auto">
-        {/* Arrows */}
-        <button
-          onClick={prevSlide}
-          className="absolute right-14 cursor-pointer  -translate-y-1/2 bg-white border shadow-md rounded-full p-2 hover:bg-gray-50"
-        >
-          <ChevronLeft className="w-5 h-5 text-gray-700" />
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute right-0 cursor-pointer  -translate-y-1/2 bg-white border shadow-md rounded-full p-2 hover:bg-gray-50"
-        >
-          <ChevronRight className="w-5 h-5 text-gray-700" />
-        </button>
+            </div>
+          ))}
+        </div>
+
+        {/* Buttons (centered below slider) */}
+        <div className="flex justify-center gap-6 mt-10">
+          <button
+            onClick={prevSlide}
+            className="cursor-pointer bg-white border shadow-md rounded-full p-3 hover:bg-gray-50 transition-colors"
+            aria-label="Previous Slide"
+          >
+            <ChevronLeft className="w-6 h-6 text-gray-700" />
+          </button>
+
+          <button
+            onClick={nextSlide}
+            className="cursor-pointer bg-white border shadow-md rounded-full p-3 hover:bg-gray-50 transition-colors"
+            aria-label="Next Slide"
+          >
+            <ChevronRight className="w-6 h-6 text-gray-700" />
+          </button>
+        </div>
       </div>
 
       {/* Dots */}
       <div className="flex justify-center mt-6 space-x-2">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrent(index)}
-            className={`w-3 h-3 rounded-full ${
-              current === index ? "bg-blue-600" : "bg-gray-300"
-            }`}
-          ></button>
-        ))}
+        {Array.from({ length: Math.ceil(slides.length / slidesPerView) }).map(
+          (_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrent(index * slidesPerView)}
+              className={`w-3 h-3 rounded-full transition-colors ${
+                Math.floor(current / slidesPerView) === index
+                  ? "bg-blue-600"
+                  : "bg-gray-300"
+              }`}
+            ></button>
+          )
+        )}
       </div>
     </section>
   );

@@ -79,10 +79,10 @@ const OurClientSay = () => {
           <p className="text-[#1A73E8] font-semibold mb-2 uppercase tracking-wide">
             Testimonials
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-4">
             What Our Clients Say
           </h2>
-          <p className="text-gray-600 mb-6 leading-relaxed font-medium">
+          <p className="text-sm md:text-lg text-gray-600 mb-6 leading-relaxed font-medium">
             Real experiences from clients across India, Nepal, and GCC countries
             who successfully achieved their work, study, and immigration goals
             with our guidance.

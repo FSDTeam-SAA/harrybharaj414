@@ -1,12 +1,15 @@
+'use client'
 import React from "react";
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
+import { useBookingCounter } from "@/lib/api";
 
 const SuccessStory = () => {
+    const { data, error } = useBookingCounter();
   const stats = [
     { number: "400+", label: "Successful Visa Applications Processed" },
     {
-      number: "1,200+",
+      number: data?.count || 2155,
       label: "Consultation Provided Access India, Nepal & GCC",
     },
     { number: "95%", label: "Climate Process & Rehabilitation Rate" },
@@ -43,7 +46,7 @@ const SuccessStory = () => {
         {/* Main Content */}
         <div className="grid grid-cols-1 items-center lg:grid-cols-2">
           <div className=" relative w-full aspect-square">
-            <Image src={"/about.jpg"} alt="about" fill />
+            <Image src={"/images/international.png"} alt="about" fill  className="rounded-2xl"/>
           </div>
           <div>
             <p className="text-[#1A73E8] text-[24px] pl-8 font-bold uppercase tracking-wide mt-8">

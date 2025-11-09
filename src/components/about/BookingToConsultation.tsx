@@ -17,10 +17,10 @@ const BookingToConsultation = () => {
           >
             Ready to Start Your Journey Abroad?{" "}
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-16">
+          <p className="text-gray-600 leading-relaxed mb-16 px-5 md:px-0 text-sm md:text-base">
             Book a consultation with our expert advisor and get personalized guidance for your work, study, or immigration plans.
           </p>
-          <Link href={'https://topmate.io/harry_singh12'}>
+          <Link href={'https://topmate.io/harry_singh12'} target="_blank">
           
           <Button className=" bg-[#1A73E8] cursor-pointer text-white font-semibold hover:bg-blue-700 transition-all duration-300">Booking A Consultation</Button>
           </Link>

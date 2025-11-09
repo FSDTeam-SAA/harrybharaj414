@@ -18,7 +18,7 @@ const WorkVisaConsulting = () => {
         interview preparation to increase your chances of approval. With our
         tailored approach, we help you successfully unlock global work
         opportunities and start your professional journey overseas."
-        image="/images/services.jpg"
+        image="/images/service5.jpeg"
         icon="/service/visa.svg"
         button="More Info"
         imgchange

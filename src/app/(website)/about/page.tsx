@@ -11,7 +11,7 @@ const page = () => {
       <SuccessStory />
        <MyAchievement />
        <WhyChooseUs />
-       <MeetOurTeams />
+       {/* <MeetOurTeams /> */}
        <BookingToConsultation />
     </div>
   )

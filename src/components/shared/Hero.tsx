@@ -53,12 +53,12 @@ const Hero = () => {
           {/* Left Content Section */}
           <div className="flex-1 max-w-2xl">
             <div className="mb-8">
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-6">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-6">
                 Your Gateway to Work,
                 <br />
                 Study & Immigration.
               </h1>
-              <p className="text-lg lg:text-xl text-gray-600 leading-relaxed mb-8">
+              <p className="text-sm md:text-lg lg:text-xl text-gray-600 leading-relaxed mb-8">
                 Destiny Abroad FZ-LLC is a UAE-based consultancy helping clients
                 from India, Nepal, and GCC countries achieve their dreams of
                 working, studying, or settling in Europe. We provide
@@ -141,7 +141,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Slider Section */}
+          {/* Right  Section */}
           <div className="relative md:w-[70%] lg:w-1/2 w-full flex justify-center items-center rounded-2xl">
             {/* Main image */}
             <div className="relative w-[80%]  h-[500px] md:w-[90%] md:h-[600px] lg:h-[788px] bg-white z-20">
