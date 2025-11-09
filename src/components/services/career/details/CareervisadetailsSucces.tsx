@@ -6,18 +6,17 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const CareervisadetailsSucces = () => {
   const slides = [
-    "/visa/visa1.png",
+    "/visa/visa1.jpeg",
     "/visa/visa2.png",
-    "/visa/visa3.png",
+    "/visa/visa3.jpeg",
     "/visa/visa4.png",
     "/visa/visa5.png",
-    "/visa/visa6.png",
-    "/visa/visa7.png",
-    "/visa/visa8.jpg",
-    "/visa/visa9.jpg",
-    "/visa/visa10.jpg",
-    "/visa/visa11.jpg",
-    "/visa/visa12.jpg",
+    "/visa/visa6.jpeg",
+    "/visa/visa7.jpeg",
+    "/visa/visa8.png",
+    "/visa/visa9.png",
+    "/visa/visa10.png",
+    "/visa/visa11.jpeg",
   ];
 
   const [current, setCurrent] = useState(0);
