@@ -4,38 +4,33 @@ const LanguageVisadetailsIncluded = () => {
   const services = [
     {
       id: 1,
-      title: "Initial Language Assessment",
-      desc: "Evaluate your current language proficiency to identify strengths and areas for improvement, creating a personalized study plan.",
+      title: "Eligibility & Requirement Assessment",
+      desc: "We identify the exact language test and minimum score required for your visa, course, or job type.",
     },
     {
       id: 2,
-      title: "Test Strategy & Planning",
-      desc: "Guidance on choosing the right language test (IELTS, TOEFL, PTE, CELPIP) and developing a structured preparation plan.",
+      title: "Personalized Test Planning",
+      desc: "Guidance on selecting between IELTS, PTE, TOEFL, CELPIP, Duolingo, or OET based on your target country and institution.",
     },
     {
       id: 3,
-      title: "Practice Materials & Mock Tests",
-      desc: "Access to authentic practice materials, sample questions, and full-length mock exams to build confidence and test readiness.",
+      title: "Preparation Material & Strategy",
+      desc: "Access curated study resources, official practice tests, and proven preparation frameworks to prepare efficiently.",
     },
     {
       id: 4,
-      title: "Speaking & Writing Coaching",
-      desc: "One-on-one coaching sessions to improve speaking fluency and writing skills with personalized feedback.",
+      title: "One-to-One Guidance & Scheduling Support",
+      desc: "Assistance in booking authorized test dates, creating a study plan, and time-management techniques for test day.",
     },
     {
       id: 5,
-      title: "Reading & Listening Enhancement",
-      desc: "Targeted exercises and strategies to strengthen comprehension, speed, and accuracy in reading and listening sections.",
+      title: "Result Review & Score Improvement Plan",
+      desc: "Analysis of previous results (if applicable) and guidance on improving weak areas to meet embassy or university benchmarks.",
     },
     {
       id: 6,
-      title: "Score Tracking & Feedback",
-      desc: "Regular assessments to track progress and adjust preparation strategies to maximize your test scores.",
-    },
-    {
-      id: 7,
-      title: "Post-Test Guidance",
-      desc: "Support in interpreting test results and guidance on next steps for study, work, or immigration purposes.",
+      title: "Integration with Visa Process",
+      desc: "We align your test timeline with your application submission, ensuring your results are ready when your file is lodged.",
     },
   ];
 
@@ -54,7 +49,7 @@ const LanguageVisadetailsIncluded = () => {
               <h3 className="text-[18px] font-semibold text-[#343A40] mb-2">
                 {item.id}. {item.title}
               </h3>
-              <p className="text-[#6C757D] text-[15px] leading-relaxed">
+              <p className="text-[#6C757D] text-[15px] leading-relaxed whitespace-pre-line">
                 • {item.desc}
               </p>
             </div>

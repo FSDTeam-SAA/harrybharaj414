@@ -4,50 +4,42 @@ const ImmigrationVisadetailsIncluded = () => {
   const services = [
     {
       id: 1,
-      title: "Country & Immigration Pathway Assessment",
-      desc: "We analyze your background, professional experience, and personal goals to recommend the most suitable country and immigration program for permanent settlement.",
+      title: "Eligibility & Program Assessment",
+      desc: "Evaluate your profile, goals, and budget to identify the most suitable country and immigration pathway, including Golden Visa, Skilled Migration, or Family Sponsorship.",
     },
     {
       id: 2,
-      title: "Eligibility & Document Verification",
-      desc: "Detailed assessment of your eligibility, along with a complete checklist and verification of required documents to ensure accuracy and compliance with immigration laws.",
+      title: "Investment & Compliance Guidance",
+      desc: "Step-by-step support for investment types, fund transfers, and legal documentation as per embassy or government regulations.",
     },
     {
       id: 3,
-      title: "Application Preparation & Filing",
-      desc: "End-to-end assistance with preparing and submitting immigration forms, supporting documents, and fee payments in line with official embassy or consulate requirements.",
+      title: "Document Preparation & Verification",
+      desc: "Collect, translate, attest, and notarize documents according to embassy or residency requirements to ensure full compliance.",
     },
     {
       id: 4,
-      title: "Family & Dependent Visa Support",
-      desc: "Guidance for spouse, children, or family sponsorship programs to help your loved ones join you smoothly and legally in your new country.",
+      title: "Application Filing & Embassy Submission",
+      desc: "Complete assistance with organizing, preparing, and submitting applications via official government or consulate channels.",
     },
     {
       id: 5,
-      title: "Visa Interview & Biometric Assistance",
-      desc: "Comprehensive preparation for embassy interviews, biometrics, and verification stages to enhance your chances of success and reduce processing delays.",
+      title: "Post-Approval & Settlement Assistance",
+      desc: "Guidance on residence permit collection, registration, taxation, and integration after approval for a smooth transition.",
     },
     {
       id: 6,
-      title: "PR, Citizenship & Renewal Guidance",
-      desc: "Ongoing support for permanent residency extensions, citizenship applications, or renewals to ensure you remain compliant with immigration policies.",
-    },
-    {
-      id: 7,
-      title: "Post-Landing & Settlement Assistance",
-      desc: "Orientation on accommodation, healthcare, education, and job search to help you and your family settle confidently and comfortably abroad.",
+      title: "Continuous Policy Updates",
+      desc: "Regular updates on immigration reforms, investment requirements, and program eligibility to help you make informed decisions.",
     },
   ];
 
   return (
     <section className="bg-[#E8F1FD99] py-16">
       <div className="container mx-auto px-4">
-        {/* Section Heading */}
         <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-10">
           What’s Included in This Service
         </h2>
-
-        {/* Two Column Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
           {services.map((item) => (
             <div key={item.id} className="flex flex-col">

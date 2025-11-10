@@ -38,34 +38,31 @@ const WhyChooseUs = () => {
             <ul className="space-y-4 text-gray-700 text-sm md:text-xl">
               <li className="flex items-start gap-3">
                 <Check className="text-[#1A73E8] w-5 h-5 md:w-6 md:h-6 mt-1 shrink-0" />
-                <p className="font-medium text-base md:text-xl">
-                  Experienced Consultants:{" "}
+                <p className="font-medium text-sm md:text-base">
+                  Licensed & Registered in the UAE –:{" "}
                   <span className="font-normal">
-                    Expert guidance from licensed professionals with years of
-                    experience in immigration and visa processes.
+                    Fully compliant and authorized under UAE law.
                   </span>
                 </p>
               </li>
 
               <li className="flex items-start gap-3">
                 <Check className="text-[#1A73E8] mt-1 w-5 h-5 md:w-6 md:h-6 shrink-0" />
-                <p className="font-medium text-base md:text-xl">
-                  Personalized Approach:{" "}
+                <p className="font-medium text-sm md:text-base">
+                  Global Candidate Acceptance – :{" "}
                   <span className="font-normal">
-                    Tailored solutions for work, study, and
-                    {/* settlement  */}
-                    based on individual goals and circumstances.
+                    We assist clients from any country through secure online
                   </span>
                 </p>
               </li>
 
               <li className="flex items-start gap-3">
                 <Check className="text-[#1A73E8] mt-1 w-5 h-5 md:w-6 md:h-6 shrink-0" />
-                <p className="font-medium text-base md:text-xl">
-                  Trusted & Transparent:{" "}
+                <p className="font-medium text-sm md:text-base">
+                  Transparent & Ethical Consulting –:{" "}
                   <span className="font-normal">
-                    Clear process, honest advice, and full support at every
-                    stage of your journey.
+                    No false promises, hidden charges, or misleading
+                    information.
                   </span>
                 </p>
               </li>
@@ -83,23 +80,32 @@ const WhyChooseUs = () => {
 
               <li className="flex items-start gap-3">
                 <Check className="text-[#1A73E8] mt-1 shrink-0" />
-                <p className="font-medium">
-                  Wide Reach:{" "}
+                <p className="font-medium text-sm md:text-base">
+                  Professional Team – :{" "}
                   <span className="font-normal">
-                    Helping clients from India, Nepal, and GCC countries
-                    successfully achieve their international dreams.
+                    Experienced consultants specializing in documentation and
+                    embassy coordination.
+                  </span>
+                </p>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="text-[#1A73E8] mt-1 shrink-0" />
+                <p className="font-medium text-sm md:text-base" >
+                  Proven Track Record – :{" "}
+                  <span className="font-normal">
+                    Hundreds of successful client cases processed for Europe,
+                    the UK, Canada, and other global destinations.
                   </span>
                 </p>
               </li>
             </ul>
-            <Link  href={'https://topmate.io/harry_singh12'}  target="_blank" >
-            
-            <Button
-              className="mt-8 border-2 border-blue-600 bg-[#1A73E8] text-white font-semibold hover:bg-blue-700 transition-all duration-300"
-              aria-label="Book a consultation with our visa experts"
-            >
-              Book a Consultation
-            </Button>
+            <Link href={"https://topmate.io/harry_singh12"} target="_blank">
+              <Button
+                className="mt-8 border-2 border-blue-600 bg-[#1A73E8] text-white font-semibold hover:bg-blue-700 transition-all duration-300"
+                aria-label="Book a consultation with our visa experts"
+              >
+                Book a Consultation
+              </Button>
             </Link>
           </div>
 

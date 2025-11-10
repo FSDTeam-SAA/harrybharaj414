@@ -5,49 +5,46 @@ const WorkVisadetailsIncluded = () => {
     {
       id: 1,
       title: "Country & Pathway Assessment",
-      desc: "We evaluate your education, skills, experience, and goals to suggest the most suitable country, sector, and visa pathway.",
+      desc: "We evaluate your education, skills, experience, and goals to recommend the most suitable country, sector, and visa category.",
     },
     {
       id: 2,
       title: "Eligibility & Documentation Guidance",
-      desc: "A complete checklist of required documents, eligibility criteria, and step-by-step guidance to ensure accuracy and avoid rejection.",
+      desc: "Receive a detailed checklist of required documents with step-by-step instructions to ensure compliance and accuracy.",
     },
     {
       id: 3,
-      title: "Resume & Profile Enhancement",
-      desc: "Professional CV, cover letter, and LinkedIn optimization tailored for international recruitment standards.",
+      title: "Profile & Resume Enhancement",
+      desc: "Professionally written CVs, cover letters, and LinkedIn profiles tailored to international standards.",
     },
     {
       id: 4,
-      title: "Job Market Assistance",
-      desc: "Guidance on job search platforms, top industries hiring foreign workers, and how to increase your chances of securing offers abroad.",
+      title: "Job Market Orientation",
+      desc: "Guidance on identifying legitimate job sources, top hiring industries, and strategies to increase employability abroad.",
     },
     {
       id: 5,
       title: "Visa Application Support",
-      desc: "Assistance with form filling, documentation arrangement, submission guidelines, and compliance.",
+      desc: "Assistance with document organization, form completion, and embassy filing according to official guidelines.",
     },
     {
       id: 6,
       title: "Interview Preparation",
-      desc: "Coaching to help you confidently face interviews with recruiters or employers overseas and present your strengths effectively.",
+      desc: "Coaching and practical advice to help you confidently interact with potential employers or representatives overseas.",
     },
     {
       id: 7,
-      title: "Language Test Preparation",
-      desc: "Orientation, travel preparation guidance, and essential post-landing information to help you settle smoothly.",
+      title: "Pre-Departure & Language Guidance",
+      desc: "Orientation on travel preparation, language readiness, and post-arrival settlement to ensure a smooth transition abroad.",
     },
   ];
 
   return (
     <section className="bg-[#E8F1FD99] py-16">
       <div className="container mx-auto px-4">
-        {/* Section Heading */}
         <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-10">
           What’s Included in This Service
         </h2>
-
-        {/* Two Column Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
           {services.map((item) => (
             <div key={item.id} className="flex flex-col">
