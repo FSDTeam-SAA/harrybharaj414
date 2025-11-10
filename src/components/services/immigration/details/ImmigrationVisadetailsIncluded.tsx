@@ -1,43 +1,41 @@
-
-
 import React from "react";
 
 const ImmigrationVisadetailsIncluded = () => {
   const services = [
     {
       id: 1,
-      title: "Country & Pathway Assessment",
-      desc: "We evaluate your education, skills, experience, and goals to suggest the most suitable country, sector, and visa pathway.",
+      title: "Country & Immigration Pathway Assessment",
+      desc: "We analyze your background, professional experience, and personal goals to recommend the most suitable country and immigration program for permanent settlement.",
     },
     {
       id: 2,
-      title: "Eligibility & Documentation Guidance",
-      desc: "A complete checklist of required documents, eligibility criteria, and step-by-step guidance to ensure accuracy and avoid rejection.",
+      title: "Eligibility & Document Verification",
+      desc: "Detailed assessment of your eligibility, along with a complete checklist and verification of required documents to ensure accuracy and compliance with immigration laws.",
     },
     {
       id: 3,
-      title: "Resume & Profile Enhancement",
-      desc: "Professional CV, cover letter, and LinkedIn optimization tailored for international recruitment standards.",
+      title: "Application Preparation & Filing",
+      desc: "End-to-end assistance with preparing and submitting immigration forms, supporting documents, and fee payments in line with official embassy or consulate requirements.",
     },
     {
       id: 4,
-      title: "Job Market Assistance",
-      desc: "Guidance on job search platforms, top industries hiring foreign workers, and how to increase your chances of securing offers abroad.",
+      title: "Family & Dependent Visa Support",
+      desc: "Guidance for spouse, children, or family sponsorship programs to help your loved ones join you smoothly and legally in your new country.",
     },
     {
       id: 5,
-      title: "Visa Application Support",
-      desc: "Assistance with form filling, documentation arrangement, submission guidelines, and compliance.",
+      title: "Visa Interview & Biometric Assistance",
+      desc: "Comprehensive preparation for embassy interviews, biometrics, and verification stages to enhance your chances of success and reduce processing delays.",
     },
     {
       id: 6,
-      title: "Interview Preparation",
-      desc: "Coaching to help you confidently face interviews with recruiters or employers overseas and present your strengths effectively.",
+      title: "PR, Citizenship & Renewal Guidance",
+      desc: "Ongoing support for permanent residency extensions, citizenship applications, or renewals to ensure you remain compliant with immigration policies.",
     },
     {
       id: 7,
-      title: "Language Test Preparation",
-      desc: "Orientation, travel preparation guidance, and essential post-landing information to help you settle smoothly.",
+      title: "Post-Landing & Settlement Assistance",
+      desc: "Orientation on accommodation, healthcare, education, and job search to help you and your family settle confidently and comfortably abroad.",
     },
   ];
 

@@ -1,5 +1,3 @@
-
-
 import Image from "next/image";
 import React from "react";
 
@@ -13,45 +11,46 @@ const CareerVisadetailsHero = () => {
             Services We Provide
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
-            Explore Our Services
+            Career & CV Guidance
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Professional consulting solutions designed to support your work,
-            study, and immigration journey abroad with clarity and confidence.
+            Professional career consulting and document preparation designed to
+            help you achieve your global career goals with clarity, confidence,
+            and impact.
           </p>
         </header>
 
         {/* Banner Image */}
         <div className="mb-12">
           <Image
-            src="/images/career.jpg" 
-            alt="Work visa consulting overview"
+            src="/images/career.jpg"
+            alt="Career guidance consulting overview"
             width={1536}
             height={400}
-            className="object-cover w-full aspect-5/2 rounded-xl"
+            className="object-cover w-full aspect-[5/2] rounded-xl"
           />
         </div>
 
         {/* Overview Section */}
-        <div className=" mx-auto space-y-6">
+        <div className="mx-auto space-y-6">
           <h3 className="text-[#343A40] font-bold text-[20px] lg:text-[24px]">
             Overview
           </h3>
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            Securing a work visa and building a career abroad can be challenging
-            without the right guidance. Every country has its own rules,
-            requirements, and documentation process, which often confuses
-            applicants and leads to delays or rejections. Our Work Visa
-            Consulting service is designed to simplify this journey for you,
-            ensuring you take the right steps from the very beginning.
+            Navigating your career path — especially across international
+            markets — can be complex without expert advice. Each country has its
+            own recruitment trends, documentation requirements, and job market
+            expectations. Our <strong>Career & CV Guidance</strong> service is
+            designed to equip you with the right strategy, professional tools,
+            and confidence to stand out to global employers.
           </p>
+
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            We provide personalized consultation based on your skills,
-            education, work experience, and long-term career goals. Whether you
-            are a skilled professional, recent graduate, or jobseeker, we help
-            you choose the most suitable country, industry, and pathway for a
-            strong and secure career abroad. With clear guidance, transparency,
-            and strategic planning, we ensure you move forward with confidence.
+            We offer personalized consulting based on your education, skills,
+            and long-term career aspirations. Whether you’re a skilled
+            professional, recent graduate, or jobseeker, we help you position
+            yourself competitively for overseas job markets — with a strong
+            resume, optimized LinkedIn profile, and tailored career direction.
           </p>
 
           {/* Target Audience */}
@@ -59,21 +58,18 @@ const CareerVisadetailsHero = () => {
             Who Is This Service For?
           </h3>
           <ul className="list-disc pl-6 text-[#6C757D] text-[16px] leading-[150%] space-y-2">
-            <li>Skilled professionals aiming to work abroad</li>
-            <li>Fresh graduates seeking international career opportunities</li>
-            <li>Jobseekers exploring European and GCC work opportunities</li>
-            <li>
-              Individuals planning long-term career growth and settlement abroad
-            </li>
+            <li>Professionals planning to advance or relocate their careers abroad</li>
+            <li>Fresh graduates seeking international job opportunities</li>
+            <li>Jobseekers targeting European, Canadian, or GCC markets</li>
+            <li>Individuals preparing for long-term global career development</li>
           </ul>
 
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            From eligibility checks to documentation, job preparation, visa
-            filing, and post-approval guidance, our experts support you
-            throughout the entire process. We don’t just advise — we walk with
-            you every step of the way to make your work visa journey smooth,
-            stress-free, and result-oriented, helping you start a successful
-            career overseas.
+            From resume building and interview preparation to professional
+            branding and documentation, our team ensures you are fully prepared
+            for every stage of your global career journey. We don’t just advise
+            — we empower you to succeed internationally with strategy,
+            precision, and professional confidence.
           </p>
         </div>
       </div>

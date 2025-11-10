@@ -6,19 +6,9 @@ const DocumentationSupport = () => {
     <div>
       <Services
         tittle="Documentation & Application Support"
-        dis1="We provide expert guidance for individuals who want to build their
-        careers abroad by securing a legal work visa. Our consultants help you
-        choose the right country, job market, and pathway based on your
-        skills, experience, and goals. We ensure you have a clear
-        understanding of the requirements, eligibility, and process so you can
-        move forward with confidence."
-        dis2="From preparing documents to submitting applications, we offer complete
-        end-to-end support for a smooth visa process. Our team assists with
-        job profiling, resume optimization, application submissions, and
-        interview preparation to increase your chances of approval. With our
-        tailored approach, we help you successfully unlock global work
-        opportunities and start your professional journey overseas."
-        image="/images/about.jpeg"
+        dis1="We provide professional guidance for individuals who need assistance with preparing, organizing, and submitting documents for visas, study programs, or immigration applications. Our experts ensure that all requirements are clearly understood and that every document is accurate and compliant."
+        dis2="From document verification to application submission, we offer complete end-to-end support for a smooth process. Our team assists with form filling, credential checks, and submission tracking to help you avoid delays or rejections. With our tailored approach, your applications are handled efficiently and professionally."
+        image="/images/international.png"
         icon="/service/visa.svg"
         button="More Info"
         imgchange

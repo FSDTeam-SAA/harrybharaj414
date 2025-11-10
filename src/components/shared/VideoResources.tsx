@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
-import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const VideoResources = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -13,116 +13,130 @@ const VideoResources = () => {
 
   const perPage = 6;
   const videos = [
-  {
-    id: 1,
-    title: "Poland Work Permit Visa",
-    videoUrl: "lII03D-7L-w",
-    description: "Everything you need to know about the Poland Work Permit Visa."
-  },
-  {
-    id: 2,
-    title: "Luxembourg Work Permit Visa",
-    videoUrl: "8BNcftSlt8g",
-    description: "Luxembourg Work Permit Visa explained, with tips and guidelines."
-  },
-  {
-    id: 3,
-    title: "Albania Work Permit Visa 99% Success",
-    videoUrl: "xJXGT2SkFn8",
-    description: "How to get an Albania Work Permit Visa with a 99% success rate."
-  },
-  {
-    id: 4,
-    title: "Europe Work Permit Visa",
-    videoUrl: "o_muYt6nh08",
-    description: "Get your Europe Work Permit Visa in a few simple steps."
-  },
-  {
-    id: 5,
-    title: "Italy Work Permit Visa",
-    videoUrl: "etlzKQTg6io",
-    description: "A complete guide to applying for an Italy Work Permit Visa."
-  },
-  {
-    id: 6,
-    title: "Latvia Work Permit Visa",
-    videoUrl: "Gvle35g7pno",
-    description: "Steps to get a Latvia Work Permit Visa easily."
-  },
-  {
-    id: 7,
-    title: "Denmark Work Permit Visa",
-    videoUrl: "qC15QSVwQQw",
-    description: "Why Denmark is one of the best countries for your career abroad."
-  },
-  {
-    id: 8,
-    title: "Poland Work Permit Visa",
-    videoUrl: "vqGNFNLt6xg",
-    description: "Find out how to work and live in Poland with this guide."
-  },
-  {
-    id: 9,
-    title: "Poland Study & Work Permit Visa",
-    videoUrl: "0UAQ6vUZh_o",
-    description: "A guide to studying and working in Poland at the same time."
-  },
-  {
-    id: 10,
-    title: "Australia Skill Shortage Subclass 482",
-    videoUrl: "PRu19h6uHGQ",
-    description: "Everything you need to know about the Australia Skill Shortage Subclass 482 Visa."
-  },
-  {
-    id: 11,
-    title: "VFS Free Work Permit Visa Application",
-    videoUrl: "6YgUewcjiCU",
-    description: "Why you should avoid VFS and apply directly for your work permit in certain countries."
-  },
-  {
-    id: 12,
-    title: "Poland Work Visa Explained",
-    videoUrl: "vHcvjzMyjaA",
-    description: "See how I helped someone get a free work permit for Poland, including tips and hacks."
-  },
-  {
-    id: 13,
-    title: "Germany Work Permit Visa",
-    videoUrl: "Cc34Zpnm_3M",
-    description: "How to get a Germany Work Permit Visa and live and work in Germany."
-  },
-  {
-    id: 14,
-    title: "How I Came to Europe – Job & Work Permit",
-    videoUrl: "7EtM8dzydec",
-    description: "My personal journey to Europe and how you can come here too!"
-  },
-  {
-    id: 15,
-    title: "Poland Work Permit Visa Process",
-    videoUrl: "PMB5P4fCm5M",
-    description: "A step-by-step guide to successfully applying for the Poland Work Permit Visa."
-  },
-  {
-    id: 16,
-    title: "Spain Work Permit Visa",
-    videoUrl: "PFC1edcu-TA",
-    description: "Learn all about the Spain Work Permit Visa process and how to apply."
-  },
-  {
-    id: 17,
-    title: "Luxembourg Work Permit Visa for Subscribers",
-    videoUrl: "AnHaTWq_ee8",
-    description: "Lucky subscribers get a chance for a free work visa process for Luxembourg."
-  },
-  {
-    id: 18,
-    title: "Latvia Work Permit Visa",
-    videoUrl: "trawHdWWIPY",
-    description: "The ultimate guide to obtaining a Latvia Work Permit Visa and finding a job."
-  }
-];
-
+    {
+      id: 1,
+      title: "Poland Work Permit Visa",
+      videoUrl: "lII03D-7L-w",
+      description:
+        "Everything you need to know about the Poland Work Permit Visa.",
+    },
+    {
+      id: 2,
+      title: "Luxembourg Work Permit Visa",
+      videoUrl: "8BNcftSlt8g",
+      description:
+        "Luxembourg Work Permit Visa explained, with tips and guidelines.",
+    },
+    {
+      id: 3,
+      title: "Albania Work Permit Visa 99% Success",
+      videoUrl: "xJXGT2SkFn8",
+      description:
+        "How to get an Albania Work Permit Visa with a 99% success rate.",
+    },
+    {
+      id: 4,
+      title: "Europe Work Permit Visa",
+      videoUrl: "o_muYt6nh08",
+      description: "Get your Europe Work Permit Visa in a few simple steps.",
+    },
+    {
+      id: 5,
+      title: "Italy Work Permit Visa",
+      videoUrl: "etlzKQTg6io",
+      description:
+        "A complete guide to applying for an Italy Work Permit Visa.",
+    },
+    {
+      id: 6,
+      title: "Latvia Work Permit Visa",
+      videoUrl: "Gvle35g7pno",
+      description: "Steps to get a Latvia Work Permit Visa easily.",
+    },
+    {
+      id: 7,
+      title: "Denmark Work Permit Visa",
+      videoUrl: "qC15QSVwQQw",
+      description:
+        "Why Denmark is one of the best countries for your career abroad.",
+    },
+    {
+      id: 8,
+      title: "Poland Work Permit Visa",
+      videoUrl: "vqGNFNLt6xg",
+      description: "Find out how to work and live in Poland with this guide.",
+    },
+    {
+      id: 9,
+      title: "Poland Study & Work Permit Visa",
+      videoUrl: "0UAQ6vUZh_o",
+      description:
+        "A guide to studying and working in Poland at the same time.",
+    },
+    {
+      id: 10,
+      title: "Australia Skill Shortage Subclass 482",
+      videoUrl: "PRu19h6uHGQ",
+      description:
+        "Everything you need to know about the Australia Skill Shortage Subclass 482 Visa.",
+    },
+    {
+      id: 11,
+      title: "VFS Free Work Permit Visa Application",
+      videoUrl: "6YgUewcjiCU",
+      description:
+        "Why you should avoid VFS and apply directly for your work permit in certain countries.",
+    },
+    {
+      id: 12,
+      title: "Poland Work Visa Explained",
+      videoUrl: "vHcvjzMyjaA",
+      description:
+        "See how I helped someone get a free work permit for Poland, including tips and hacks.",
+    },
+    {
+      id: 13,
+      title: "Germany Work Permit Visa",
+      videoUrl: "Cc34Zpnm_3M",
+      description:
+        "How to get a Germany Work Permit Visa and live and work in Germany.",
+    },
+    {
+      id: 14,
+      title: "How I Came to Europe – Job & Work Permit",
+      videoUrl: "7EtM8dzydec",
+      description:
+        "My personal journey to Europe and how you can come here too!",
+    },
+    {
+      id: 15,
+      title: "Poland Work Permit Visa Process",
+      videoUrl: "PMB5P4fCm5M",
+      description:
+        "A step-by-step guide to successfully applying for the Poland Work Permit Visa.",
+    },
+    {
+      id: 16,
+      title: "Spain Work Permit Visa",
+      videoUrl: "PFC1edcu-TA",
+      description:
+        "Learn all about the Spain Work Permit Visa process and how to apply.",
+    },
+    {
+      id: 17,
+      title: "Luxembourg Work Permit Visa for Subscribers",
+      videoUrl: "AnHaTWq_ee8",
+      description:
+        "Lucky subscribers get a chance for a free work visa process for Luxembourg.",
+    },
+    {
+      id: 18,
+      title: "Latvia Work Permit Visa",
+      videoUrl: "trawHdWWIPY",
+      description:
+        "The ultimate guide to obtaining a Latvia Work Permit Visa and finding a job.",
+    },
+  ];
 
   const totalPages = Math.ceil(videos.length / perPage);
   const lastIndex = currentPage * perPage;
@@ -146,16 +160,16 @@ const VideoResources = () => {
 
   // Detect when YouTube videos start playing
   useEffect(() => {
-    const handleVideoPlay = () => {
-      setAnyVideoPlaying(true);
-      if (autoPlayRef.current) {
-        clearInterval(autoPlayRef.current);
-      }
-    };
+    // const handleVideoPlay = () => {
+    //   setAnyVideoPlaying(true);
+    //   if (autoPlayRef.current) {
+    //     clearInterval(autoPlayRef.current);
+    //   }
+    // };
 
-    const handleVideoPause = () => {
-      setAnyVideoPlaying(false);
-    };
+    // const handleVideoPause = () => {
+    //   setAnyVideoPlaying(false);
+    // };
 
     // Listen for YouTube iframe events
     const iframes = document.querySelectorAll("iframe");
@@ -222,16 +236,16 @@ const VideoResources = () => {
     }
   };
 
-  const toggleAutoPlay = () => {
-    setIsAutoPlaying(!isAutoPlaying);
-    if (!isAutoPlaying && !anyVideoPlaying) {
-      // If turning on auto-play and no video is playing
-      resetAutoPlay();
-    } else if (isAutoPlaying && autoPlayRef.current) {
-      // If turning off auto-play
-      clearInterval(autoPlayRef.current);
-    }
-  };
+  // const toggleAutoPlay = () => {
+  //   setIsAutoPlaying(!isAutoPlaying);
+  //   if (!isAutoPlaying && !anyVideoPlaying) {
+  //     // If turning on auto-play and no video is playing
+  //     resetAutoPlay();
+  //   } else if (isAutoPlaying && autoPlayRef.current) {
+  //     // If turning off auto-play
+  //     clearInterval(autoPlayRef.current);
+  //   }
+  // };
 
   const goToPage = (page: number) => {
     setCurrentPage(page);

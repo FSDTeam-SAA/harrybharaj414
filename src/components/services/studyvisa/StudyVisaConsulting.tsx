@@ -6,18 +6,8 @@ const StudyVisaConsulting = () => {
     <div>
       <Services
         tittle="Study Visa Consulting"
-        dis1="We provide expert guidance for individuals who want to build their
-        careers abroad by securing a legal work visa. Our consultants help you
-        choose the right country, job market, and pathway based on your
-        skills, experience, and goals. We ensure you have a clear
-        understanding of the requirements, eligibility, and process so you can
-        move forward with confidence."
-        dis2="From preparing documents to submitting applications, we offer complete
-        end-to-end support for a smooth visa process. Our team assists with
-        job profiling, resume optimization, application submissions, and
-        interview preparation to increase your chances of approval. With our
-        tailored approach, we help you successfully unlock global work
-        opportunities and start your professional journey overseas."
+        dis1="We provide professional guidance for students who want to pursue education abroad. Our consultants help you choose the right country, program, and pathway based on your academic background, goals, and preferences. We ensure you fully understand eligibility, documentation requirements, and the application process, so you can proceed with confidence."
+        dis2="From document preparation to application submission, we offer complete end-to-end support for a smooth study visa process. Our team assists with application forms, academic credential verification, and interview guidance to increase your chances of approval. With our personalized approach, we help you unlock international study opportunities and kickstart your academic journey overseas."
         image="/images/service3.jpeg"
         icon="/service/visa.svg"
         button="More Info"

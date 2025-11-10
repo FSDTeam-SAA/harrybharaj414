@@ -4,7 +4,6 @@ import MyAchievement from "@/components/home/MyAchievement";
 import OurClientSay from "@/components/home/OurClientSay";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import HomeServices from "@/components/services/HomeSerivces";
-import Footer from "@/components/shared/Footer";
 import Hero from "@/components/shared/Hero";
 import VideoResources from "@/components/shared/VideoResources";
 

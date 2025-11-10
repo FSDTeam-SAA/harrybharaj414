@@ -14,28 +14,28 @@ const OurClientSay = () => {
       url: "/video/video2.MP4",
       name: "Vishal",
       country: "India",
-      title: "Work Visa",
+      title: "Work Permit",
       image: "/india.svg",
     },
     {
       url: "/video/video3.MP4",
-      name: "Patel Anjali mahendrabhai",
+      name: "Patel Anjali Mahendrabhai",
       country: "India",
-      title: "Study Abrod",
+      title: "Work Permit",
       image: "/india.svg",
     },
     {
       url: "/video/video4.MP4",
-      name: "Rishabh",
+      name: "Chetan",
       country: "India",
-      title: "Work Visa",
+      title: "Work Permit",
       image: "/india.svg",
     },
     {
       url: "/video/video1.mp4",
-      name: "Chetan",
+      name: "Rishabh",
       country: "India",
-      title: "Work Visa",
+      title: "Work Permit",
       image: "/india.svg",
     },
   ];
@@ -71,7 +71,7 @@ const OurClientSay = () => {
   return (
     <section
       id="testimonials"
-      className="py-16 lg:py-24 bg-gradient-to-b from-blue-50 via-white to-blue-50"
+      className="py-16 lg:py-24 bg-linear-to-b from-blue-50 via-white to-blue-50"
     >
       <div className="container mx-auto px-4">
         {/* Section Header */}
@@ -92,11 +92,11 @@ const OurClientSay = () => {
         {/* Video Carousel */}
         <div className="relative flex flex-col items-center">
           <div className="relative w-full overflow-hidden">
-            <div className="flex justify-center items-center gap-8 transition-all duration-500 ease-in-out">
-              {visibleVideos.map((video, index) => (
+            <div className="flex justify-center items-center gap-8 transition-all duration-500 ease-in-out mb-6">
+              {visibleVideos.map((video) => (
                 <article
                   key={`${video.url}-${video.position}`}
-                  className={`flex-shrink-0 w-full max-w-sm transition-all duration-500 ease-in-out ${
+                  className={`shrink-0 w-full max-w-sm transition-all duration-500 ease-in-out ${
                     video.position === 1 ? "scale-105" : "scale-100 opacity-90"
                   }`}
                 >
@@ -113,7 +113,7 @@ const OurClientSay = () => {
                     </span>
 
                     {/* Optimized Video */}
-                    <div className="relative w-full aspect-video bg-gray-100 overflow-hidden">
+                    <div className="relative w-full aspect-square bg-gray-100 overflow-hidden">
                       <video
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         controls

@@ -1,5 +1,3 @@
-
-
 import Image from "next/image";
 import React from "react";
 
@@ -13,11 +11,12 @@ const DocumentationVisadetailsHero = () => {
             Services We Provide
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
-            Explore Our Services
+            Documentation & Application Support
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Professional consulting solutions designed to support your work,
-            study, and immigration journey abroad with clarity and confidence.
+            Accurate documentation is the foundation of every successful visa
+            application. Our experts help you prepare, organize, and verify all
+            documents to ensure a smooth and error-free submission process.
           </p>
         </header>
 
@@ -25,7 +24,7 @@ const DocumentationVisadetailsHero = () => {
         <div className="mb-12">
           <Image
             src="/images/documentation.jpg"
-            alt="Work visa consulting overview"
+            alt="Documentation and visa file preparation"
             width={1536}
             height={400}
             className="object-cover w-full aspect-5/2 rounded-xl"
@@ -33,25 +32,25 @@ const DocumentationVisadetailsHero = () => {
         </div>
 
         {/* Overview Section */}
-        <div className=" mx-auto space-y-6">
+        <div className="mx-auto space-y-6">
           <h3 className="text-[#343A40] font-bold text-[20px] lg:text-[24px]">
             Overview
           </h3>
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            Securing a work visa and building a career abroad can be challenging
-            without the right guidance. Every country has its own rules,
-            requirements, and documentation process, which often confuses
-            applicants and leads to delays or rejections. Our Work Visa
-            Consulting service is designed to simplify this journey for you,
-            ensuring you take the right steps from the very beginning.
+            Preparing visa and immigration documents can be complex and
+            time-consuming. Every country has unique requirements and formats
+            that must be followed strictly. Missing information or incorrect
+            paperwork often leads to unnecessary delays or even rejections.
+            That’s why our Documentation & Application Support service ensures
+            your file meets every official standard before submission.
           </p>
+
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            We provide personalized consultation based on your skills,
-            education, work experience, and long-term career goals. Whether you
-            are a skilled professional, recent graduate, or jobseeker, we help
-            you choose the most suitable country, industry, and pathway for a
-            strong and secure career abroad. With clear guidance, transparency,
-            and strategic planning, we ensure you move forward with confidence.
+            We provide end-to-end assistance — from verifying eligibility,
+            organizing supporting evidence, and preparing financial or academic
+            records, to ensuring your application is fully compliant with
+            embassy or consulate guidelines. Our goal is to make the process
+            stress-free, transparent, and efficient for you.
           </p>
 
           {/* Target Audience */}
@@ -59,21 +58,17 @@ const DocumentationVisadetailsHero = () => {
             Who Is This Service For?
           </h3>
           <ul className="list-disc pl-6 text-[#6C757D] text-[16px] leading-[150%] space-y-2">
-            <li>Skilled professionals aiming to work abroad</li>
-            <li>Fresh graduates seeking international career opportunities</li>
-            <li>Jobseekers exploring European and GCC work opportunities</li>
-            <li>
-              Individuals planning long-term career growth and settlement abroad
-            </li>
+            <li>Students applying for study visas</li>
+            <li>Professionals submitting work visa applications</li>
+            <li>Immigrants preparing permanent residency documents</li>
+            <li>Individuals seeking flawless and compliant visa files</li>
           </ul>
 
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            From eligibility checks to documentation, job preparation, visa
-            filing, and post-approval guidance, our experts support you
-            throughout the entire process. We don’t just advise — we walk with
-            you every step of the way to make your work visa journey smooth,
-            stress-free, and result-oriented, helping you start a successful
-            career overseas.
+            From document review to final submission, our experts ensure your
+            application package is complete, accurate, and professionally
+            presented. With our guidance, you can move forward confidently,
+            knowing your documents meet every visa authority’s expectations.
           </p>
         </div>
       </div>

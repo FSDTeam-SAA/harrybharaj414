@@ -1,35 +1,35 @@
-'use client'
+"use client";
 import React from "react";
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
 import { useBookingCounter } from "@/lib/api";
 
 const SuccessStory = () => {
-    const { data, error } = useBookingCounter();
+  const { data } = useBookingCounter();
   const stats = [
     { number: "400+", label: "Successful Visa Applications Processed" },
     {
       number: data?.count || 2155,
-      label: "Consultation Provided Access India, Nepal & GCC",
+      label: "Consultations Provided Across India, Nepal & GCC",
     },
-    { number: "95%", label: "Climate Process & Rehabilitation Rate" },
+    { number: "95%", label: "Client Satisfaction & Success Rate" },
     {
       number: "200+",
-      label: "Clinical Successfully Placed to Europe for Work & Study",
+      label: "Clients Successfully Placed in Europe for Work & Study",
     },
   ];
 
   const features = [
-    "Licensed sub-based immigration & Owner Consultancy",
-    "Personalized Outdoors with 6rd-to-first Documentation Support",
-    "Trusted by Climate Access India, Nepal & GCC Countries",
+    "Licensed UAE-based immigration & career consultancy",
+    "Personalized end-to-end documentation and application support",
+    "Trusted by clients from India, Nepal & GCC countries",
   ];
 
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <header className="text-center mb-14  mx-auto">
+        <header className="text-center mb-14 mx-auto">
           <p className="text-blue-600 font-semibold uppercase tracking-wide">
             About Us
           </p>
@@ -37,45 +37,38 @@ const SuccessStory = () => {
             About Destiny Abroad
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Guiding individuals from India, Nepal, and GCC countries with
-            trusted immigration, work, and study visa consulting to build a
-            successful future abroad.
+            Destiny Abroad guides individuals from India, Nepal, and GCC countries with trusted immigration, work, study, and settlement services, helping them achieve successful opportunities abroad.
           </p>
         </header>
 
         {/* Main Content */}
-        <div className="grid grid-cols-1 items-center lg:grid-cols-2">
-          <div className=" relative w-full aspect-square">
-            <Image src={"/images/international.png"} alt="about" fill  className="rounded-2xl"/>
+        <div className="grid grid-cols-1 items-center lg:grid-cols-2 gap-12">
+          {/* Image */}
+          <div className="relative w-full aspect-5/6">
+            <Image
+              src="/images/about.png"
+              alt="About Destiny Abroad"
+              fill
+              className="rounded-2xl object-cover"
+            />
           </div>
+
+          {/* Text Content */}
           <div>
             <p className="text-[#1A73E8] text-[24px] pl-8 font-bold uppercase tracking-wide mt-8">
               Success Story
             </p>
-            <div className=" rounded-2xl p-8 mb-4">
-              <div className="grid grid-cols-1  gap-8">
-                {/* Left Column - Text Content */}
-                <div className="space-y-6">
-                  <p className="text-[#6C757D] leading-relaxed">
-                    Destiny Abroad FZ-LLC is a licensed UAE-based immigration
-                    and career consulting firm dedicated to helping individuals
-                    from India, Nepal, and GCC countries achieve global
-                    opportunities. We specialize in guiding clients toward 
-                    {/* work,study, and settlement  */}
-                    pathways in Europe with trusted
-                    consultation and seamless documentation support.
-                  </p>
-                  <p className="text-[#6C757D] leading-relaxed">
-                    With a personalized and transparent approach, we simplify
-                    the complex visa and immigration process, ensuring clarity
-                    and confidence at every step. Our mission is to provide
-                    reliable guidance, ethical consulting, and successful
-                    outcomes that empower our clients to build a secure and
-                    prosperous future abroad.
-                  </p>
-                </div>
 
-                {/* Right Column - Features */}
+            <div className="rounded-2xl p-8 mb-4 bg-gray-50">
+              <div className="space-y-6">
+                <p className="text-[#6C757D] leading-relaxed">
+                  Destiny Abroad FZ-LLC is a licensed UAE-based immigration and career consultancy dedicated to helping individuals from India, Nepal, and GCC countries access global opportunities. We specialize in guiding clients through work, study, and settlement pathways with seamless consultation and documentation support.
+                </p>
+                <p className="text-[#6C757D] leading-relaxed">
+                  With a personalized and transparent approach, we simplify the complex visa and immigration process, ensuring clarity and confidence at every step. Our mission is to deliver reliable guidance, ethical consulting, and successful outcomes, empowering our clients to build a secure and prosperous future abroad.
+                </p>
+
+                {/* Features */}
                 <div className="space-y-4">
                   {features.map((feature, index) => (
                     <div key={index} className="flex items-start space-x-3">

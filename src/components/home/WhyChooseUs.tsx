@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
   return (
     <section
       id="why-choose-us"
-      className="mt-8 md:mt-0 md:py-16 lg:py-24 bg-gradient-to-b from-white to-blue-50"
+      className="mt-8 md:mt-0 md:py-16 lg:py-24 bg-linear-to-b from-white to-blue-50"
     >
       <div className="container mx-auto px-4">
         {/* Section Header */}
@@ -92,7 +92,7 @@ const WhyChooseUs = () => {
                 </p>
               </li>
             </ul>
-            <Link href={'https://topmate.io/harry_singh12'}>
+            <Link  href={'https://topmate.io/harry_singh12'}  target="_blank" >
             
             <Button
               className="mt-8 border-2 border-blue-600 bg-[#1A73E8] text-white font-semibold hover:bg-blue-700 transition-all duration-300"
@@ -104,9 +104,9 @@ const WhyChooseUs = () => {
           </div>
 
           {/* Right Image */}
-          <div className="relative w-full h-[400px] lg:h-[550px]">
+          <div className="relative w-full h-[400px] lg:h-[650px]">
             <Image
-              src="/images/international.png"
+              src="/images/bbb.png"
               alt="Experienced immigration consultants assisting clients"
               fill
               className="object-cover rounded-2xl shadow-lg"

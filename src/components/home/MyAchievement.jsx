@@ -45,7 +45,7 @@ const MyAchievement = () => {
                 width={120}
                 height={120}
                 loading="lazy"
-                className="object-contain inline-block min-w-[120px]"
+                className="object-cover inline-block min-w-[120px] min-h-[120px] overflow-hidden rounded-2xl"
               />
             </span>
           ))}
@@ -62,7 +62,7 @@ const MyAchievement = () => {
                 width={100}
                 height={100}
                 loading="lazy"
-                className="object-contain"
+                className="object-cover min-w-[120px] min-h-[120px] overflow-hidden rounded-2xl"
               />
             ))}
           </div>

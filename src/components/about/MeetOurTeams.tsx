@@ -1,40 +1,40 @@
 import React from "react";
 
 const MeetOurTeams = () => {
-  const teamMembers = [
-    {
-      name: "Olivia Rhye",
-      role: "Founder & CEO",
-      description:
-        "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
-    },
-    {
-      name: "Phoenix Baker",
-      role: "Engineering Manager",
-      description: "Lead engineering teams at Figma, Pitch, and Protocol Labs.",
-    },
-    {
-      name: "Natal Craig",
-      role: "Product Designer",
-      description:
-        "Founding design team at Figma, Former Pleo, Stripe, and Tile.",
-    },
-    {
-      name: "Lana Steiner",
-      role: "Product Manager",
-      description: "Former PM for Linear, Lambda School, and On Deck.",
-    },
-    {
-      name: "Demi Wilkinson",
-      role: "Frontend Developer",
-      description: "Former frontend dev for Linear, Coinbase, and Postscript.",
-    },
-    {
-      name: "Orlando Diggs",
-      role: "Customer Success",
-      description: "Lead CX at Wealthsimple, Former PagerDuty and Sgreen.",
-    },
-  ];
+  // const teamMembers = [
+  //   {
+  //     name: "Olivia Rhye",
+  //     role: "Founder & CEO",
+  //     description:
+  //       "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+  //   },
+  //   {
+  //     name: "Phoenix Baker",
+  //     role: "Engineering Manager",
+  //     description: "Lead engineering teams at Figma, Pitch, and Protocol Labs.",
+  //   },
+  //   {
+  //     name: "Natal Craig",
+  //     role: "Product Designer",
+  //     description:
+  //       "Founding design team at Figma, Former Pleo, Stripe, and Tile.",
+  //   },
+  //   {
+  //     name: "Lana Steiner",
+  //     role: "Product Manager",
+  //     description: "Former PM for Linear, Lambda School, and On Deck.",
+  //   },
+  //   {
+  //     name: "Demi Wilkinson",
+  //     role: "Frontend Developer",
+  //     description: "Former frontend dev for Linear, Coinbase, and Postscript.",
+  //   },
+  //   {
+  //     name: "Orlando Diggs",
+  //     role: "Customer Success",
+  //     description: "Lead CX at Wealthsimple, Former PagerDuty and Sgreen.",
+  //   },
+  // ];
 
   return (
     <section className="py-16 bg-gray-50">
