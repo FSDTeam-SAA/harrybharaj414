@@ -3,7 +3,7 @@ import { Mail, MapPin } from "lucide-react";
 
 const GetToTuch = () => {
   return (
-    <section className="my-20 pb-20 bg-white">
+    <section className="lg:mt-20 mt-14 pb-10 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <header className="text-center mb-16 max-w-2xl mx-auto">
@@ -20,9 +20,9 @@ const GetToTuch = () => {
         </header>
 
         {/* Contact Info Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-12 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 text-center md:text-left">
           {/* Email */}
-          <div className="flex flex-col items-center md:items-center">
+          <div className="flex flex-col items-center md:items-center bg-[#E8F1FD] justify-center p-5 rounded-lg">
             <div className="flex items-center justify-center md:justify-start mb-4">
               <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                 <Mail className="h-6 w-6 text-blue-600" />
@@ -43,7 +43,7 @@ const GetToTuch = () => {
           </div>
 
           {/* Office */}
-          <div className="flex flex-col items-center md:items-center">
+          <div className="flex flex-col items-center md:items-center bg-[#E8F1FD] p-5 rounded-lg">
             <div className="flex items-center justify-center md:justify-start mb-4">
               <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                 <MapPin className="h-6 w-6 text-blue-600" />
@@ -51,7 +51,6 @@ const GetToTuch = () => {
             </div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Office</h3>
             <p className="text-gray-600 mb-1 text-center tracking-wide leading-[150%]">
-              office-Destiny Abroad FZ-LLC,having it&apos;s address at <br />{" "}
               FDBC4169 Compass Building <br /> AL Shohada Road, <br />
               Al Hamra Industrial Zone-Fz,
             </p>
