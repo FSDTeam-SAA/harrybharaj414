@@ -14,8 +14,9 @@ const StudyVisadetailsHero = () => {
             Study Visa Consulting
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Professional consulting solutions designed to support your work,
-            study, and immigration journey abroad with clarity and confidence.
+            Expert guidance to help you achieve your dream of studying abroad.
+            From choosing the right course to securing your visa, we make the
+            entire process smooth, transparent, and stress-free.
           </p>
         </header>
 
@@ -23,7 +24,7 @@ const StudyVisadetailsHero = () => {
         <div className="mb-12">
           <Image
             src="/images/study.jpg"
-            alt="Work visa consulting overview"
+            alt="Study visa consulting overview"
             width={1536}
             height={400}
             className="object-cover w-full aspect-5/2 rounded-xl"
@@ -31,25 +32,23 @@ const StudyVisadetailsHero = () => {
         </div>
 
         {/* Overview Section */}
-        <div className=" mx-auto space-y-6">
+        <div className="mx-auto space-y-6">
           <h3 className="text-[#343A40] font-bold text-[20px] lg:text-[24px]">
             Overview
           </h3>
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            Securing a work visa and building a career abroad can be challenging
-            without the right guidance. Every country has its own rules,
-            requirements, and documentation process, which often confuses
-            applicants and leads to delays or rejections. Our Work Visa
-            Consulting service is designed to simplify this journey for you,
-            ensuring you take the right steps from the very beginning.
+            Applying for a study visa can be overwhelming — each country has
+            different requirements, admission criteria, and documentation
+            processes. Our Study Visa Consulting service simplifies this journey
+            by offering complete, step-by-step guidance from university
+            selection to visa approval.
           </p>
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            We provide personalized consultation based on your skills,
-            education, work experience, and long-term career goals. Whether you
-            are a skilled professional, recent graduate, or jobseeker, we help
-            you choose the most suitable country, industry, and pathway for a
-            strong and secure career abroad. With clear guidance, transparency,
-            and strategic planning, we ensure you move forward with confidence.
+            Whether you’re planning to study in the UK, Canada, Australia, the
+            USA, or Europe, our experts help you choose the right course,
+            prepare strong applications, and ensure your visa documents meet all
+            official standards. With personalized support and transparent advice,
+            we help you take confident steps toward your academic goals abroad.
           </p>
 
           {/* Target Audience */}
@@ -57,21 +56,17 @@ const StudyVisadetailsHero = () => {
             Who Is This Service For?
           </h3>
           <ul className="list-disc pl-6 text-[#6C757D] text-[16px] leading-[150%] space-y-2">
-            <li>Skilled professionals aiming to work abroad</li>
-            <li>Fresh graduates seeking international career opportunities</li>
-            <li>Jobseekers exploring European and GCC work opportunities</li>
-            <li>
-              Individuals planning long-term career growth and settlement abroad
-            </li>
+            <li>Students aspiring to pursue higher education abroad</li>
+            <li>Parents seeking trusted visa guidance for their children</li>
+            <li>Graduates planning for postgraduate or research programs overseas</li>
+            <li>Individuals seeking scholarships or specialized academic pathways</li>
           </ul>
 
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            From eligibility checks to documentation, job preparation, visa
-            filing, and post-approval guidance, our experts support you
-            throughout the entire process. We don’t just advise — we walk with
-            you every step of the way to make your work visa journey smooth,
-            stress-free, and result-oriented, helping you start a successful
-            career overseas.
+            From profile assessment and university admission to visa filing and
+            pre-departure briefing, we support you every step of the way. Our
+            mission is to make your study abroad journey smooth, successful, and
+            inspiring — helping you start your global education with confidence.
           </p>
         </div>
       </div>

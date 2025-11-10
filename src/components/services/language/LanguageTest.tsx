@@ -6,18 +6,8 @@ const LanguageTest = () => {
     <div>
       <Services
         tittle="Language Test Preparation"
-        dis1="We provide expert guidance for individuals who want to build their
-        careers abroad by securing a legal work visa. Our consultants help you
-        choose the right country, job market, and pathway based on your
-        skills, experience, and goals. We ensure you have a clear
-        understanding of the requirements, eligibility, and process so you can
-        move forward with confidence."
-        dis2="From preparing documents to submitting applications, we offer complete
-        end-to-end support for a smooth visa process. Our team assists with
-        job profiling, resume optimization, application submissions, and
-        interview preparation to increase your chances of approval. With our
-        tailored approach, we help you successfully unlock global work
-        opportunities and start your professional journey overseas."
+        dis1="We provide professional guidance for individuals preparing for international language tests such as IELTS, TOEFL, or PTE. Our experts help you understand test formats, scoring criteria, and strategies to achieve your target scores efficiently."
+        dis2="From practice materials to mock tests and personalized coaching, we offer end-to-end support to ensure you are fully prepared. Our team provides tips on time management, common pitfalls, and skill enhancement, helping you approach your language exam with confidence and success."
         image="/images/service4.jpeg"
         icon="/service/visa.svg"
         button="More Info"

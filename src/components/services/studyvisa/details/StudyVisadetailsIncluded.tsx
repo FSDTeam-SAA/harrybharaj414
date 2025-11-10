@@ -4,38 +4,38 @@ const StudyVisadetailsIncluded = () => {
   const services = [
     {
       id: 1,
-      title: "Country & Pathway Assessment",
-      desc: "We evaluate your education, skills, experience, and goals to suggest the most suitable country, sector, and visa pathway.",
+      title: "Country & Course Selection",
+      desc: "We assess your academic background, budget, and career goals to recommend the best countries, universities, and programs that align with your interests.",
     },
     {
       id: 2,
-      title: "Eligibility & Documentation Guidance",
-      desc: "A complete checklist of required documents, eligibility criteria, and step-by-step guidance to ensure accuracy and avoid rejection.",
+      title: "Admission & Application Guidance",
+      desc: "Step-by-step support for university applications, including form submission, document verification, and meeting admission deadlines.",
     },
     {
       id: 3,
-      title: "Resume & Profile Enhancement",
-      desc: "Professional CV, cover letter, and LinkedIn optimization tailored for international recruitment standards.",
+      title: "Document Preparation & Verification",
+      desc: "Detailed checklist and assistance for transcripts, recommendation letters, SOP, passport, and financial proofs to ensure all documents meet visa standards.",
     },
     {
       id: 4,
-      title: "Job Market Assistance",
-      desc: "Guidance on job search platforms, top industries hiring foreign workers, and how to increase your chances of securing offers abroad.",
+      title: "SOP & Interview Coaching",
+      desc: "Expert guidance for writing a compelling Statement of Purpose and preparing confidently for university or visa interviews.",
     },
     {
       id: 5,
-      title: "Visa Application Support",
-      desc: "Assistance with form filling, documentation arrangement, submission guidelines, and compliance.",
+      title: "Visa Filing & Processing Support",
+      desc: "Comprehensive help with visa forms, fee payment, biometric appointments, and submission to ensure a smooth and timely approval process.",
     },
     {
       id: 6,
-      title: "Interview Preparation",
-      desc: "Coaching to help you confidently face interviews with recruiters or employers overseas and present your strengths effectively.",
+      title: "Scholarship & Financial Guidance",
+      desc: "Advice on available scholarships, tuition fee planning, and financial documentation to strengthen your application and reduce costs.",
     },
     {
       id: 7,
-      title: "Language Test Preparation",
-      desc: "Orientation, travel preparation guidance, and essential post-landing information to help you settle smoothly.",
+      title: "Pre-Departure & Post-Arrival Support",
+      desc: "Guidance on travel, accommodation, health insurance, and cultural orientation to help you adapt easily to your new academic environment.",
     },
   ];
 

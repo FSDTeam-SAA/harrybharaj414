@@ -1,41 +1,40 @@
-
-
 import React from "react";
 
 const ImmigrationVisadetailsBenifit = () => {
   const services = [
     {
       id: 1,
-      title: "Personalized Strategy",
-      desc: "We evaluate your education, skills, experience, and goals to suggest the most suitable country, sector, and visa pathway.",
+      title: "Tailored Immigration Strategy",
+      desc: "We carefully assess your education, experience, and career goals to recommend the best immigration route and destination country for you.",
     },
     {
       id: 2,
-      title: "Avoid Mistakes & Rejections",
-      desc: "A complete checklist of required documents, eligibility criteria, and step-by-step guidance to ensure accuracy and avoid rejection.",
+      title: "Error-Free Process",
+      desc: "We ensure your documentation, eligibility requirements, and application forms are accurate and compliant — minimizing the risk of rejection.",
     },
     {
       id: 3,
-      title: "Time & Cost Efficient",
-      desc: "Professional CV, cover letter, and LinkedIn optimization tailored for international recruitment standards.",
+      title: "Save Time & Resources",
+      desc: "Our step-by-step guidance and expert handling streamline the entire process, helping you avoid delays and unnecessary expenses.",
     },
     {
       id: 4,
-      title: "Global Opportunities",
-      desc: "Guidance on job search platforms, top industries hiring foreign workers, and how to increase your chances of securing offers abroad.",
+      title: "Access to Global Opportunities",
+      desc: "We provide insights into global job markets, skill demands, and pathways that increase your chances of successfully immigrating.",
     },
     {
       id: 5,
-      title: "Expert Support at Every Step",
-      desc: "Assistance with form filling, documentation arrangement, submission guidelines, and compliance.",
+      title: "Dedicated Expert Assistance",
+      desc: "From initial consultation to post-visa guidance, our professionals support you through every step of your immigration journey.",
     },
   ];
+
   return (
-    <section className=" py-16">
+    <section className="py-16">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-10">
-          Benefits of Choosing Our Work Visa Consulting{" "}
+          Benefits of Choosing Our Immigration Consulting
         </h2>
 
         {/* Two Column Grid */}

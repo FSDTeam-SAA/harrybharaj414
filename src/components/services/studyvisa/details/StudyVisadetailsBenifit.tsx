@@ -4,36 +4,37 @@ const StudyVisadetailsBenifit = () => {
   const services = [
     {
       id: 1,
-      title: "Personalized Strategy",
-      desc: "We evaluate your education, skills, experience, and goals to suggest the most suitable country, sector, and visa pathway.",
+      title: "Personalized Study Plan",
+      desc: "We assess your academic background, interests, and career goals to design a customized study plan and recommend the best-fit universities and programs.",
     },
     {
       id: 2,
-      title: "Avoid Mistakes & Rejections",
-      desc: "A complete checklist of required documents, eligibility criteria, and step-by-step guidance to ensure accuracy and avoid rejection.",
+      title: "Higher Visa Approval Success",
+      desc: "With accurate documentation, professional guidance, and compliance with embassy requirements, we help minimize errors and increase your visa approval rate.",
     },
     {
       id: 3,
-      title: "Time & Cost Efficient",
-      desc: "Professional CV, cover letter, and LinkedIn optimization tailored for international recruitment standards.",
+      title: "Save Time & Effort",
+      desc: "Our step-by-step process simplifies applications, admissions, and visa filing — saving you weeks of research, paperwork, and uncertainty.",
     },
     {
       id: 4,
-      title: "Global Opportunities",
-      desc: "Guidance on job search platforms, top industries hiring foreign workers, and how to increase your chances of securing offers abroad.",
+      title: "Access to Top Global Universities",
+      desc: "We partner with leading institutions across the UK, Canada, Australia, USA, and Europe to help you study at reputable and globally recognized universities.",
     },
     {
       id: 5,
-      title: "Expert Support at Every Step",
-      desc: "Assistance with form filling, documentation arrangement, submission guidelines, and compliance.",
+      title: "End-to-End Expert Support",
+      desc: "From course selection and SOP writing to visa filing and pre-departure prep — our consultants guide you through every stage of your study abroad journey.",
     },
   ];
+
   return (
-    <section className=" py-16">
+    <section className="py-16">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-10">
-          Benefits of Choosing Our Work Visa Consulting{" "}
+          Benefits of Choosing Our Study Visa Consulting
         </h2>
 
         {/* Two Column Grid */}

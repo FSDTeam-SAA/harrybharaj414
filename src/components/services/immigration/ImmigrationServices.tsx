@@ -6,18 +6,8 @@ const ImmigrationServices = () => {
     <div>
       <Services
         tittle="Immigration & Settlement Services"
-        dis1="We provide expert guidance for individuals who want to build their
-        careers abroad by securing a legal work visa. Our consultants help you
-        choose the right country, job market, and pathway based on your
-        skills, experience, and goals. We ensure you have a clear
-        understanding of the requirements, eligibility, and process so you can
-        move forward with confidence."
-        dis2="From preparing documents to submitting applications, we offer complete
-        end-to-end support for a smooth visa process. Our team assists with
-        job profiling, resume optimization, application submissions, and
-        interview preparation to increase your chances of approval. With our
-        tailored approach, we help you successfully unlock global work
-        opportunities and start your professional journey overseas."
+        dis1="We provide professional guidance for individuals planning to immigrate or settle abroad. Our consultants help you choose the most suitable country and immigration pathway based on your personal, professional, and family goals. We ensure you fully understand eligibility requirements, necessary documents, and the application process so you can proceed with confidence."
+        dis2="From document preparation to application submission, we offer complete end-to-end support for a smooth immigration journey. Our team assists with visa forms, document verification, compliance checks, and follow-up procedures. With our personalized approach, we help you successfully navigate immigration and settlement processes, making your transition overseas seamless."
         image="/images/service2.jpeg"
         icon="/service/visa.svg"
         button="More Info"

@@ -1,43 +1,41 @@
-
-
 import React from "react";
 
 const CareerVisadetailsIncluded = () => {
   const services = [
     {
       id: 1,
-      title: "Country & Pathway Assessment",
-      desc: "We evaluate your education, skills, experience, and goals to suggest the most suitable country, sector, and visa pathway.",
+      title: "Career Assessment & Goal Mapping",
+      desc: "We assess your qualifications, skills, and career aspirations to identify the best industries, countries, and roles that fit your profile.",
     },
     {
       id: 2,
-      title: "Eligibility & Documentation Guidance",
-      desc: "A complete checklist of required documents, eligibility criteria, and step-by-step guidance to ensure accuracy and avoid rejection.",
+      title: "Professional Resume & Cover Letter Writing",
+      desc: "Expertly written documents that highlight your strengths and meet international recruitment standards to stand out to global employers.",
     },
     {
       id: 3,
-      title: "Resume & Profile Enhancement",
-      desc: "Professional CV, cover letter, and LinkedIn optimization tailored for international recruitment standards.",
+      title: "LinkedIn Profile Optimization",
+      desc: "We optimize your LinkedIn profile to boost visibility and attract recruiters from top organizations worldwide.",
     },
     {
       id: 4,
-      title: "Job Market Assistance",
-      desc: "Guidance on job search platforms, top industries hiring foreign workers, and how to increase your chances of securing offers abroad.",
+      title: "Interview Preparation & Mock Sessions",
+      desc: "Personalized coaching sessions to help you build confidence, communicate effectively, and make a strong impression during interviews.",
     },
     {
       id: 5,
-      title: "Visa Application Support",
-      desc: "Assistance with form filling, documentation arrangement, submission guidelines, and compliance.",
+      title: "Job Market Guidance",
+      desc: "Detailed insights on trending job markets, top global industries, and proven strategies for finding and applying to the right opportunities.",
     },
     {
       id: 6,
-      title: "Interview Preparation",
-      desc: "Coaching to help you confidently face interviews with recruiters or employers overseas and present your strengths effectively.",
+      title: "Career Branding Consultation",
+      desc: "Tailored advice on personal branding, portfolio development, and how to position yourself as a valuable professional internationally.",
     },
     {
       id: 7,
-      title: "Language Test Preparation",
-      desc: "Orientation, travel preparation guidance, and essential post-landing information to help you settle smoothly.",
+      title: "Ongoing Career Mentorship",
+      desc: "Continuous one-on-one support to refine your strategy, update your documents, and stay aligned with evolving global career trends.",
     },
   ];
 

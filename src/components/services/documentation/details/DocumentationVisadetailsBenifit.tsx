@@ -1,41 +1,40 @@
-
-
 import React from "react";
 
 const DocumentationVisadetailsBenifit = () => {
   const services = [
     {
       id: 1,
-      title: "Personalized Strategy",
-      desc: "We evaluate your education, skills, experience, and goals to suggest the most suitable country, sector, and visa pathway.",
+      title: "Accurate & Verified Documentation",
+      desc: "Ensure that all your documents are correctly prepared, verified, and compliant with official guidelines, reducing errors and delays.",
     },
     {
       id: 2,
-      title: "Avoid Mistakes & Rejections",
-      desc: "A complete checklist of required documents, eligibility criteria, and step-by-step guidance to ensure accuracy and avoid rejection.",
+      title: "Minimized Risk of Rejection",
+      desc: "Our step-by-step guidance and document checks help prevent common mistakes, ensuring your application is complete and accurate.",
     },
     {
       id: 3,
-      title: "Time & Cost Efficient",
-      desc: "Professional CV, cover letter, and LinkedIn optimization tailored for international recruitment standards.",
+      title: "Time & Cost Efficiency",
+      desc: "Save time and avoid unnecessary expenses by submitting the right documents in the correct format on the first attempt.",
     },
     {
       id: 4,
-      title: "Global Opportunities",
-      desc: "Guidance on job search platforms, top industries hiring foreign workers, and how to increase your chances of securing offers abroad.",
+      title: "Comprehensive Application Support",
+      desc: "From compiling documents to filling forms and handling submission requirements, we guide you at every stage of the process.",
     },
     {
       id: 5,
-      title: "Expert Support at Every Step",
-      desc: "Assistance with form filling, documentation arrangement, submission guidelines, and compliance.",
+      title: "Expert Assistance Throughout",
+      desc: "Receive professional guidance and support for any post-submission queries, clarifications, or additional documentation requests.",
     },
   ];
+
   return (
-    <section className=" py-16">
+    <section className="py-16">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-10">
-          Benefits of Choosing Our Work Visa Consulting{" "}
+          Benefits of Choosing Our Documentation & Application Support
         </h2>
 
         {/* Two Column Grid */}
