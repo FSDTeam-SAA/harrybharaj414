@@ -97,6 +97,10 @@ Reality: A consistent LinkedIn profile boosts credibility and supports embassy e
     }
   };
 
+  // Split services into two groups
+  const firstThreeServices = services.slice(0, 3); // Items 1-3
+  const lastFourServices = services.slice(3); // Items 4-7
+
   return (
     <section className="bg-[#E8F1FD99] py-16">
       <div className="container mx-auto px-4">
@@ -105,16 +109,31 @@ Reality: A consistent LinkedIn profile boosts credibility and supports embassy e
           What&apos;s Included in This Service
         </h2>
 
-        {/* Two Column Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-start justify-start gap-x-16 gap-y-8">
-          {services.map((item) => (
-            <div key={item.id} className="flex flex-col">
-              <h3 className="text-[18px] font-semibold text-[#343A40] mb-2">
-                {item.id}. {item.title}
-              </h3>
-              {renderContent(item)}
-            </div>
-          ))}
+        {/* Two Column Grid with separate divs for each group */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
+          {/* First Column - Items 1-3 */}
+          <div className="flex flex-col gap-8">
+            {firstThreeServices.map((item) => (
+              <div key={item.id} className="flex flex-col">
+                <h3 className="text-[18px] font-semibold text-[#343A40] mb-2">
+                  {item.id}. {item.title}
+                </h3>
+                {renderContent(item)}
+              </div>
+            ))}
+          </div>
+
+          {/* Second Column - Items 4-7 */}
+          <div className="flex flex-col gap-8">
+            {lastFourServices.map((item) => (
+              <div key={item.id} className="flex flex-col">
+                <h3 className="text-[18px] font-semibold text-[#343A40] mb-2">
+                  {item.id}. {item.title}
+                </h3>
+                {renderContent(item)}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
