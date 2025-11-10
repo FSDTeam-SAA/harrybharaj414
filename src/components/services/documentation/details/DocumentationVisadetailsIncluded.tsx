@@ -1,44 +1,41 @@
-
-
-
 import React from "react";
 
 const DocumentationVisadetailsIncluded = () => {
   const services = [
     {
       id: 1,
-      title: "Country & Pathway Assessment",
-      desc: "We evaluate your education, skills, experience, and goals to suggest the most suitable country, sector, and visa pathway.",
+      title: "Document Checklist Preparation",
+      desc: "We provide a complete checklist of required documents for your application, ensuring nothing is missed and everything is correctly formatted.",
     },
     {
       id: 2,
-      title: "Eligibility & Documentation Guidance",
-      desc: "A complete checklist of required documents, eligibility criteria, and step-by-step guidance to ensure accuracy and avoid rejection.",
+      title: "Eligibility Verification",
+      desc: "Our experts review your profile and documents to confirm eligibility for the intended visa, immigration, or study pathway.",
     },
     {
       id: 3,
-      title: "Resume & Profile Enhancement",
-      desc: "Professional CV, cover letter, and LinkedIn optimization tailored for international recruitment standards.",
+      title: "Document Organization & Formatting",
+      desc: "We arrange, format, and compile all your documents professionally to meet official submission standards.",
     },
     {
       id: 4,
-      title: "Job Market Assistance",
-      desc: "Guidance on job search platforms, top industries hiring foreign workers, and how to increase your chances of securing offers abroad.",
+      title: "Application Form Assistance",
+      desc: "Guidance and support for accurately filling out application forms, reducing errors and processing delays.",
     },
     {
       id: 5,
-      title: "Visa Application Support",
-      desc: "Assistance with form filling, documentation arrangement, submission guidelines, and compliance.",
+      title: "Supporting Evidence Review",
+      desc: "We verify all supporting documents such as academic transcripts, financial statements, and employment records for accuracy and compliance.",
     },
     {
       id: 6,
-      title: "Interview Preparation",
-      desc: "Coaching to help you confidently face interviews with recruiters or employers overseas and present your strengths effectively.",
+      title: "Submission Guidance",
+      desc: "Step-by-step instructions for submitting your documents to the relevant authorities correctly and on time.",
     },
     {
       id: 7,
-      title: "Language Test Preparation",
-      desc: "Orientation, travel preparation guidance, and essential post-landing information to help you settle smoothly.",
+      title: "Post-Submission Support",
+      desc: "Ongoing assistance for follow-ups, clarifications, or additional documentation requests from authorities.",
     },
   ];
 

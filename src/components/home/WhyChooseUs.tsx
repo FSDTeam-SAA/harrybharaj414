@@ -92,7 +92,7 @@ const WhyChooseUs = () => {
                 </p>
               </li>
             </ul>
-            <Link href={'https://topmate.io/harry_singh12'}>
+            <Link  href={'https://topmate.io/harry_singh12'}  target="_blank" >
             
             <Button
               className="mt-8 border-2 border-blue-600 bg-[#1A73E8] text-white font-semibold hover:bg-blue-700 transition-all duration-300"

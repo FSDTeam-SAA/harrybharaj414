@@ -14,8 +14,9 @@ const ImmigrationVisadetailsHero = () => {
             Immigration & Settlement Services
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Professional consulting solutions designed to support your work,
-            study, and immigration journey abroad with clarity and confidence.
+            Trusted immigration consulting services designed to help you and
+            your family achieve permanent residency, citizenship, or long-term
+            settlement abroad — with expert guidance every step of the way.
           </p>
         </header>
 
@@ -23,7 +24,7 @@ const ImmigrationVisadetailsHero = () => {
         <div className="mb-12">
           <Image
             src="/images/Immigration.jpg"
-            alt="Work visa consulting overview"
+            alt="Immigration and settlement overview"
             width={1536}
             height={400}
             className="object-cover w-full aspect-5/2 rounded-xl"
@@ -31,25 +32,23 @@ const ImmigrationVisadetailsHero = () => {
         </div>
 
         {/* Overview Section */}
-        <div className=" mx-auto space-y-6">
+        <div className="mx-auto space-y-6">
           <h3 className="text-[#343A40] font-bold text-[20px] lg:text-[24px]">
             Overview
           </h3>
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            Securing a work visa and building a career abroad can be challenging
-            without the right guidance. Every country has its own rules,
-            requirements, and documentation process, which often confuses
-            applicants and leads to delays or rejections. Our Work Visa
-            Consulting service is designed to simplify this journey for you,
-            ensuring you take the right steps from the very beginning.
+            Immigration policies vary from country to country, and navigating
+            them can be complex. From choosing the right program to preparing
+            your documents and meeting eligibility criteria, our Immigration
+            Consulting service helps simplify the path to permanent residency
+            and citizenship for individuals and families alike.
           </p>
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            We provide personalized consultation based on your skills,
-            education, work experience, and long-term career goals. Whether you
-            are a skilled professional, recent graduate, or jobseeker, we help
-            you choose the most suitable country, industry, and pathway for a
-            strong and secure career abroad. With clear guidance, transparency,
-            and strategic planning, we ensure you move forward with confidence.
+            Whether you’re seeking PR through skilled migration, family
+            sponsorship, investor programs, or humanitarian pathways, we offer
+            transparent guidance and strategic planning to increase your chances
+            of success. Our mission is to help you make informed decisions and
+            transition to your new country with confidence and peace of mind.
           </p>
 
           {/* Target Audience */}
@@ -57,21 +56,18 @@ const ImmigrationVisadetailsHero = () => {
             Who Is This Service For?
           </h3>
           <ul className="list-disc pl-6 text-[#6C757D] text-[16px] leading-[150%] space-y-2">
-            <li>Skilled professionals aiming to work abroad</li>
-            <li>Fresh graduates seeking international career opportunities</li>
-            <li>Jobseekers exploring European and GCC work opportunities</li>
-            <li>
-              Individuals planning long-term career growth and settlement abroad
-            </li>
+            <li>Professionals and skilled workers seeking permanent residency</li>
+            <li>Families planning long-term relocation or sponsorship programs</li>
+            <li>Investors and entrepreneurs exploring immigration-based business opportunities</li>
+            <li>Individuals seeking citizenship or settlement in developed countries</li>
           </ul>
 
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            From eligibility checks to documentation, job preparation, visa
-            filing, and post-approval guidance, our experts support you
-            throughout the entire process. We don’t just advise — we walk with
-            you every step of the way to make your work visa journey smooth,
-            stress-free, and result-oriented, helping you start a successful
-            career overseas.
+            From eligibility assessment and application filing to documentation,
+            interviews, and post-arrival settlement support — our team ensures
+            your immigration process is organized, compliant, and stress-free.
+            We’re not just your consultants — we’re your partners in building a
+            secure future abroad.
           </p>
         </div>
       </div>

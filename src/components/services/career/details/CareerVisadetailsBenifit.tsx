@@ -1,40 +1,40 @@
-
 import React from "react";
 
 const CareerVisadetailsBenifit = () => {
   const services = [
     {
       id: 1,
-      title: "Personalized Strategy",
-      desc: "We evaluate your education, skills, experience, and goals to suggest the most suitable country, sector, and visa pathway.",
+      title: "Tailored Career Strategy",
+      desc: "Get a customized career roadmap based on your strengths, education, and experience to help you reach your global career goals faster.",
     },
     {
       id: 2,
-      title: "Avoid Mistakes & Rejections",
-      desc: "A complete checklist of required documents, eligibility criteria, and step-by-step guidance to ensure accuracy and avoid rejection.",
+      title: "Professional Edge",
+      desc: "Stand out to employers with expertly written CVs, cover letters, and LinkedIn profiles that meet international hiring standards.",
     },
     {
       id: 3,
-      title: "Time & Cost Efficient",
-      desc: "Professional CV, cover letter, and LinkedIn optimization tailored for international recruitment standards.",
+      title: "Save Time & Effort",
+      desc: "Avoid the trial-and-error approach with clear, guided steps to build a professional brand and secure better opportunities efficiently.",
     },
     {
       id: 4,
-      title: "Global Opportunities",
-      desc: "Guidance on job search platforms, top industries hiring foreign workers, and how to increase your chances of securing offers abroad.",
+      title: "Access to Global Opportunities",
+      desc: "Gain insights into international job markets, emerging industries, and in-demand skills to explore worldwide career possibilities.",
     },
     {
       id: 5,
-      title: "Expert Support at Every Step",
-      desc: "Assistance with form filling, documentation arrangement, submission guidelines, and compliance.",
+      title: "End-to-End Expert Guidance",
+      desc: "From profile building to interview training, receive continuous support at every stage of your career advancement journey.",
     },
   ];
+
   return (
-    <section className=" py-16">
+    <section className="py-16">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-10">
-          Benefits of Choosing Our Work Visa Consulting{" "}
+          Benefits of Choosing Our Career Guidance Service
         </h2>
 
         {/* Two Column Grid */}
