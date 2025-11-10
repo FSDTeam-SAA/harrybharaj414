@@ -1,44 +1,41 @@
-
-
-
 import React from "react";
 
 const LanguageVisadetailsIncluded = () => {
   const services = [
     {
       id: 1,
-      title: "Country & Pathway Assessment",
-      desc: "We evaluate your education, skills, experience, and goals to suggest the most suitable country, sector, and visa pathway.",
+      title: "Initial Language Assessment",
+      desc: "Evaluate your current language proficiency to identify strengths and areas for improvement, creating a personalized study plan.",
     },
     {
       id: 2,
-      title: "Eligibility & Documentation Guidance",
-      desc: "A complete checklist of required documents, eligibility criteria, and step-by-step guidance to ensure accuracy and avoid rejection.",
+      title: "Test Strategy & Planning",
+      desc: "Guidance on choosing the right language test (IELTS, TOEFL, PTE, CELPIP) and developing a structured preparation plan.",
     },
     {
       id: 3,
-      title: "Resume & Profile Enhancement",
-      desc: "Professional CV, cover letter, and LinkedIn optimization tailored for international recruitment standards.",
+      title: "Practice Materials & Mock Tests",
+      desc: "Access to authentic practice materials, sample questions, and full-length mock exams to build confidence and test readiness.",
     },
     {
       id: 4,
-      title: "Job Market Assistance",
-      desc: "Guidance on job search platforms, top industries hiring foreign workers, and how to increase your chances of securing offers abroad.",
+      title: "Speaking & Writing Coaching",
+      desc: "One-on-one coaching sessions to improve speaking fluency and writing skills with personalized feedback.",
     },
     {
       id: 5,
-      title: "Visa Application Support",
-      desc: "Assistance with form filling, documentation arrangement, submission guidelines, and compliance.",
+      title: "Reading & Listening Enhancement",
+      desc: "Targeted exercises and strategies to strengthen comprehension, speed, and accuracy in reading and listening sections.",
     },
     {
       id: 6,
-      title: "Interview Preparation",
-      desc: "Coaching to help you confidently face interviews with recruiters or employers overseas and present your strengths effectively.",
+      title: "Score Tracking & Feedback",
+      desc: "Regular assessments to track progress and adjust preparation strategies to maximize your test scores.",
     },
     {
       id: 7,
-      title: "Language Test Preparation",
-      desc: "Orientation, travel preparation guidance, and essential post-landing information to help you settle smoothly.",
+      title: "Post-Test Guidance",
+      desc: "Support in interpreting test results and guidance on next steps for study, work, or immigration purposes.",
     },
   ];
 

@@ -1,45 +1,45 @@
-
 import React from "react";
 
 const LanguageVisadetailsBenifit = () => {
-  const services = [
+  const benefits = [
     {
       id: 1,
-      title: "Personalized Strategy",
-      desc: "We evaluate your education, skills, experience, and goals to suggest the most suitable country, sector, and visa pathway.",
+      title: "Personalized Preparation Plan",
+      desc: "Tailored study strategies based on your current proficiency and target scores to maximize efficiency and results.",
     },
     {
       id: 2,
-      title: "Avoid Mistakes & Rejections",
-      desc: "A complete checklist of required documents, eligibility criteria, and step-by-step guidance to ensure accuracy and avoid rejection.",
+      title: "Minimize Mistakes & Improve Scores",
+      desc: "Focused coaching and step-by-step guidance help avoid common errors and increase your chances of achieving your desired score.",
     },
     {
       id: 3,
-      title: "Time & Cost Efficient",
-      desc: "Professional CV, cover letter, and LinkedIn optimization tailored for international recruitment standards.",
+      title: "Time & Cost Efficiency",
+      desc: "Optimized preparation schedule and resources ensure you get the best results without wasting time or money.",
     },
     {
       id: 4,
-      title: "Global Opportunities",
-      desc: "Guidance on job search platforms, top industries hiring foreign workers, and how to increase your chances of securing offers abroad.",
+      title: "Confidence & Test Readiness",
+      desc: "Mock tests, practice exercises, and feedback sessions build confidence and help you perform at your best on test day.",
     },
     {
       id: 5,
-      title: "Expert Support at Every Step",
-      desc: "Assistance with form filling, documentation arrangement, submission guidelines, and compliance.",
+      title: "Expert Support Throughout",
+      desc: "Ongoing support from experienced instructors covering all sections of the language test, including speaking, writing, reading, and listening.",
     },
   ];
+
   return (
-    <section className=" py-16">
+    <section className="py-16">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-10">
-          Benefits of Choosing Our Work Visa Consulting{" "}
+          Benefits of Choosing Our Language Test Preparation
         </h2>
 
         {/* Two Column Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
-          {services.map((item) => (
+          {benefits.map((item) => (
             <div key={item.id} className="flex flex-col">
               <h3 className="text-[18px] font-semibold text-[#343A40] mb-2">
                 {item.id}. {item.title}
@@ -55,5 +55,4 @@ const LanguageVisadetailsBenifit = () => {
   );
 };
 
-export default LanguageVisadetailsBenifit
-;
+export default LanguageVisadetailsBenifit;

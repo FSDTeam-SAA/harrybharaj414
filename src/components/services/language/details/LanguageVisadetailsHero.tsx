@@ -14,16 +14,15 @@ const LanguageVisadetailsHero = () => {
             Language Test Preparation
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Professional consulting solutions designed to support your work,
-            study, and immigration journey abroad with clarity and confidence.
+            Expert guidance to help you prepare for international language tests such as IELTS, TOEFL, PTE, or CELPIP, enhancing your chances for work, study, and immigration success abroad.
           </p>
         </header>
 
         {/* Banner Image */}
         <div className="mb-12">
           <Image
-            src="/images/language.jpg" // replace with your actual image
-            alt="Work visa consulting overview"
+            src="/images/language.jpg"
+            alt="Language test preparation"
             width={1536}
             height={400}
             className="object-cover w-full aspect-5/2 rounded-xl"
@@ -31,25 +30,15 @@ const LanguageVisadetailsHero = () => {
         </div>
 
         {/* Overview Section */}
-        <div className=" mx-auto space-y-6">
+        <div className="mx-auto space-y-6">
           <h3 className="text-[#343A40] font-bold text-[20px] lg:text-[24px]">
             Overview
           </h3>
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            Securing a work visa and building a career abroad can be challenging
-            without the right guidance. Every country has its own rules,
-            requirements, and documentation process, which often confuses
-            applicants and leads to delays or rejections. Our Work Visa
-            Consulting service is designed to simplify this journey for you,
-            ensuring you take the right steps from the very beginning.
+            Preparing for international language tests can be challenging without proper guidance. Each test has its own format, scoring criteria, and preparation requirements. Our Language Test Preparation service ensures you understand the test structure and are fully equipped to achieve your desired score.
           </p>
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            We provide personalized consultation based on your skills,
-            education, work experience, and long-term career goals. Whether you
-            are a skilled professional, recent graduate, or jobseeker, we help
-            you choose the most suitable country, industry, and pathway for a
-            strong and secure career abroad. With clear guidance, transparency,
-            and strategic planning, we ensure you move forward with confidence.
+            We provide personalized coaching, practice materials, and strategies tailored to your proficiency level. Whether you are aiming to study abroad, secure a work visa, or migrate, we help you maximize your language test performance with confidence and efficiency.
           </p>
 
           {/* Target Audience */}
@@ -57,21 +46,14 @@ const LanguageVisadetailsHero = () => {
             Who Is This Service For?
           </h3>
           <ul className="list-disc pl-6 text-[#6C757D] text-[16px] leading-[150%] space-y-2">
-            <li>Skilled professionals aiming to work abroad</li>
-            <li>Fresh graduates seeking international career opportunities</li>
-            <li>Jobseekers exploring European and GCC work opportunities</li>
-            <li>
-              Individuals planning long-term career growth and settlement abroad
-            </li>
+            <li>Students preparing for higher education abroad</li>
+            <li>Professionals seeking work opportunities overseas</li>
+            <li>Individuals applying for immigration in English-speaking countries</li>
+            <li>Anyone aiming to improve their international language test scores</li>
           </ul>
 
           <p className="text-[#6C757D] text-[16px] leading-[150%]">
-            From eligibility checks to documentation, job preparation, visa
-            filing, and post-approval guidance, our experts support you
-            throughout the entire process. We don’t just advise — we walk with
-            you every step of the way to make your work visa journey smooth,
-            stress-free, and result-oriented, helping you start a successful
-            career overseas.
+            Our experts guide you from initial assessment to full test readiness. With structured coaching, practice tests, and personalized feedback, we help you approach your language exam with confidence, ensuring the best possible outcome for your academic or career goals abroad.
           </p>
         </div>
       </div>
