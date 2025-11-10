@@ -38,32 +38,27 @@ const HomeAbout = () => {
               Shaping Futures Beyond Borders
             </h2>
             <p className="text-sm md:text-base text-gray-600 mb-4 leading-relaxed">
-              Destiny Abroad FZ-LLC is a licensed UAE-based immigration and
-              career consulting firm dedicated to helping individuals from
-              India, Nepal, and GCC countries achieve global opportunities. We
-              specialize in guiding clients toward
-              {/* work, study, and settlement */}
-              pathways in Europe with trusted consultation and seamless
-              documentation support.
+              Destiny Abroad FZ-LLC delivers professional visa, work-permit,
+              study, and residency consultation with end-to-end documentation
+              and embassy filing support. The process is transparent,
+              structured, and designed to minimize delays.
             </p>
-            <p className="text-gray-600 mb-6 leading-relaxed">
+            {/* <p className="text-gray-600 mb-6 leading-relaxed">
               With a personalized and transparent approach, we simplify the
               complex visa and immigration process, ensuring clarity and
               confidence at every step. Our mission is to provide reliable
               guidance, ethical consulting, and successful outcomes that empower
               our clients to build a secure and prosperous future abroad.
-            </p>
+            </p> */}
 
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-              <li>Licensed UAE-based Immigration & Career Consultancy.</li>
-              <li>
-                Personalized Guidance with End-to-End Documentation Support.
-              </li>
-              <li>Trusted by Clients Across India, Nepal & GCC Countries.</li>
+              <li> Licensed UAE LLC .</li>
+              <li>Personalized, case-by-case guidance .</li>
+              <li>Documentation prepared to embassy standards .</li>
             </ul>
             <Link href={"/about"}>
               <Button className="border-2 border-blue-500 text-blue-600 hover:bg-white cursor-pointer bg-transparent hover:scale-105 transition-all duration-300">
-                More Info
+                Learn More About Us
               </Button>
             </Link>
           </div>

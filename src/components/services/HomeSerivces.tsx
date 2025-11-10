@@ -1,56 +1,57 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Button } from "../ui/button";
 
 const HomeServices = () => {
   const servicesData = [
     {
-      title: "Working Visa Consulting",
+      title: "Work Permit & Visa Consultation",
       description:
-        "Expert guidance to secure legal overseas employment with full documentation support and visa processing assistance.",
+        "Work Permit & Visa Consultation – Step-by-step guidance for skilled, semi-skilled, and general categories",
       icon: "/employee.svg",
-      href: "workvisadetails"
+      href: "workvisadetails",
     },
     {
-      title: "Study Visa Consulting",
+      title: "Study & Residency Consultation ",
       description:
-        "Personalized counseling and admission support for students pursuing international education.",
+        "Study & Residency Consultation – Guidance for long-term residence or study pathways.",
       icon: "/guidance.svg",
-      href: "studyvisadetails"
+      href: "studyvisadetails",
     },
     {
       title: "Immigration & Settlement Services",
       description:
         "Comprehensive permanent residency and immigration application support to start your new life abroad.",
       icon: "/communication.svg",
-      href: "immigrationvisadetails"
+      href: "immigrationvisadetails",
     },
     {
       title: "Career & CV Guidance",
       description:
-        "Quick and reliable tourist visa application help for smooth international travel.",
+        "Career Materials – CV and statement drafting tailored to job markets.",
       icon: "/tourist.svg",
-      href: "careervisadetails"
+      href: "careervisadetails",
     },
     {
       title: "Documentation & Application Support",
-      description: "Documentation Support for Work visa filing",
+      description: "B2B / Corporate – Documentation support for licensed agencies and companies.",
       icon: "/project-management.svg",
-      href: "documentationvisadetails"
+      href: "documentationvisadetails",
     },
     {
       title: "Language Test Preparation",
       description:
-        "Coaching and resources for IELTS, TOEFL, and other proficiency exams.",
+        "Test Prep Advisory – Help with IELTS/TOEFL and language tests.",
       icon: "/test-cases.svg",
-      href: "languagetestdetails"
+      href: "languagevisadetails",
     },
   ];
 
   return (
     <section
       id="services"
-      className="py-16 lg:py-24 bg-linear-to-b from-blue-50 via-white to-blue-50"
+      className="pt-12 pb-4 lg:pt-20 lg:pb-8 bg-linear-to-b from-blue-50 via-white to-blue-50"
     >
       <div className="container mx-auto px-4">
         {/* Section Header */}
@@ -97,6 +98,10 @@ const HomeServices = () => {
             </Link>
           ))}
         </div>
+        <Link href={'/services'} >
+        
+        <Button className="mt-6 mb-0 flex justify-center items-center mx-auto border-2 border-blue-500 text-blue-600 hover:bg-white cursor-pointer bg-transparent hover:scale-105 transition-all duration-300">View All Services</Button>
+        </Link>
       </div>
     </section>
   );
