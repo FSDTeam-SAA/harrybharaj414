@@ -52,18 +52,18 @@ const Hero = () => {
                 Study & Immigration.
               </h1>
               <p className="text-sm md:text-lg lg:text-xl text-gray-600 leading-relaxed mb-8">
-                Destiny Abroad FZ-LLC is a UAE-based consultancy helping clients
-                from India, Nepal, and GCC countries achieve their dreams of
-                working, studying, or settling in Europe. We provide
-                personalized guidance, documentation support, and expert visa
-                consulting to make your journey abroad smooth and successful.
+                Destiny Abroad FZ-LLC is a UAE-licensed documentation and
+                immigration consulting company serving clients worldwide. We
+                provide clear guidance, complete documentation support, and
+                embassy filing assistance—so you can move forward with
+                confidence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <Button
                   size="lg"
                   className="border-2 border-blue-500 text-blue-600 hover:bg-white cursor-pointer bg-transparent hover:scale-105 transition-all duration-300 "
                 >
-                  More Info
+                  Explore Services
                 </Button>
                 <Link href={"https://topmate.io/harry_singh12"}>
                   <Button

@@ -1,45 +1,43 @@
 import React from "react";
 
-const StudyVisadetailsBenifit = () => {
-  const services = [
+const StudyVisadetailsBenefit = () => {
+  const benefits = [
     {
       id: 1,
-      title: "Personalized Study Plan",
-      desc: "We assess your academic background, interests, and career goals to design a customized study plan and recommend the best-fit universities and programs.",
+      title: "Wide University Network",
+      desc: "Partnerships and collaborations with recognized universities across the UK, USA, EU, Australia, and Canada.",
     },
     {
       id: 2,
-      title: "Higher Visa Approval Success",
-      desc: "With accurate documentation, professional guidance, and compliance with embassy requirements, we help minimize errors and increase your visa approval rate.",
+      title: "Personalized Guidance",
+      desc: "Tailored advice based on your academic goals, financial background, and visa eligibility.",
     },
     {
       id: 3,
-      title: "Save Time & Effort",
-      desc: "Our step-by-step process simplifies applications, admissions, and visa filing — saving you weeks of research, paperwork, and uncertainty.",
+      title: "Transparent & Ethical Consulting",
+      desc: "Clear process without hidden costs or misleading claims.",
     },
     {
       id: 4,
-      title: "Access to Top Global Universities",
-      desc: "We partner with leading institutions across the UK, Canada, Australia, USA, and Europe to help you study at reputable and globally recognized universities.",
+      title: "Comprehensive Support",
+      desc: "From admission to visa filing, every step is handled with professionalism and care.",
     },
     {
       id: 5,
-      title: "End-to-End Expert Support",
-      desc: "From course selection and SOP writing to visa filing and pre-departure prep — our consultants guide you through every stage of your study abroad journey.",
+      title: "Global Expertise",
+      desc: "Experienced consultants assisting students worldwide through UAE’s trusted documentation platform.",
     },
   ];
 
   return (
-    <section className="py-16">
+    <section className="py-16 bg-[#F9FAFB]">
       <div className="container mx-auto px-4">
-        {/* Section Heading */}
         <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-10">
-          Benefits of Choosing Our Study Visa Consulting
+          Benefits of Choosing Destiny Abroad FZ-LLC
         </h2>
 
-        {/* Two Column Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
-          {services.map((item) => (
+          {benefits.map((item) => (
             <div key={item.id} className="flex flex-col">
               <h3 className="text-[18px] font-semibold text-[#343A40] mb-2">
                 {item.id}. {item.title}
@@ -50,9 +48,20 @@ const StudyVisadetailsBenifit = () => {
             </div>
           ))}
         </div>
+
+        <div className="mt-12 text-[#6C757D] text-[14px] leading-relaxed">
+          <h3 className="font-semibold mb-2">Legal Disclaimer</h3>
+          <p>
+            Destiny Abroad FZ-LLC provides documentation, admission coordination, and embassy
+            filing support for student visa applicants globally. The company does not operate as a
+            recruiter or educational agent, and does not guarantee admission, visa issuance, or
+            scholarship approval. All consultation and service fees are non-refundable, as they
+            cover expert consulting, documentation review, and administrative assistance.
+          </p>
+        </div>
       </div>
     </section>
   );
 };
 
-export default StudyVisadetailsBenifit;
+export default StudyVisadetailsBenefit;

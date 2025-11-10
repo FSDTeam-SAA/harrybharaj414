@@ -8,14 +8,15 @@ import Link from "next/link";
 import { Mail } from "lucide-react";
 
 const HomeContact = () => {
-
   const services = [
-    { title: "Book a Consultation for Your Business", id: "6" },
+    // { title: "Book a Consultation for Your Business", id: "6" },
     { title: "Work Visa Consulting", id: "1" },
     { title: "Study Visa Consulting", id: "2" },
     { title: "Immigration & Settlement Services", id: "3" },
     { title: "Career & CV Guidance", id: "4" },
     { title: "Documentation & Application Support", id: "5" },
+    { title: " Language Test Preparation", id: "6" },
+
   ];
 
   // const handleCheckboxChange = (title: string, checked: boolean) => {
@@ -40,12 +41,11 @@ const HomeContact = () => {
             id="contact-heading"
             className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4"
           >
-            Trusted Immigration & Visa Experts
+            Trusted Documentation & Immigration Support
           </h2>
           <p className="text-sm md:text-lg px-4 md:px-0 text-gray-600 leading-relaxed">
-            We offer expert immigration, study, and visa consulting services for
-            clients from India, Nepal, and GCC countries — helping you take the
-            next confident step toward your global future.
+            Get clear answers, a realistic route, and a document plan that fits
+            your profile.
           </p>
         </header>
 
@@ -68,7 +68,8 @@ const HomeContact = () => {
             {/* Email Contact Card */}
             <div className="bg-gray-50 rounded-xl p-6 shadow-sm border border-gray-200">
               <p className="text-lg font-semibold text-gray-800 mb-4">
-                Email Only for Business Queries & Collaboration | Book a Call for Visa Assistance
+                Email Only for Business Queries & Collaboration | Book a Call
+                for Visa Assistance
               </p>
               <Link
                 href="mailto:harrysingh@destinyabroad.ae"

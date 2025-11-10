@@ -1,52 +1,23 @@
 import React from "react";
 
 const CareerVisadetailsBenifit = () => {
-  const services = [
-    {
-      id: 1,
-      title: "Tailored Career Strategy",
-      desc: "Get a customized career roadmap based on your strengths, education, and experience to help you reach your global career goals faster.",
-    },
-    {
-      id: 2,
-      title: "Professional Edge",
-      desc: "Stand out to employers with expertly written CVs, cover letters, and LinkedIn profiles that meet international hiring standards.",
-    },
-    {
-      id: 3,
-      title: "Save Time & Effort",
-      desc: "Avoid the trial-and-error approach with clear, guided steps to build a professional brand and secure better opportunities efficiently.",
-    },
-    {
-      id: 4,
-      title: "Access to Global Opportunities",
-      desc: "Gain insights into international job markets, emerging industries, and in-demand skills to explore worldwide career possibilities.",
-    },
-    {
-      id: 5,
-      title: "End-to-End Expert Guidance",
-      desc: "From profile building to interview training, receive continuous support at every stage of your career advancement journey.",
-    },
+  const benefits = [
+    { id: 1, title: "Country-Wise Accuracy", desc: "CVs and profiles aligned with latest EU, UK, USA, Canada, Australia, and GCC standards." },
+    { id: 2, title: "ATS-Friendly Documents", desc: "Structured for modern recruitment systems and embassy checks." },
+    { id: 3, title: "Professional Branding", desc: "CVs, cover letters, and LinkedIn profiles designed to reflect credibility, confidence, and clarity." },
+    { id: 4, title: "Complete Support", desc: "From CV writing to LinkedIn optimization and post-interview communication." },
+    { id: 5, title: "Time-Efficient & Transparent", desc: "Fast turnaround with clear consultation at every step." },
   ];
 
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        {/* Section Heading */}
-        <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-10">
-          Benefits of Choosing Our Career Guidance Service
-        </h2>
-
-        {/* Two Column Grid */}
+        <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-10 text-center">Benefits of Choosing Destiny Abroad FZ-LLC</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
-          {services.map((item) => (
+          {benefits.map((item) => (
             <div key={item.id} className="flex flex-col">
-              <h3 className="text-[18px] font-semibold text-[#343A40] mb-2">
-                {item.id}. {item.title}
-              </h3>
-              <p className="text-[#6C757D] text-[15px] leading-relaxed">
-                • {item.desc}
-              </p>
+              <h3 className="text-[18px] font-semibold text-[#343A40] mb-2">{item.id}. {item.title}</h3>
+              <p className="text-[#6C757D] text-[15px] leading-relaxed">• {item.desc}</p>
             </div>
           ))}
         </div>

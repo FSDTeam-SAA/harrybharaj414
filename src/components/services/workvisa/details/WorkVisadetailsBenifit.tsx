@@ -1,44 +1,41 @@
 import React from "react";
 
 const WorkVisadetailsBenifit = () => {
-  const services = [
+  const benefits = [
     {
       id: 1,
       title: "Personalized Strategy",
-      desc: "We evaluate your education, skills, experience, and goals to suggest the most suitable country, sector, and visa pathway.",
+      desc: "Tailored guidance for both skilled and unskilled applicants, freshers or experienced, ensuring you choose the right country, sector, and visa pathway.",
     },
     {
       id: 2,
-      title: "Avoid Mistakes & Rejections",
-      desc: "A complete checklist of required documents, eligibility criteria, and step-by-step guidance to ensure accuracy and avoid rejection.",
+      title: "Error-Free Documentation",
+      desc: "Structured process reduces the risk of embassy rejections with accurate document preparation and step-by-step guidance.",
     },
     {
       id: 3,
-      title: "Time & Cost Efficient",
-      desc: "Professional CV, cover letter, and LinkedIn optimization tailored for international recruitment standards.",
+      title: "Time & Cost Efficiency",
+      desc: "Professional, organized handling from consultation to submission, saving your time, effort, and resources.",
     },
     {
       id: 4,
-      title: "Global Opportunities",
-      desc: "Guidance on job search platforms, top industries hiring foreign workers, and how to increase your chances of securing offers abroad.",
+      title: "Global Coverage",
+      desc: "Consulting for major destinations in Europe, the UK, Canada, and GCC countries.",
     },
     {
       id: 5,
-      title: "Expert Support at Every Step",
-      desc: "Assistance with form filling, documentation arrangement, submission guidelines, and compliance.",
+      title: "Dedicated Support",
+      desc: "Expert assistance throughout your entire visa and documentation journey, ensuring a smooth and stress-free experience.",
     },
   ];
   return (
-    <section className=" py-16">
+    <section className="py-16">
       <div className="container mx-auto px-4">
-        {/* Section Heading */}
         <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-10">
-          Benefits of Choosing Our Work Visa Consulting{" "}
+          Benefits of Choosing Destiny Abroad FZ-LLC
         </h2>
-
-        {/* Two Column Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-8">
-          {services.map((item) => (
+          {benefits.map((item) => (
             <div key={item.id} className="flex flex-col">
               <h3 className="text-[18px] font-semibold text-[#343A40] mb-2">
                 {item.id}. {item.title}
