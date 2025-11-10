@@ -16,7 +16,7 @@ const ContactMessage = () => {
   ];
 
   return (
-    <section className="my-20">
+    <section className="lg:my-20 my-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* LEFT — Image & Socials */}
