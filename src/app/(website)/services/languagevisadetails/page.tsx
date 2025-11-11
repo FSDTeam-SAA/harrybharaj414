@@ -2,6 +2,7 @@ import LanguageVisadetailsBenifit from '@/components/services/language/details/L
 import LanguageVisadetailsHero from '@/components/services/language/details/LanguageVisadetailsHero'
 import LanguageVisadetailsIncluded from '@/components/services/language/details/LanguageVisadetailsIncluded'
 import LanguagevisadetailsSucces from '@/components/services/language/details/LanguagevisadetailsSucces'
+import LanguageLegal from '@/components/services/legaldisclamer/LanguageLegal'
 import React from 'react'
 
 const page = () => {
@@ -11,6 +12,7 @@ const page = () => {
         <LanguageVisadetailsIncluded />
         <LanguageVisadetailsBenifit />
         <LanguagevisadetailsSucces />
+        <LanguageLegal />
     </div>
   )
 }
