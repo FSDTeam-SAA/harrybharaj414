@@ -1,3 +1,4 @@
+import WorkLegal from '@/components/services/legaldisclamer/WorkLegal'
 import WorkVisadetailsBenifit from '@/components/services/workvisa/details/WorkVisadetailsBenifit'
 import WorkVisadetailsHero from '@/components/services/workvisa/details/WorkVisadetailsHero'
 import WorkVisadetailsIncluded from '@/components/services/workvisa/details/WorkVisadetailsIncluded'
@@ -11,6 +12,7 @@ const page = () => {
         <WorkVisadetailsIncluded />
         <WorkVisadetailsBenifit />
         <WorkvisadetailsSucces />
+        <WorkLegal />
     </div>
   )
 }

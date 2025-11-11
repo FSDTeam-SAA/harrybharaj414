@@ -1,3 +1,4 @@
+import AboutLegalDisclamer from '@/components/about/AboutLegalDisclamer'
 import BookingToConsultation from '@/components/about/BookingToConsultation'
 import SuccessStory from '@/components/about/SuccessStory'
 import MyAchievement from '@/components/home/MyAchievement'
@@ -12,6 +13,7 @@ const page = () => {
        <WhyChooseUs />
        {/* <MeetOurTeams /> */}
        <BookingToConsultation />
+       <AboutLegalDisclamer />
     </div>
   )
 }

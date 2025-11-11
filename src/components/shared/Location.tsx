@@ -17,8 +17,8 @@ const Location = () => {
             Find Us
           </h2>
           <address className="not-italic text-[16px] text-start text-[#F1F2F3]">
-              FDBC4169 Compass Building AL Shohada Road, 
-              Al Hamra Industrial Zone-Fz,
+            Compass Building, Al Shohada Road, Al Hamra Industrial Zone-FZ, Ras
+            Al Khaimah, United Arab Emirates
           </address>
 
           <h3 className="text-xl font-semibold mt-6 mb-1.5">Message Us</h3>
@@ -26,7 +26,7 @@ const Location = () => {
             href="harrysingh@destinyabroad.ae"
             className="text-[16px] leading-[150%] mb-1 text-[#F1F2F3] underline hover:text-white transition-colors duration-200"
           >
-           harrysingh@destinyabroad.ae
+            harrysingh@destinyabroad.ae
           </a>
           {/* <a
             href="tel:+17043581528"
@@ -55,4 +55,6 @@ const Location = () => {
 };
 
 export default Location;
-{/* <iframe src=""  height="230" style={{"border:0;"}} allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+{
+  /* <iframe src=""  height="230" style={{"border:0;"}} allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */
+}
