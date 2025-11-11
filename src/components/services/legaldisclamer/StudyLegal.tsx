@@ -3,7 +3,7 @@ import React from "react";
 
 const StudyLegal = () => {
   return (
-    <div className="my-5">
+    <div className="">
       <LegalDisclamer
         p="Destiny Abroad FZ-LLC provides documentation, admission coordination, and embassy
 filing support for student visa applicants globally. The company does not operate as a

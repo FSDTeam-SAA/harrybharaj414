@@ -13,12 +13,12 @@ const SuccessStory = () => {
     },
     {
       number: data?.count || 2155,
-      label: "Consultations Provided Across India, Nepal & GCC",
+      label: "Consultations Provided UK,CANADA,EU,GCC,WORLDWIDE",
     },
     // { number: "95%", label: "Client Satisfaction & Success Rate" },
     {
       number: "",
-      label: "Expanding partnerships across Europe, the Middle East, and Asia.",
+      label: "Expanding partnerships UK,CANADA,EU,GCC,WORLDWIDE.",
     },
   ];
 

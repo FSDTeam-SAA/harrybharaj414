@@ -3,7 +3,7 @@ import React from 'react'
 
 const DocumentLegal = () => {
   return (
-    <div className="my-5">
+    <div className="">
       <LegalDisclamer
         p="Destiny Abroad FZ-LLC provides documentation, application preparation, and embassy
 filing support services for clients worldwide. The company does not operate as a recruiter,

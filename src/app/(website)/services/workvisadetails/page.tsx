@@ -1,3 +1,4 @@
+import BookingToConsultation from '@/components/about/BookingToConsultation'
 import WorkLegal from '@/components/services/legaldisclamer/WorkLegal'
 import WorkVisadetailsBenifit from '@/components/services/workvisa/details/WorkVisadetailsBenifit'
 import WorkVisadetailsHero from '@/components/services/workvisa/details/WorkVisadetailsHero'
@@ -12,6 +13,7 @@ const page = () => {
         <WorkVisadetailsIncluded />
         <WorkVisadetailsBenifit />
         <WorkvisadetailsSucces />
+        <BookingToConsultation />
         <WorkLegal />
     </div>
   )

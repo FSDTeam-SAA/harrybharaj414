@@ -63,7 +63,7 @@ const HomeServices = () => {
             Trusted Immigration & Visa Consulting
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            We assist clients from India, Nepal, and GCC countries with reliable
+            We assist clients from India, Nepal, GCC & WorldWide with reliable
             visa, study, and immigration services to help them build a
             successful future abroad.
           </p>
