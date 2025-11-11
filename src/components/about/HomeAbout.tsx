@@ -13,7 +13,7 @@ const HomeAbout = () => {
             About Destiny Abroad
           </h3>
           <p className="text-sm md:text-gray-600 mb-6 leading-relaxed">
-            Guiding individuals from India, Nepal, and GCC countries with
+            Guiding individuals from India, Nepal, and WorldWide
             trusted immigration, work, and study visa consulting to build a
             successful future abroad.
           </p>

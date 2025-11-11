@@ -1,3 +1,4 @@
+import BookingToConsultation from "@/components/about/BookingToConsultation";
 import ImmigrationVisadetailsBenifit from "@/components/services/immigration/details/ImmigrationVisadetailsBenifit";
 import ImmigrationVisadetailsHero from "@/components/services/immigration/details/ImmigrationVisadetailsHero";
 import ImmigrationVisadetailsIncluded from "@/components/services/immigration/details/ImmigrationVisadetailsIncluded";
@@ -13,6 +14,7 @@ const page = () => {
       <ImmigrationVisadetailsIncluded />
       <ImmigrationVisadetailsBenifit />
       <ImmigrationvisadetailsSucces />
+      <BookingToConsultation />
       <ImmigrationLegal />
     </div>
   );
