@@ -8,7 +8,7 @@ const page = () => {
     <div>
       <GetToTuch />
        <ContactMessage />
-       <ContactMap />
+       {/* <ContactMap /> */}
     </div>
   )
 }
