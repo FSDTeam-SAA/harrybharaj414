@@ -41,7 +41,7 @@ const LanguageVisadetailsHero = () => {
             alt="Language test preparation"
             width={1536}
             height={400}
-            className="object-center w-full aspect-[5/3] rounded-xl"
+            className="object-center w-full aspect-5/3 rounded-xl"
           />
         </div>
 
