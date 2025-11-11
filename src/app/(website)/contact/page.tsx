@@ -1,3 +1,4 @@
+import ContactMap from '@/components/contact/ContactMap'
 import ContactMessage from '@/components/contact/ContactMessage'
 import GetToTuch from '@/components/contact/GetToTuch'
 import React from 'react'
@@ -7,6 +8,7 @@ const page = () => {
     <div>
       <GetToTuch />
        <ContactMessage />
+       <ContactMap />
     </div>
   )
 }

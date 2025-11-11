@@ -3,7 +3,7 @@ import React from 'react'
 
 const LanguageLegal = () => {
   return (
-    <div className="my-5">
+    <div className="">
       <LegalDisclamer
         p="Destiny Abroad FZ-LLC provides consulting and preparation guidance for internationally
 recognized language tests required for visa or academic purposes. We do not operate as

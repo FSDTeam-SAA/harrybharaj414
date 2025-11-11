@@ -1,3 +1,4 @@
+import BookingToConsultation from '@/components/about/BookingToConsultation'
 import LanguageVisadetailsBenifit from '@/components/services/language/details/LanguageVisadetailsBenifit'
 import LanguageVisadetailsHero from '@/components/services/language/details/LanguageVisadetailsHero'
 import LanguageVisadetailsIncluded from '@/components/services/language/details/LanguageVisadetailsIncluded'
@@ -12,6 +13,7 @@ const page = () => {
         <LanguageVisadetailsIncluded />
         <LanguageVisadetailsBenifit />
         <LanguagevisadetailsSucces />
+        <BookingToConsultation />
         <LanguageLegal />
     </div>
   )

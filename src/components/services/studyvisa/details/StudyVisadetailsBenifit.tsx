@@ -49,7 +49,7 @@ const StudyVisadetailsBenefit = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-[#6C757D] text-[14px] leading-relaxed">
+        {/* <div className="mt-12 text-[#6C757D] text-[14px] leading-relaxed">
           <h3 className="font-semibold mb-2">Legal Disclaimer</h3>
           <p>
             Destiny Abroad FZ-LLC provides documentation, admission coordination, and embassy
@@ -58,7 +58,7 @@ const StudyVisadetailsBenefit = () => {
             scholarship approval. All consultation and service fees are non-refundable, as they
             cover expert consulting, documentation review, and administrative assistance.
           </p>
-        </div>
+        </div> */}
       </div>
     </section>
   );
