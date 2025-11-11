@@ -29,7 +29,7 @@ const ImmigrationVisadetailsHero = () => {
             alt="Immigration and settlement overview"
             width={1536}
             height={400}
-            className="object-center w-full aspect-[5/3] rounded-xl"
+            className="object-center w-full aspect-5/3 rounded-xl"
           />
         </div>
 
