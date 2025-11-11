@@ -11,21 +11,21 @@ const OurClientSay = () => {
 
   const data = [
     {
-      url: "/video/video2.MP4",
+      url: "/video/video2.mp4",
       name: "Vishal",
       country: "India",
       title: "Work Permit",
       image: "/india.svg",
     },
     {
-      url: "/video/video3.MP4",
+      url: "/video/video3.mp4",
       name: "Patel Anjali Mahendrabhai",
       country: "India",
       title: "Work Permit",
       image: "/india.svg",
     },
     {
-      url: "/video/video4.MP4",
+      url: "/video/video4.mp4",
       name: "Chetan",
       country: "India",
       title: "Work Permit",
@@ -101,21 +101,21 @@ const OurClientSay = () => {
                   }`}
                 >
                   <div className="relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300 group">
-                    <span className="absolute top-3 left-3 bg-white  px-2 py-2 rounded-full z-10 shadow-md">
+                    {/* <span className="absolute top-3 left-3 bg-white  px-2 py-2 rounded-full z-10 shadow-md">
                       <Image
                         src={"/logo.png"}
                         width={20}
                         height={20}
                         className="w-5 h-5 rounded-full object-cover "
                         alt="logo"
-                      />
-                      {/* {video.title} */}
-                    </span>
+                      /> 
+                    
+                    </span> */}
 
                     {/* Optimized Video */}
-                    <div className="relative w-full aspect-square bg-gray-100 overflow-hidden">
+                    <div className="relative w-full aspect-video bg-gray-100 overflow-hidden">
                       <video
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        className="w-full aspect-video object-contain group-hover:scale-105 transition-transform duration-500"
                         controls
                         preload="metadata"
                         playsInline
