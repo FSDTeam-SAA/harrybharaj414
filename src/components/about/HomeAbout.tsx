@@ -56,7 +56,7 @@ const HomeAbout = () => {
               <li>Personalized, case-by-case guidance .</li>
               <li>Documentation prepared to embassy standards .</li>
             </ul>
-            <Link href={"/about"}>
+            <Link href={"/about"} target="_blank">
               <Button className="border-2 border-blue-500 text-blue-600 hover:bg-white cursor-pointer bg-transparent hover:scale-105 transition-all duration-300">
                 Learn More About Us
               </Button>

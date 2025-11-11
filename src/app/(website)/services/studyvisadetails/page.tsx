@@ -1,4 +1,5 @@
 import BookingToConsultation from '@/components/about/BookingToConsultation'
+import StudyLegal from '@/components/services/legaldisclamer/StudyLegal'
 import StudyVisadetailsBenifit from '@/components/services/studyvisa/details/StudyVisadetailsBenifit'
 import StudyVisadetailsHero from '@/components/services/studyvisa/details/StudyVisadetailsHero'
 import StudyVisadetailsIncluded from '@/components/services/studyvisa/details/StudyVisadetailsIncluded'
@@ -14,6 +15,7 @@ const page = () => {
         <StudyVisadetailsBenifit />
         <StudyvisadetailsSucces />
         <BookingToConsultation />
+        <StudyLegal />
     </div>
   )
 }

@@ -16,7 +16,6 @@ const HomeContact = () => {
     { title: "Career & CV Guidance", id: "4" },
     { title: "Documentation & Application Support", id: "5" },
     { title: " Language Test Preparation", id: "6" },
-
   ];
 
   // const handleCheckboxChange = (title: string, checked: boolean) => {
@@ -68,8 +67,10 @@ const HomeContact = () => {
             {/* Email Contact Card */}
             <div className="bg-gray-50 rounded-xl p-6 shadow-sm border border-gray-200">
               <p className="text-lg font-semibold text-gray-800 mb-4">
-                Email Only for Business Queries & Collaboration | Book a Call
-                for Visa Assistance
+                {/* Email Only for Business Queries & Collaboration | Book a Call
+                for Visa Assistance */}
+                For individual cases, book a consultation. Business or
+                collaboration inquiries by
               </p>
               <Link
                 href="mailto:harrysingh@destinyabroad.ae"

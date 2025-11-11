@@ -1,23 +1,17 @@
-import Services from '@/components/shared/Services'
-import React from 'react'
+import Services from "@/components/shared/Services";
+import React from "react";
 
 const WorkVisaConsulting = () => {
   return (
     <div>
       <Services
         tittle="Working Visa Consulting"
-        dis1="We provide expert guidance for individuals who want to build their
-        careers abroad by securing a legal work visa. Our consultants help you
-        choose the right country, job market, and pathway based on your
-        skills, experience, and goals. We ensure you have a clear
-        understanding of the requirements, eligibility, and process so you can
-        move forward with confidence."
-        dis2="From preparing documents to submitting applications, we offer complete
-        end-to-end support for a smooth visa process. Our team assists with
-        job profiling, resume optimization, application submissions, and
-        interview preparation to increase your chances of approval. With our
-        tailored approach, we help you successfully unlock global work
-        opportunities and start your professional journey overseas."
+        dis1="Securing a work visa and building a career abroad can be complex without the right
+professional support. Every country has its own rules, eligibility criteria, and documentation
+process, which often causes confusion and delays."
+        dis2="At Destiny Abroad FZ-LLC, our Work Visa Consulting Service simplifies this journey by
+providing you with a clear, structured, and transparent process — from profile assessment
+to embassy filing support."
         image="/images/service5.jpeg"
         icon="/service/visa.svg"
         button="More Info"
@@ -25,7 +19,7 @@ const WorkVisaConsulting = () => {
         btnlink="/services/workvisadetails"
       />
     </div>
-  )
-}
+  );
+};
 
-export default WorkVisaConsulting
+export default WorkVisaConsulting;

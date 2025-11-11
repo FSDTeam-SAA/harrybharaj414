@@ -3,6 +3,7 @@ import CareerVisadetailsBenifit from '@/components/services/career/details/Caree
 import CareerVisadetailsHero from '@/components/services/career/details/CareerVisadetailsHero'
 import CareerVisadetailsIncluded from '@/components/services/career/details/CareerVisadetailsIncluded'
 import CareervisadetailsSucces from '@/components/services/career/details/CareervisadetailsSucces'
+import CareearLegal from '@/components/services/legaldisclamer/CareearLegal'
 import React from 'react'
 
 const page = () => {
@@ -13,6 +14,7 @@ const page = () => {
         <CareerVisadetailsBenifit  />
         <CareervisadetailsSucces />
         <BookingToConsultation />
+        <CareearLegal />
     </div>
   )
 }

@@ -59,13 +59,16 @@ const Hero = () => {
                 confidence.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
+                <Link href={'/services'} target="_blank">
+                
                 <Button
                   size="lg"
                   className="border-2 border-blue-500 text-blue-600 hover:bg-white cursor-pointer bg-transparent hover:scale-105 transition-all duration-300 "
                 >
                   Explore Services
                 </Button>
-                <Link href={"https://topmate.io/harry_singh12"}>
+                </Link>
+                <Link href={"https://topmate.io/harry_singh12"} target="_blank">
                   <Button
                     size="lg"
                     variant="outline"

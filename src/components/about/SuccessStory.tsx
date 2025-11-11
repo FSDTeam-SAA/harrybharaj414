@@ -35,7 +35,7 @@ const SuccessStory = () => {
         {/* Header */}
         <header className="text-center mb-14 mx-auto">
           <p className="text-blue-600 font-semibold uppercase tracking-wide">
-            About Us
+            Our Services – Destiny Abroad FZ-LLC
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
             Your Trusted Partner for Global Immigration & Documentation Services
@@ -96,6 +96,11 @@ const SuccessStory = () => {
                     </div>
                   ))}
                 </div>
+                <p className="text-[#6C757D] leading-relaxed">
+                  We operate with a global network of trusted partners to
+                  provide up-to-date, accurate information and country-specific
+                  solutions.
+                </p>
               </div>
             </div>
 
@@ -110,7 +115,7 @@ const SuccessStory = () => {
                   className="bg-white rounded-lg shadow-md p-6 text-center border border-gray-100 hover:shadow-lg transition-shadow duration-300"
                 >
                   <div className="text-2xl lg:text-3xl font-bold text-blue-600 mb-2">
-                    {stat.number ? `${stat.number} +` : ''} 
+                    {stat.number ? `${stat.number} +` : ""}
                   </div>
                   <p className="text-[#343A40] text-sm lg:text-base">
                     {stat.label}

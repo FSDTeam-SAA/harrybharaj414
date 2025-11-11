@@ -50,7 +50,7 @@ const HomeServices = () => {
 
   return (
     <section
-      id="services"
+      // id="services"
       className="pt-12 pb-4 lg:pt-20 lg:pb-8 bg-linear-to-b from-blue-50 via-white to-blue-50"
     >
       <div className="container mx-auto px-4">
@@ -98,7 +98,7 @@ const HomeServices = () => {
             </Link>
           ))}
         </div>
-        <Link href={'/services'} >
+        <Link className="flex" href={'/services'} target="_blank">
         
         <Button className="mt-6 mb-0 flex justify-center items-center mx-auto border-2 border-blue-500 text-blue-600 hover:bg-white cursor-pointer bg-transparent hover:scale-105 transition-all duration-300">View All Services</Button>
         </Link>
