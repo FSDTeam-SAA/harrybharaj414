@@ -40,7 +40,7 @@ const ContactMessage = () => {
 
               <div className="flex gap-4 justify-center">
                 <Link
-                  href="https://www.instagram.com/harry_bharaj34"
+                  href="https://www.instagram.com/destiny_abroad_fzllc"
                   target="_blank"
                   className="flex items-center justify-center w-10 h-10 bg-pink-600 hover:bg-pink-700 rounded-full transition-transform hover:scale-110"
                   title="Instagram"
@@ -65,8 +65,8 @@ const ContactMessage = () => {
             {/* Email Contact Card */}
             <div className="bg-gray-50 rounded-xl p-6 shadow-sm border border-gray-200">
               <p className="text-lg font-semibold text-gray-800 mb-4">
-                Email Only for Business Queries & Collaboration | Book a Call for Visa
-                Assistance
+                Email Only for Business Queries & Collaboration | Book a Call
+                for Visa Assistance
               </p>
               <Link
                 href="mailto:harrysingh@destinyabroad.ae"
