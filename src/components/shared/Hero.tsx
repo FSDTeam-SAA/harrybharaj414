@@ -89,7 +89,7 @@ const Hero = () => {
                 <ul className="flex gap-4">
                   <li>
                     <Link
-                      href="https://www.instagram.com/harry_bharaj34"
+                      href="https://www.instagram.com/destiny_abroad_fzllc"
                       target="_blank"
                       className="flex items-center justify-center w-10 h-10  bg-pink-600 hover:bg-pink-700 rounded-full transition-colors group"
                       title="Instagram"
