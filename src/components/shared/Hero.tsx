@@ -31,7 +31,7 @@ const Hero = () => {
       if (current >= countdata) {
         clearInterval(interval);
       }
-    }, 5);
+    }, 2);
 
     return () => clearInterval(interval);
   }, [countdata]);
