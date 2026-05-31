@@ -23,54 +23,57 @@ const Footer = () => {
             />
           </div>
 
-          <nav
-            className="pt-8 pb-12"
-            aria-label="Footer Navigation"
-          >
-            <ul className="flex text-[#1A73E8] items-center justify-center gap-8">
-              <li>
-                <a
-                  href={'/'}
-                  className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-500"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href={'/services'}
-                  className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-500"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href={'/about'}
-                  className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-500"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href={'/contact'}
-                  className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-500"
-                >
-                  Contact Us
-                </a>
-              </li>
+       <nav
+  className="pt-8 pb-12 px-4"
+  aria-label="Footer Navigation"
+>
+  <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 sm:gap-x-8 text-[#1A73E8] text-sm sm:text-base text-center">
+    <li>
+      <a
+        href="/"
+        className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-300 whitespace-nowrap"
+      >
+        Home
+      </a>
+    </li>
 
-                   <li>
-                <a
-                  href={'/t&c'}
-                  className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-500"
-                >
-                  Terms & Conditions
-                </a>
-              </li>
-            </ul>
-          </nav>
+    <li>
+      <a
+        href="/services"
+        className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-300 whitespace-nowrap"
+      >
+        Services
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="/about"
+        className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-300 whitespace-nowrap"
+      >
+        About Us
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="/contact"
+        className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-300 whitespace-nowrap"
+      >
+        Contact Us
+      </a>
+    </li>
+
+    <li>
+      <a
+        href="/t&c"
+        className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-300 whitespace-nowrap"
+      >
+        Terms & Conditions
+      </a>
+    </li>
+  </ul>
+</nav>
         </div>
 
         <hr />
