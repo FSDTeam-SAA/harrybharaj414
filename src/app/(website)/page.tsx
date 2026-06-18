@@ -4,6 +4,7 @@ import HomeLegalDisclamer from "@/components/home/HomeLegalDisclamer";
 import HowItWorks from "@/components/home/HowItWorks";
 import MyAchievement from "@/components/home/MyAchievement";
 import OurClientSay from "@/components/home/OurClientSay";
+import ReviewSection from "@/components/home/ReviewSection";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import HomeServices from "@/components/services/HomeSerivces";
 import StudyLegal from "@/components/services/legaldisclamer/StudyLegal";
@@ -14,6 +15,7 @@ import VideoResources from "@/components/shared/VideoResources";
 export default function Home() {
   return (
     <div className="">
+      <ReviewSection />
       <Hero />
       <MyAchievement />
       <HomeAbout />
@@ -22,11 +24,11 @@ export default function Home() {
       {/* <WhyChooseUs /> */}
 
       <OurClientSay />
-      <HomeContact /> 
-     <VideoResources />
-     {/* <HomeLegalDisclamer /> */}
+      <HomeContact />
+      <VideoResources />
+      {/* <HomeLegalDisclamer /> */}
       <StudyLegal />
-     
+
     </div>
   );
 }
