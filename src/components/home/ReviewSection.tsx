@@ -11,10 +11,11 @@ import {
 const testimonials = [
     {
         id: 1,
-        quote: "My name is Kanwaljeet Kaur from Punjab, India. I would like to thank Destiny Abroad and especially Mr. Harry for helping me throughout my Poland work visa journey. My process took around 5 months, and during this time the team guided me professionally at every step. Mr. Harry personally helped me with my documentation, visa interview preparation, and all the requirements needed for my application. Whenever I had questions or concerns, the team was always available to support me. Thanks to their expertise and guidance, I successfully obtained my Polish work visa and am now working in Poland. The entire process was transparent, smooth, and well managed. I highly recommend Destiny Abroad to anyone looking for genuine assistance with overseas work opportunities. Thank you, Destiny Abroad, for making my journey successful.",
+        quote: "My name is Kanwaljeet Kaur from Punjab, India. I would like to thank Destiny Abroad and especially Mr. Harry for helping me throughout my Poland work visa journey. My process took around 5 months, and during this time the team guided me professionally at every step. Mr. Harry personally helped me with my documentation, visa interview preparation, and all the requirements needed for my application. Whenever I had questions or concerns, the team was always available to support me. Thanks to their expertise and guidance, I successfully obtained my Polish work visa and now working in Poland. The entire process was transparent, smooth, and well managed. I highly recommend Destiny Abroad to anyone looking for genuine assistance with overseas work opportunities. Thank you, Destiny Abroad, for making my journey successful.",
         name: "Kanwaljeet Kaur",
         tag: "Poland Work Visa – From Punjab, India",
         videoUrl: "/video/video5.webm",
+        thumbnailUrl: "/images/hero-thumbnail.png",
     },
 ];
 
@@ -87,9 +88,12 @@ const MouseClickIndicator = () => (
 );
 
 // ─── Custom Video Player ──────────────────────────────────────────────────────
-interface VideoPlayerProps { videoUrl: string }
+interface VideoPlayerProps {
+    videoUrl: string;
+    thumbnailUrl: string;
+}
 
-const TestimonialVideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl }) => {
+const TestimonialVideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl, thumbnailUrl }) => {
     const videoRef = useRef<HTMLVideoElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
     const [isPlaying, setIsPlaying] = useState(false);
@@ -155,6 +159,7 @@ const TestimonialVideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl }) => {
             <video
                 ref={videoRef}
                 src={videoUrl}
+                poster={thumbnailUrl}
                 className="w-full h-full object-cover cursor-pointer"
                 playsInline
                 onClick={togglePlay}
@@ -165,7 +170,7 @@ const TestimonialVideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl }) => {
             />
 
             {/* Trusted Badge */}
-            <div className="absolute top-4 right-4 z-20 bg-white border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.08)] rounded-[14px] px-3.5 py-2 flex items-center gap-2 select-none">
+            <div className="absolute top-1 right-1 z-20 bg-white border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.08)] rounded-[14px] px-3.5 py-2 flex items-center gap-2 select-none">
                 <Star className="w-4 h-4 text-blue-600 fill-blue-600 shrink-0" />
                 <div className="flex flex-col text-left">
                     <span className="text-[10px] sm:text-xs font-bold text-gray-900 leading-tight">
@@ -232,7 +237,7 @@ export default function ReviewSection() {
     const currentTestimonial = testimonials[currentIndex];
 
     return (
-        <section className="container mx-auto py-16 md:py-2 md:mb-12 relative overflow-visible">
+        <section className="container mx-auto py-16 md:py-2 md:mb-12 relative overflow-visible md:my-8">
             <div className="container mx-auto px-4 md:px-6 relative">
 
                 {/* Main Card */}
@@ -242,8 +247,7 @@ export default function ReviewSection() {
                     <div className="flex-1 flex flex-col justify-between h-full min-h-[300px]">
                         <div className="flex flex-col">
                             {/* Quote Icon */}
-                            <div className="text-blue-600 text-[80px] font-serif leading-none h-10 select-none pointer-events-none font-semibold">&quot;</div>
-
+                            <div className="text-7xl -mb-6 font-serif font-bold text-blue-600 select-none pointer-events-none"> &ldquo;</div>
                             {/* Animated slide transition wrapper */}
                             <AnimatePresence mode="wait">
                                 <motion.div
@@ -288,7 +292,11 @@ export default function ReviewSection() {
 
                     {/* Right Column: Video */}
                     <div className="w-full lg:w-[55%] shrink-0">
-                        <TestimonialVideoPlayer key={currentTestimonial.id} videoUrl={currentTestimonial.videoUrl} />
+                        <TestimonialVideoPlayer
+                            key={currentTestimonial.id}
+                            videoUrl={currentTestimonial.videoUrl}
+                            thumbnailUrl={currentTestimonial.thumbnailUrl}
+                        />
                     </div>
                 </div>
 
@@ -308,7 +316,7 @@ export default function ReviewSection() {
                                 transition={{ repeat: Infinity, repeatType: "loop", duration: 2.2, ease: "linear" }}
                             />
                             <span className="relative z-10 leading-tight text-center">
-                                REGISTER NOW TO SUBMIT YOUR FILE AND START YOUR JOURNEY
+                                REGISTER NOW
                             </span>
                             <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:translate-x-1 relative z-10 shrink-0" />
                         </Link>
