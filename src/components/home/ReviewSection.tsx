@@ -1,13 +1,23 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import {
-    Play, Pause, Volume2, VolumeX, Settings, Maximize2, Star, ArrowRight, ChevronDown, ChevronUp
+    ArrowRight,
+    ChevronDown,
+    ChevronUp,
+    Maximize2,
+    Pause,
+    Play,
+    Settings,
+    Star,
+    Volume2,
+    VolumeX,
 } from "lucide-react";
 
 // ─── Testimonial Data ─────────────────────────────────────────────────────────
+
 const testimonials = [
     {
         id: 1,
@@ -19,28 +29,37 @@ const testimonials = [
     },
 ];
 
-// ─── Short preview length (characters) ───────────────────────────────────────
+// ─── Quote Preview ─────────────────────────────────────────────────────────────
+
 const PREVIEW_CHARS = 250;
 
-// ─── Read More / Collapse Quote Component ────────────────────────────────────
-const ExpandableQuote = ({ quote }: { quote: string }) => {
-    const [expanded, setExpanded] = useState(false);
-    const isLong = quote.length > PREVIEW_CHARS;
+interface ExpandableQuoteProps {
+    quote: string;
+}
 
-    const preview = isLong ? quote.slice(0, PREVIEW_CHARS).trimEnd() + "…" : quote;
+const ExpandableQuote = ({ quote }: ExpandableQuoteProps) => {
+    const [expanded, setExpanded] = useState(false);
+
+    const isLong = quote.length > PREVIEW_CHARS;
+    const preview = isLong
+        ? `${quote.slice(0, PREVIEW_CHARS).trimEnd()}…`
+        : quote;
 
     return (
         <div className="mb-6">
-            <AnimatePresence mode="wait">
+            <AnimatePresence mode="wait" initial={false}>
                 <motion.div
                     key={expanded ? "expanded" : "collapsed"}
                     initial={{ opacity: 0, height: 0 }}
                     animate={{ opacity: 1, height: "auto" }}
                     exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.35, ease: "easeInOut" }}
+                    transition={{
+                        duration: 0.35,
+                        ease: "easeInOut",
+                    }}
                     className="overflow-hidden"
                 >
-                    <p className="text-sm sm:text-base md:text-lg lg:text-[20px] text-gray-700 italic font-medium leading-relaxed">
+                    <p className="text-sm font-medium italic leading-relaxed text-gray-700 sm:text-base md:text-lg lg:text-[20px]">
                         {expanded ? quote : preview}
                     </p>
                 </motion.div>
@@ -48,18 +67,20 @@ const ExpandableQuote = ({ quote }: { quote: string }) => {
 
             {isLong && (
                 <button
-                    onClick={() => setExpanded((prev) => !prev)}
-                    className="mt-2 inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 font-semibold text-xs sm:text-sm transition-colors duration-200 cursor-pointer group"
+                    type="button"
+                    onClick={() => setExpanded((previous) => !previous)}
+                    className="group mt-2 inline-flex cursor-pointer items-center gap-1 text-xs font-semibold text-blue-600 transition-colors duration-200 hover:text-blue-800 sm:text-sm"
+                    aria-expanded={expanded}
                 >
                     {expanded ? (
                         <>
                             <span>Show less</span>
-                            <ChevronUp className="w-4 h-4 transition-transform duration-300 group-hover:-translate-y-0.5" />
+                            <ChevronUp className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5" />
                         </>
                     ) : (
                         <>
                             <span>Read more</span>
-                            <ChevronDown className="w-4 h-4 transition-transform duration-300 group-hover:translate-y-0.5" />
+                            <ChevronDown className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
                         </>
                     )}
                 </button>
@@ -69,12 +90,24 @@ const ExpandableQuote = ({ quote }: { quote: string }) => {
 };
 
 // ─── Mouse Click Indicator ────────────────────────────────────────────────────
+
 const MouseClickIndicator = () => (
-    <div className="absolute -right-1.5 -bottom-3 sm:-right-3 sm:-bottom-5 z-40 scale-75 sm:scale-100 pointer-events-none select-none flex items-center justify-center">
-        <div className="absolute w-8 h-8 rounded-full border border-amber-500/80 animate-ping opacity-75" style={{ animationDuration: "1.2s" }} />
-        <div className="absolute w-12 h-12 rounded-full border border-amber-500/40 animate-ping opacity-50" style={{ animationDuration: "1.8s" }} />
+    <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-0 right-0 z-40 flex translate-x-[35%] translate-y-[40%] scale-75 select-none items-center justify-center sm:scale-100"
+    >
+        <div
+            className="absolute h-8 w-8 animate-ping rounded-full border border-amber-500/80 opacity-75"
+            style={{ animationDuration: "1.2s" }}
+        />
+
+        <div
+            className="absolute h-12 w-12 animate-ping rounded-full border border-amber-500/40 opacity-50"
+            style={{ animationDuration: "1.8s" }}
+        />
+
         <svg
-            className="w-8 h-8 text-neutral-900 fill-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] transform rotate-[-15deg] translate-x-1.5 translate-y-1.5"
+            className="h-8 w-8 -rotate-[15deg] fill-white text-neutral-900 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
             viewBox="0 0 24 24"
         >
             <path
@@ -88,136 +121,315 @@ const MouseClickIndicator = () => (
 );
 
 // ─── Custom Video Player ──────────────────────────────────────────────────────
+
 interface VideoPlayerProps {
     videoUrl: string;
     thumbnailUrl: string;
 }
 
-const TestimonialVideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl, thumbnailUrl }) => {
+const TestimonialVideoPlayer = ({
+    videoUrl,
+    thumbnailUrl,
+}: VideoPlayerProps) => {
     const videoRef = useRef<HTMLVideoElement>(null);
     const containerRef = useRef<HTMLDivElement>(null);
+    const controlsTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(
+        null,
+    );
+
     const [isPlaying, setIsPlaying] = useState(false);
     const [progress, setProgress] = useState(0);
     const [currentTime, setCurrentTime] = useState("0:00");
     const [duration, setDuration] = useState("0:00");
     const [isMuted, setIsMuted] = useState(false);
     const [showControls, setShowControls] = useState(false);
-    const controlsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-    const togglePlay = () => {
-        if (!videoRef.current) return;
-        if (isPlaying) { videoRef.current.pause(); } else { videoRef.current.play(); }
+    const clearControlsTimeout = () => {
+        if (!controlsTimeoutRef.current) {
+            return;
+        }
+
+        clearTimeout(controlsTimeoutRef.current);
+        controlsTimeoutRef.current = null;
     };
 
-    const formatTime = (t: number) => {
-        if (isNaN(t)) return "0:00";
-        const m = Math.floor(t / 60), s = Math.floor(t % 60);
-        return `${m}:${s < 10 ? "0" : ""}${s}`;
+    const togglePlay = async () => {
+        const video = videoRef.current;
+
+        if (!video) {
+            return;
+        }
+
+        if (video.paused) {
+            try {
+                await video.play();
+            } catch {
+                setIsPlaying(false);
+            }
+
+            return;
+        }
+
+        video.pause();
+    };
+
+    const formatTime = (time: number) => {
+        if (!Number.isFinite(time)) {
+            return "0:00";
+        }
+
+        const minutes = Math.floor(time / 60);
+        const seconds = Math.floor(time % 60);
+
+        return `${minutes}:${seconds.toString().padStart(2, "0")}`;
     };
 
     const handleTimeUpdate = () => {
-        if (!videoRef.current) return;
-        const cur = videoRef.current.currentTime, dur = videoRef.current.duration || 0;
-        setProgress(dur > 0 ? (cur / dur) * 100 : 0);
-        setCurrentTime(formatTime(cur));
+        const video = videoRef.current;
+
+        if (!video) {
+            return;
+        }
+
+        const videoDuration = video.duration || 0;
+        const videoCurrentTime = video.currentTime;
+
+        setProgress(
+            videoDuration > 0
+                ? Math.min((videoCurrentTime / videoDuration) * 100, 100)
+                : 0,
+        );
+        setCurrentTime(formatTime(videoCurrentTime));
     };
 
-    const handleProgressClick = (e: React.MouseEvent<HTMLDivElement>) => {
-        if (!videoRef.current) return;
-        const rect = e.currentTarget.getBoundingClientRect();
-        videoRef.current.currentTime = ((e.clientX - rect.left) / rect.width) * videoRef.current.duration;
+    const handleLoadedMetadata = () => {
+        const video = videoRef.current;
+
+        if (!video) {
+            return;
+        }
+
+        setDuration(formatTime(video.duration));
+    };
+
+    const handleProgressClick = (
+        event: React.MouseEvent<HTMLDivElement>,
+    ) => {
+        const video = videoRef.current;
+
+        if (!video || !Number.isFinite(video.duration)) {
+            return;
+        }
+
+        const rect = event.currentTarget.getBoundingClientRect();
+        const clickPosition = Math.min(
+            Math.max((event.clientX - rect.left) / rect.width, 0),
+            1,
+        );
+
+        video.currentTime = clickPosition * video.duration;
     };
 
     const toggleMute = () => {
-        if (!videoRef.current) return;
-        videoRef.current.muted = !isMuted;
-        setIsMuted(!isMuted);
+        const video = videoRef.current;
+
+        if (!video) {
+            return;
+        }
+
+        const nextMutedState = !video.muted;
+
+        video.muted = nextMutedState;
+        setIsMuted(nextMutedState);
     };
 
-    const toggleFullscreen = () => {
-        if (!containerRef.current) return;
-        document.fullscreenElement ? document.exitFullscreen() : containerRef.current.requestFullscreen();
+    const toggleFullscreen = async () => {
+        const container = containerRef.current;
+
+        if (!container) {
+            return;
+        }
+
+        try {
+            if (document.fullscreenElement) {
+                await document.exitFullscreen();
+                return;
+            }
+
+            await container.requestFullscreen();
+        } catch {
+            // Fullscreen may be blocked by the browser or device.
+        }
     };
 
     const handleMouseMove = () => {
         setShowControls(true);
-        if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current);
+        clearControlsTimeout();
+
         if (isPlaying) {
-            controlsTimeoutRef.current = setTimeout(() => setShowControls(false), 2500);
+            controlsTimeoutRef.current = setTimeout(() => {
+                setShowControls(false);
+            }, 2500);
         }
     };
 
-    useEffect(() => () => { if (controlsTimeoutRef.current) clearTimeout(controlsTimeoutRef.current); }, [isPlaying]);
+    useEffect(() => {
+        return clearControlsTimeout;
+    }, []);
+
+    useEffect(() => {
+        if (!isPlaying) {
+            clearControlsTimeout();
+            setShowControls(true);
+        }
+    }, [isPlaying]);
 
     return (
         <div
             ref={containerRef}
-            className="relative w-full aspect-[16/9] rounded-[20px] overflow-hidden bg-black group shadow-md"
+            className="group relative aspect-[16/9] w-full overflow-hidden rounded-[20px] bg-black shadow-md"
             onMouseMove={handleMouseMove}
-            onMouseLeave={() => isPlaying && setShowControls(false)}
+            onMouseLeave={() => {
+                if (isPlaying) {
+                    setShowControls(false);
+                }
+            }}
         >
             <video
                 ref={videoRef}
                 src={videoUrl}
                 poster={thumbnailUrl}
-                className="w-full h-full object-cover cursor-pointer"
+                className="h-full w-full cursor-pointer object-cover"
                 playsInline
+                preload="metadata"
                 onClick={togglePlay}
                 onTimeUpdate={handleTimeUpdate}
-                onLoadedMetadata={() => videoRef.current && setDuration(formatTime(videoRef.current.duration))}
+                onLoadedMetadata={handleLoadedMetadata}
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}
+                onEnded={() => {
+                    setIsPlaying(false);
+                    setProgress(100);
+                }}
             />
 
             {/* Trusted Badge */}
-            <div className="absolute top-1 right-1 z-20 bg-white border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.08)] rounded-[14px] px-3.5 py-2 flex items-center gap-2 select-none">
-                <Star className="w-4 h-4 text-blue-600 fill-blue-600 shrink-0" />
+            <div className="absolute right-1 top-1 z-20 flex select-none items-center gap-2 rounded-[14px] border border-slate-100 bg-white px-3.5 py-2 shadow-[0_8px_30px_rgb(0,0,0,0.08)]">
+                <Star className="h-4 w-4 shrink-0 fill-blue-600 text-blue-600" />
+
                 <div className="flex flex-col text-left">
-                    <span className="text-[10px] sm:text-xs font-bold text-gray-900 leading-tight">
-                        Trusted by <span className="text-blue-600 font-extrabold">3217+</span>
+                    <span className="text-[10px] font-bold leading-tight text-gray-900 sm:text-xs">
+                        Trusted by{" "}
+                        <span className="font-extrabold text-blue-600">
+                            3217+
+                        </span>
                     </span>
-                    <span className="text-[8px] sm:text-[10px] text-gray-500 font-semibold leading-tight">Happy Clients</span>
+
+                    <span className="text-[8px] font-semibold leading-tight text-gray-500 sm:text-[10px]">
+                        Happy Clients
+                    </span>
                 </div>
             </div>
 
             {/* Play Overlay */}
             <AnimatePresence>
                 {!isPlaying && (
-                    <motion.div
+                    <motion.button
+                        type="button"
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.9 }}
-                        className="absolute inset-0 flex items-center justify-center bg-black/15 group-hover:bg-black/25 transition-all duration-300 cursor-pointer"
                         onClick={togglePlay}
+                        className="absolute inset-0 flex cursor-pointer items-center justify-center bg-black/15 transition-all duration-300 group-hover:bg-black/25"
+                        aria-label="Play testimonial video"
                     >
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-blue-600 rounded-full flex items-center justify-center shadow-[0_4px_20px_rgba(0,82,255,0.4)] hover:scale-110 transition-transform duration-300">
-                            <svg className="w-8 h-8 fill-white translate-x-0.5" viewBox="0 0 24 24">
-                                <path d="M8 5v14l11-7z" />
-                            </svg>
-                        </div>
-                    </motion.div>
+                        <span className="flex h-16 w-16 items-center justify-center rounded-full bg-blue-600 shadow-[0_4px_20px_rgba(0,82,255,0.4)] transition-transform duration-300 hover:scale-110 sm:h-20 sm:w-20">
+                            <Play className="h-8 w-8 translate-x-0.5 fill-white text-white" />
+                        </span>
+                    </motion.button>
                 )}
             </AnimatePresence>
 
-            {/* Controls */}
-            <div className={`absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 flex flex-col gap-2 transition-opacity duration-300 z-20 ${showControls || !isPlaying ? "opacity-100" : "opacity-0 pointer-events-none"}`}>
-                <div className="relative w-full h-1.5 bg-white/20 rounded-full cursor-pointer hover:h-2 transition-all duration-150" onClick={handleProgressClick}>
-                    <div className="absolute top-0 left-0 h-full bg-blue-600 rounded-full" style={{ width: `${progress}%` }} />
-                    <div className="absolute top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-blue-500 border-2 border-white rounded-full" style={{ left: `calc(${progress}% - 7px)` }} />
+            {/* Video Controls */}
+            <div
+                className={`absolute bottom-0 left-0 right-0 z-20 flex flex-col gap-2 bg-gradient-to-t from-black/90 via-black/40 to-transparent p-4 transition-opacity duration-300 ${showControls || !isPlaying
+                    ? "opacity-100"
+                    : "pointer-events-none opacity-0"
+                    }`}
+            >
+                <div
+                    className="relative h-1.5 w-full cursor-pointer rounded-full bg-white/20 transition-all duration-150 hover:h-2"
+                    onClick={handleProgressClick}
+                    role="slider"
+                    aria-label="Video progress"
+                    aria-valuemin={0}
+                    aria-valuemax={100}
+                    aria-valuenow={Math.round(progress)}
+                    tabIndex={0}
+                >
+                    <div
+                        className="absolute left-0 top-0 h-full rounded-full bg-blue-600"
+                        style={{ width: `${progress}%` }}
+                    />
+
+                    <div
+                        className="absolute top-1/2 h-3.5 w-3.5 -translate-y-1/2 rounded-full border-2 border-white bg-blue-500"
+                        style={{
+                            left: `clamp(0px, calc(${progress}% - 7px), calc(100% - 14px))`,
+                        }}
+                    />
                 </div>
+
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                        <button onClick={togglePlay} className="text-white hover:text-blue-400 transition-colors p-1 cursor-pointer">
-                            {isPlaying ? <Pause className="w-4 h-4 fill-white" /> : <Play className="w-4 h-4 fill-white" />}
+                        <button
+                            type="button"
+                            onClick={togglePlay}
+                            className="cursor-pointer p-1 text-white transition-colors hover:text-blue-400"
+                            aria-label={isPlaying ? "Pause video" : "Play video"}
+                        >
+                            {isPlaying ? (
+                                <Pause className="h-4 w-4 fill-white" />
+                            ) : (
+                                <Play className="h-4 w-4 fill-white" />
+                            )}
                         </button>
-                        <span className="text-white text-[11px] sm:text-xs font-semibold select-none tracking-wide">{currentTime} / {duration}</span>
+
+                        <span className="select-none text-[11px] font-semibold tracking-wide text-white sm:text-xs">
+                            {currentTime} / {duration}
+                        </span>
                     </div>
+
                     <div className="flex items-center gap-3">
-                        <button onClick={toggleMute} className="text-white hover:text-blue-400 transition-colors p-1 cursor-pointer">
-                            {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
+                        <button
+                            type="button"
+                            onClick={toggleMute}
+                            className="cursor-pointer p-1 text-white transition-colors hover:text-blue-400"
+                            aria-label={isMuted ? "Unmute video" : "Mute video"}
+                        >
+                            {isMuted ? (
+                                <VolumeX className="h-4 w-4" />
+                            ) : (
+                                <Volume2 className="h-4 w-4" />
+                            )}
                         </button>
-                        <button className="text-white hover:text-blue-400 transition-colors p-1 cursor-pointer"><Settings className="w-4 h-4" /></button>
-                        <button onClick={toggleFullscreen} className="text-white hover:text-blue-400 transition-colors p-1 cursor-pointer"><Maximize2 className="w-4 h-4" /></button>
+
+                        <button
+                            type="button"
+                            className="cursor-pointer p-1 text-white transition-colors hover:text-blue-400"
+                            aria-label="Video settings"
+                        >
+                            <Settings className="h-4 w-4" />
+                        </button>
+
+                        <button
+                            type="button"
+                            onClick={toggleFullscreen}
+                            className="cursor-pointer p-1 text-white transition-colors hover:text-blue-400"
+                            aria-label="Enter fullscreen"
+                        >
+                            <Maximize2 className="h-4 w-4" />
+                        </button>
                     </div>
                 </div>
             </div>
@@ -226,39 +438,56 @@ const TestimonialVideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl, thumbnai
 };
 
 // ─── Main Component ───────────────────────────────────────────────────────────
+
 export default function ReviewSection() {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [showPaymentNote, setShowPaymentNote] = useState(false);
 
     useEffect(() => {
-        const timer = setInterval(() => setCurrentIndex((p) => (p + 1) % testimonials.length), 9000);
-        return () => clearInterval(timer);
+        if (testimonials.length <= 1) {
+            return;
+        }
+
+        const timer = window.setInterval(() => {
+            setCurrentIndex(
+                (previous) => (previous + 1) % testimonials.length,
+            );
+        }, 9000);
+
+        return () => window.clearInterval(timer);
     }, []);
 
     const currentTestimonial = testimonials[currentIndex];
 
     return (
-        <section className="container mx-auto py-16 md:py-2 md:mb-12 relative overflow-visible md:my-8">
-            <div className="container mx-auto px-4 md:px-6 relative">
-
+        <section className="container relative mx-auto overflow-visible py-16 md:my-8 md:mb-12 md:py-2">
+            <div className="container relative mx-auto px-4 md:px-6">
                 {/* Main Card */}
-                <div className="relative bg-[#F1F6FA] border border-slate-100 rounded-3xl p-6 sm:p-8 md:p-12 shadow-[0_15px_60px_-15px_rgba(0,82,255,0.07)] flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
-
+                <div className="relative flex flex-col items-start gap-8 rounded-3xl border border-slate-100 bg-[#F1F6FA] p-6 shadow-[0_15px_60px_-15px_rgba(0,82,255,0.07)] sm:p-8 md:p-12 lg:flex-row lg:gap-12">
                     {/* Left Column */}
-                    <div className="flex-1 flex flex-col justify-between h-full min-h-[300px]">
+                    <div className="flex h-full min-h-[300px] flex-1 flex-col justify-between">
                         <div className="flex flex-col">
                             {/* Quote Icon */}
-                            <div className="text-7xl -mb-6 font-serif font-bold text-blue-600 select-none pointer-events-none"> &ldquo;</div>
-                            {/* Animated slide transition wrapper */}
+                            <div
+                                aria-hidden="true"
+                                className="-mb-6 select-none font-serif text-7xl font-bold text-blue-600"
+                            >
+                                &ldquo;
+                            </div>
+
+                            {/* Testimonial Transition */}
                             <AnimatePresence mode="wait">
                                 <motion.div
                                     key={currentIndex}
                                     initial={{ opacity: 0, y: 10 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, y: -10 }}
-                                    transition={{ duration: 0.35, ease: "easeInOut" }}
+                                    transition={{
+                                        duration: 0.35,
+                                        ease: "easeInOut",
+                                    }}
                                     className="mt-2"
                                 >
-                                    {/* Expandable Quote — key forces remount on slide change, resetting expanded state */}
                                     <ExpandableQuote
                                         key={currentIndex}
                                         quote={currentTestimonial.quote}
@@ -266,10 +495,11 @@ export default function ReviewSection() {
 
                                     {/* Author */}
                                     <div className="mt-2">
-                                        <h4 className="text-base sm:text-lg font-bold text-gray-900 leading-snug">
+                                        <h4 className="text-base font-bold leading-snug text-gray-900 sm:text-lg">
                                             {currentTestimonial.name}
                                         </h4>
-                                        <p className="text-sm font-semibold text-blue-600 mt-1">
+
+                                        <p className="mt-1 text-sm font-semibold text-blue-600">
                                             {currentTestimonial.tag}
                                         </p>
                                     </div>
@@ -278,20 +508,31 @@ export default function ReviewSection() {
                         </div>
 
                         {/* Slider Dots */}
-                        <div className="flex gap-2.5 mt-8 items-center flex-wrap">
-                            {testimonials.map((_, index) => (
-                                <button
-                                    key={index}
-                                    onClick={() => setCurrentIndex(index)}
-                                    className={`w-2.5 h-2.5 rounded-full transition-all duration-300 cursor-pointer ${index === currentIndex ? "bg-blue-600 scale-110 w-5" : "bg-[#B0CFFF] hover:bg-blue-300"}`}
-                                    aria-label={`Go to slide ${index + 1}`}
-                                />
-                            ))}
-                        </div>
+                        {testimonials.length > 1 && (
+                            <div className="mt-8 flex flex-wrap items-center gap-2.5">
+                                {testimonials.map((testimonial, index) => (
+                                    <button
+                                        key={testimonial.id}
+                                        type="button"
+                                        onClick={() => setCurrentIndex(index)}
+                                        className={`h-2.5 rounded-full transition-all duration-300 ${index === currentIndex
+                                            ? "w-5 scale-110 bg-blue-600"
+                                            : "w-2.5 bg-[#B0CFFF] hover:bg-blue-300"
+                                            }`}
+                                        aria-label={`Go to testimonial ${index + 1}`}
+                                        aria-current={
+                                            index === currentIndex
+                                                ? "true"
+                                                : undefined
+                                        }
+                                    />
+                                ))}
+                            </div>
+                        )}
                     </div>
 
-                    {/* Right Column: Video */}
-                    <div className="w-full lg:w-[55%] shrink-0">
+                    {/* Right Column */}
+                    <div className="w-full shrink-0 lg:w-[55%]">
                         <TestimonialVideoPlayer
                             key={currentTestimonial.id}
                             videoUrl={currentTestimonial.videoUrl}
@@ -300,30 +541,92 @@ export default function ReviewSection() {
                     </div>
                 </div>
 
-                {/* Golden CTA Button — overlapping bottom edge */}
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-30 w-[90%] sm:w-auto flex justify-center">
-                    <div className="relative group w-full flex justify-center">
-                        <Link
-                            href="https://topmate.io/harry_singh12/1974489"
-                            target="_blank"
-                            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 sm:gap-2.5 bg-gradient-to-r from-[#F5C036] via-[#FFE79A] to-[#E5A91D] hover:scale-[1.02] active:scale-[0.98] text-black font-extrabold tracking-wide py-3 sm:py-4 px-6 sm:px-10 rounded-xl shadow-[0_8px_25px_rgba(229,169,29,0.35)] hover:shadow-[0_12px_35px_rgba(229,169,29,0.65)] transition-all duration-300 cursor-pointer text-[11px] sm:text-sm md:text-base whitespace-nowrap relative overflow-hidden uppercase border border-[#E5A91D]/80"
-                        >
-                            {/* Shimmer */}
-                            <motion.div
-                                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/60 to-transparent -skew-x-12"
-                                initial={{ x: "-100%" }}
-                                animate={{ x: "200%" }}
-                                transition={{ repeat: Infinity, repeatType: "loop", duration: 2.2, ease: "linear" }}
-                            />
-                            <span className="relative z-10 leading-tight text-center">
-                                REGISTER NOW
-                            </span>
-                            <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300 group-hover:translate-x-1 relative z-10 shrink-0" />
-                        </Link>
-                        <MouseClickIndicator />
-                    </div>
-                </div>
+                {/* CTA Button and Payment Note */}
+                <div className="relative z-30 mx-auto flex w-[90%] flex-col items-center gap-4  sm:w-auto">
+                    <div className="flex w-full justify-center">
+                        {/*
+                            This wrapper matches the exact button width.
 
+                            MouseClickIndicator is positioned relative to this
+                            element instead of the full-width outer container.
+                        */}
+                        <div className="group relative inline-flex max-w-full">
+                            <Link
+                                href="https://buy.stripe.com/eVq28sb0fbv297dgs26Na05"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => setShowPaymentNote(true)}
+                                className="relative inline-flex w-full items-center justify-center gap-2 overflow-hidden whitespace-nowrap rounded-xl border border-[#E5A91D]/80 bg-gradient-to-r from-[#F5C036] via-[#FFE79A] to-[#E5A91D] px-6 py-3 text-[11px] font-extrabold uppercase tracking-wide text-black shadow-[0_8px_25px_rgba(229,169,29,0.35)] transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_12px_35px_rgba(229,169,29,0.65)] active:scale-[0.98] sm:w-auto sm:gap-2.5 sm:px-10 sm:py-4 sm:text-sm md:text-base"
+                            >
+                                {/* Shimmer */}
+                                <motion.span
+                                    aria-hidden="true"
+                                    className="absolute inset-0 -skew-x-12 bg-gradient-to-r from-transparent via-white/60 to-transparent"
+                                    initial={{ x: "-100%" }}
+                                    animate={{ x: "200%" }}
+                                    transition={{
+                                        repeat: Infinity,
+                                        repeatType: "loop",
+                                        duration: 2.2,
+                                        ease: "linear",
+                                    }}
+                                />
+
+                                <span className="relative z-10 text-center leading-tight">
+                                    REGISTER NOW
+                                </span>
+
+                                <ArrowRight className="relative z-10 h-4 w-4 shrink-0 transition-transform duration-300 group-hover:translate-x-1 sm:h-5 sm:w-5" />
+                            </Link>
+
+                            <MouseClickIndicator />
+                        </div>
+                    </div>
+
+                    {/* Payment Note */}
+                    <AnimatePresence>
+                        {showPaymentNote && (
+                            <motion.div
+                                initial={{
+                                    opacity: 0,
+                                    height: 0,
+                                    y: -10,
+                                }}
+                                animate={{
+                                    opacity: 1,
+                                    height: "auto",
+                                    y: 0,
+                                }}
+                                exit={{
+                                    opacity: 0,
+                                    height: 0,
+                                    y: -10,
+                                }}
+                                transition={{
+                                    duration: 0.3,
+                                    ease: "easeInOut",
+                                }}
+                                className="w-full max-w-sm overflow-hidden rounded-xl border border-blue-200/80 bg-blue-50/95 p-3 text-center shadow-md backdrop-blur-xs sm:max-w-md md:max-w-lg"
+                            >
+                                <p className="text-[10px] font-semibold leading-relaxed text-blue-900 sm:text-[11px] md:text-xs">
+                                    Having trouble completing your payment
+                                    through Stripe?{" "}
+                                    <span className="block sm:inline">
+                                        Please email us at{" "}
+                                        <a
+                                            href="mailto:harrysingh@destinyabroad.ae"
+                                            className="cursor-pointer font-bold text-blue-600 underline transition-colors hover:text-blue-700"
+                                        >
+                                            harrysingh@destinyabroad.ae
+                                        </a>
+                                        , and our team will assist you with an
+                                        alternative payment option.
+                                    </span>
+                                </p>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
+                </div>
             </div>
         </section>
     );
