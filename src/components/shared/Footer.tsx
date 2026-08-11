@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Location from "./Location";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -29,48 +30,48 @@ const Footer = () => {
 >
   <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 sm:gap-x-8 text-[#1A73E8] text-sm sm:text-base text-center">
     <li>
-      <a
+      <Link
         href="/"
         className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-300 whitespace-nowrap"
       >
         Home
-      </a>
+      </Link>
     </li>
 
     <li>
-      <a
+      <Link
         href="/services"
         className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-300 whitespace-nowrap"
       >
         Services
-      </a>
+      </Link>
     </li>
 
     <li>
-      <a
+      <Link
         href="/about"
         className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-300 whitespace-nowrap"
       >
         About Us
-      </a>
+      </Link>
     </li>
 
     <li>
-      <a
+      <Link
         href="/contact"
         className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-300 whitespace-nowrap"
       >
         Contact Us
-      </a>
+      </Link>
     </li>
 
     <li>
-      <a
+      <Link
         href="/t&c"
         className="cursor-pointer hover:border-b-2 hover:border-[#1A73E8] transition duration-300 whitespace-nowrap"
       >
         Terms & Conditions
-      </a>
+      </Link>
     </li>
   </ul>
 </nav>
