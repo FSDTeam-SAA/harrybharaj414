@@ -10,9 +10,9 @@ const StudyVisadetailsHero = () => {
           <p className="text-blue-600 font-semibold uppercase tracking-wide">
             Services We Provide
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
+          <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
             Study Visa Consulting – Destiny Abroad FZ-LLC
-          </h2>
+          </h1>
           <p className="text-gray-600 leading-relaxed">
             Pursuing higher education abroad opens global opportunities — but navigating university admissions and visa documentation can be complex without the right support. Each country follows its own admission criteria, documentation standards, and visa regulations.
           </p>

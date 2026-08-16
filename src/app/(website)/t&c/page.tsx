@@ -1,4 +1,11 @@
 import React from "react";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata({
+  title: "Terms & Conditions",
+  description: "Read the terms and conditions for services provided by Destiny Abroad FZ-LLC.",
+  path: "/t&c",
+});
 
 const Page = () => {
   return (

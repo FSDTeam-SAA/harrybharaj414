@@ -10,9 +10,9 @@ const WorkVisadetailsHero = () => {
           <p className="text-blue-600 font-semibold uppercase tracking-wide">
             Services We Provide
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
+          <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
             Work Visa Consulting – Destiny Abroad FZ-LLC
-          </h2>
+          </h1>
           <p className="text-gray-600 leading-relaxed">
             Securing a work visa and building a career abroad can be complex
             without the right professional support. Every country has its own

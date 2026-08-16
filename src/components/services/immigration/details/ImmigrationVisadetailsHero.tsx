@@ -10,9 +10,9 @@ const ImmigrationVisadetailsHero = () => {
           <p className="text-blue-600 font-semibold uppercase tracking-wide">
             Services We Provide
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
+          <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
             Immigration & Settlement Services – Destiny Abroad FZ-LLC
-          </h2>
+          </h1>
           <p className="text-gray-600 leading-relaxed">
             Relocating permanently to another country requires proper planning,
             legal documentation, and compliance with ever-changing immigration

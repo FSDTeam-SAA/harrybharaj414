@@ -10,9 +10,9 @@ const DocumentationVisadetailsHero = () => {
           <p className="text-blue-600 font-semibold uppercase tracking-wide">
             Services We Provide
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
+          <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
             Documentation & Application Support – Destiny Abroad FZ-LLC
-          </h2>
+          </h1>
           <p className="text-gray-600 leading-relaxed">
             Accurate documentation is the foundation of every successful visa,
             residency, or immigration application. Even a minor error or missing

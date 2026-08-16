@@ -5,6 +5,13 @@ import LanguageVisadetailsIncluded from '@/components/services/language/details/
 import LanguagevisadetailsSucces from '@/components/services/language/details/LanguagevisadetailsSucces'
 import LanguageLegal from '@/components/services/legaldisclamer/LanguageLegal'
 import React from 'react'
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
+  title: 'Language Test Preparation Guidance',
+  description: 'Prepare for language tests with guidance that supports your study, work or immigration plans.',
+  path: '/services/languagevisadetails',
+})
 
 const page = () => {
   return (

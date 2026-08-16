@@ -37,9 +37,9 @@ const SuccessStory = () => {
           <p className="text-blue-600 font-semibold uppercase tracking-wide">
             Our Services – Destiny Abroad FZ-LLC
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
+          <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
             Your Trusted Partner for Global Immigration & Documentation Services
-          </h2>
+          </h1>
           <p className="text-gray-600 leading-relaxed">
             Destiny Abroad FZ-LLC is a UAE government-approved and licensed
             company providing professional immigration, documentation, and

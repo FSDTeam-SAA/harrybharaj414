@@ -10,9 +10,9 @@ const GetToTuch = () => {
           <p className="text-blue-600 font-semibold uppercase tracking-wide">
             Contact Us
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
+          <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
             Get In Touch With Us
-          </h2>
+          </h1>
           <p className="text-gray-600 leading-relaxed">
             We’re here to guide you with timely and personalized opportunities
             for your journey abroad.
@@ -35,7 +35,7 @@ const GetToTuch = () => {
               Our friendly team is happy to help.
             </p>
             <a
-              href="mailto:example@example.com"
+              href="mailto:harrysingh@destinyabroad.ae"
               className="text-blue-600 font-medium hover:text-blue-700 transition-colors text-[16px]"
             >
               harrysingh@destinyabroad.ae

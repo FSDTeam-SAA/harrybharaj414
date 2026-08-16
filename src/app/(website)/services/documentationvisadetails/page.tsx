@@ -5,6 +5,13 @@ import DocumentationVisadetailsIncluded from "@/components/services/documentatio
 import DocumentationvisadetailsSucces from "@/components/services/documentation/details/DocumentationvisadetailsSucces";
 import DocumentLegal from "@/components/services/legaldisclamer/DocumentLegal";
 import React from "react";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata({
+  title: "Documentation & Application Support",
+  description: "Get practical documentation and application support for visa, study and immigration routes.",
+  path: "/services/documentationvisadetails",
+});
 
 const page = () => {
   return (

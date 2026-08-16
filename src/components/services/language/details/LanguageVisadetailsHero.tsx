@@ -26,9 +26,9 @@ const LanguageVisadetailsHero = () => {
           <p className="text-blue-600 font-semibold uppercase tracking-wide">
             Services We Provide
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
+          <h1 className="text-3xl lg:text-4xl font-bold text-gray-800 mt-2 mb-4">
             Language Test Preparation – Destiny Abroad FZ-LLC
-          </h2>
+          </h1>
           <p className="text-gray-600 leading-relaxed">
             Language proficiency is crucial for visa eligibility, university admission, and successful integration abroad. We provide personalized guidance for IELTS, TOEFL, PTE, Duolingo, CELPIP, and OET to help you achieve required scores efficiently.
           </p>

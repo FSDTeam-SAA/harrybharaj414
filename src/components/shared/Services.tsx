@@ -32,7 +32,7 @@ const Services = ({
     >
       <div className=" lg:w-1/2">
         <div className="flex gap-3 items-center mb-4">
-          <Image src={icon} alt="icon" width={28} height={28} />
+          <Image src={icon} alt={`${tittle} service icon`} width={28} height={28} />
           <h2 className="text-2xl font-semibold text-gray-800">{tittle}</h2>
         </div>
         <p className="text-sm md:text-base text-gray-600 mb-3">{dis1}</p>
@@ -48,7 +48,7 @@ const Services = ({
       <div className="lg:w-1/2">
         <Image
           src={image}
-          alt="side image"
+          alt={`${tittle} service overview`}
           width={744}
           height={484}
           className="object-contain w-full aspect-5/5 md:aspect-square   rounded-2xl"

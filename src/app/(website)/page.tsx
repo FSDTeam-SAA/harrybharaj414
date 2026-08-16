@@ -10,11 +10,25 @@ import HomeServices from "@/components/services/HomeSerivces";
 import StudyLegal from "@/components/services/legaldisclamer/StudyLegal";
 import Hero from "@/components/shared/Hero";
 import VideoResources from "@/components/shared/VideoResources";
+import { absoluteUrl, createPageMetadata, siteConfig } from "@/lib/seo";
 
+export const metadata = createPageMetadata({
+  title: "Work, Study & Immigration Visa Consulting",
+  description: "Get professional guidance for work visas, study visas, immigration, career planning and documentation from Destiny Abroad.",
+  path: "/",
+});
 
 export default function Home() {
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteConfig.name,
+    url: absoluteUrl("/"),
+  };
+
   return (
     <div className="">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
       <ReviewSection />
       <Hero />
       <MyAchievement />

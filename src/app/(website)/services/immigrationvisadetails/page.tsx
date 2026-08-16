@@ -6,6 +6,13 @@ import ImmigrationvisadetailsSucces from "@/components/services/immigration/deta
 import ImmigrationLegal from "@/components/services/legaldisclamer/ImmigrationLegal";
 
 import React from "react";
+import { createPageMetadata } from "@/lib/seo";
+
+export const metadata = createPageMetadata({
+  title: "Immigration & Settlement Services",
+  description: "Explore immigration and settlement guidance designed to help you plan your next international move.",
+  path: "/services/immigrationvisadetails",
+});
 
 const page = () => {
   return (

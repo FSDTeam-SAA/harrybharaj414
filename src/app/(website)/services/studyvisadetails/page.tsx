@@ -6,6 +6,13 @@ import StudyVisadetailsIncluded from '@/components/services/studyvisa/details/St
 import StudyvisadetailsSucces from '@/components/services/studyvisa/details/StudyvisadetailsSucces'
 
 import React from 'react'
+import { createPageMetadata } from '@/lib/seo'
+
+export const metadata = createPageMetadata({
+  title: 'Study Visa Consulting Services',
+  description: 'Get study visa guidance, application support and documentation assistance from Destiny Abroad.',
+  path: '/services/studyvisadetails',
+})
 
 const page = () => {
   return (

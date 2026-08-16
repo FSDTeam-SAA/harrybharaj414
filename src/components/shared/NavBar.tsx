@@ -14,6 +14,7 @@ const NavBar = () => {
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
+    { name: "Blogs", path: "/blogs" },
     { name: "About", path: "/about" },
     { name: "Contact Us", path: "/contact" },
     { name: "Terms & Conditions", path: "/t&c" },
@@ -24,7 +25,7 @@ const NavBar = () => {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="/logo5.png" alt="logo" width={150} height={60} priority />
+          <Image src="/logo5.png" alt="Destiny Abroad logo" width={150} height={60} priority />
         </Link>
 
         {/* Desktop Menu */}
@@ -48,6 +49,8 @@ const NavBar = () => {
         {/* Hamburger Icon (Mobile) */}
         <button
           onClick={toggleMenu}
+          aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={isOpen}
           className="md:hidden flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100 transition"
         >
           {isOpen ? <X size={26} /> : <Menu size={26} />}
