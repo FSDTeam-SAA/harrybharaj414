@@ -5,7 +5,7 @@ import { absoluteUrl } from "@/lib/seo";
 const staticRoutes = [
   "/", "/about", "/contact", "/services", "/services/workvisadetails", "/services/studyvisadetails",
   "/services/immigrationvisadetails", "/services/careervisadetails", "/services/documentationvisadetails",
-  "/services/languagevisadetails", "/blogs", "/t&c",
+  "/services/languagevisadetails", "/blogs", "/t%26c",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
