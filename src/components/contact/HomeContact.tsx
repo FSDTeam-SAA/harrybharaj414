@@ -33,7 +33,7 @@ const HomeContact = () => {
       <div className="container mx-auto">
         {/* Header */}
         <header className="text-center mb-14 max-w-2xl mx-auto">
-          <p className="text-blue-600 font-semibold uppercase tracking-wide">
+          <p className="text-blue-600 font-semibold uppercase tracking-wide cursor-pointer">
             Book a Consultation
           </p>
           <h2
@@ -107,11 +107,12 @@ const HomeContact = () => {
 
               {/* Submit Button */}
               <Link
-                href={"https://topmate.io/harry_singh12"}
+                // href={"https://topmate.io/harry_singh12"}
+                href={"https://calendly.com/harrysingh-destinyabroad/30min"}
                 target="_blank"
                 className="block mt-6"
               >
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 text-lg transition-all duration-300 hover:shadow-lg">
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 cursor-pointer text-lg transition-all duration-300 hover:shadow-lg">
                   Book a Consultation
                 </Button>
               </Link>

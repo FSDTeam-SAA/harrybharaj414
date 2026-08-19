@@ -103,11 +103,12 @@ const ContactMessage = () => {
 
               {/* Submit Button */}
               <Link
-                href={"https://topmate.io/harry_singh12"}
+                // href={"https://topmate.io/harry_singh12"}
+                 href={"https://calendly.com/harrysingh-destinyabroad/30min"}
                 target="_blank"
                 className="block mt-6"
               >
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 text-lg transition-all duration-300 hover:shadow-lg">
+                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 text-lg transition-all duration-300 hover:shadow-lg cursor-pointer">
                   Book a Consultation
                 </Button>
               </Link>

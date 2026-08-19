@@ -19,7 +19,10 @@ const BookingToConsultation = () => {
           <p className="text-gray-600 leading-relaxed mb-16 px-5 md:px-0 text-sm md:text-base">
             Take the first step toward your global future with professional guidance that saves time, money, and effort.
           </p>
-          <Link href={"https://topmate.io/harry_singh12"} target="_blank">
+          <Link 
+          // href={"https://topmate.io/harry_singh12"} 
+          href={"https://calendly.com/harrysingh-destinyabroad/30min"} 
+          target="_blank">
             <Button className="bg-[#1A73E8] cursor-pointer text-white font-semibold hover:bg-blue-700 transition-all duration-300">
               Booking A Consultation
             </Button>

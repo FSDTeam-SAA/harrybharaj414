@@ -7,9 +7,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
 
 import { useBookingCounter } from "@/lib/api";
 
@@ -60,15 +60,18 @@ const Hero = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <Link href={'/services'} target="_blank">
-                
-                <Button
-                  size="lg"
-                  className="border-2 border-blue-500 text-blue-600 hover:bg-white cursor-pointer bg-transparent hover:scale-105 transition-all duration-300 "
-                >
-                  Explore Services
-                </Button>
+
+                  <Button
+                    size="lg"
+                    className="border-2 border-blue-500 text-blue-600 hover:bg-white cursor-pointer bg-transparent hover:scale-105 transition-all duration-300 "
+                  >
+                    Explore Services
+                  </Button>
                 </Link>
-                <Link href={"https://topmate.io/harry_singh12"} target="_blank">
+                <Link 
+                // href={"https://topmate.io/harry_singh12"} 
+                href={"https://calendly.com/harrysingh-destinyabroad/30min"}
+                target="_blank">
                   <Button
                     size="lg"
                     variant="outline"
@@ -78,10 +81,13 @@ const Hero = () => {
                   </Button>
                 </Link>
 
-                    <Link href={"https://topmate.io/harry_singh12/1974489"} target="_blank">
+                <Link
+                  // href={"https://topmate.io/harry_singh12/1974489"}
+                  href={"https://buy.stripe.com/eVq28sb0fbv297dgs26Na05"}
+                  target="_blank">
                   <Button
                     size="lg"
-                  className="border-2 border-blue-500 text-blue-600 hover:bg-white cursor-pointer bg-transparent hover:scale-105 transition-all duration-300 "
+                    className="border-2 border-blue-500 text-blue-600 hover:bg-white cursor-pointer bg-transparent hover:scale-105 transition-all duration-300 "
                   >
                     Register for Services
                   </Button>
@@ -96,18 +102,18 @@ const Hero = () => {
               </h4>
               <div>
                 <ul className="flex gap-4">
-            
 
-<li>
-  <Link
-    href="https://www.facebook.com/share/1DyFWyQXxP/?mibextid=wwXlfr"
-    target="_blank"
-    className="flex items-center justify-center w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full transition-colors group"
-    title="Facebook"
-  >
-    <Facebook className="w-6 h-6 text-white" />
-  </Link>
-</li>
+
+                  <li>
+                    <Link
+                      href="https://www.facebook.com/share/1DyFWyQXxP/?mibextid=wwXlfr"
+                      target="_blank"
+                      className="flex items-center justify-center w-10 h-10 bg-blue-600 hover:bg-blue-700 rounded-full transition-colors group"
+                      title="Facebook"
+                    >
+                      <Facebook className="w-6 h-6 text-white" />
+                    </Link>
+                  </li>
                   <li>
                     <Link
                       href="https://www.youtube.com/@HARRYSINGHEUROPA"
