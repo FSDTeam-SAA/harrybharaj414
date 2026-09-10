@@ -21,7 +21,7 @@ const BookingToConsultation = () => {
           </p>
           <Link 
           // href={"https://topmate.io/harry_singh12"} 
-          href={"https://calendly.com/harrysingh-destinyabroad/30min"} 
+          href={"https://topmate.io/harry_singh12/929425"} 
           target="_blank">
             <Button className="bg-[#1A73E8] cursor-pointer text-white font-semibold hover:bg-blue-700 transition-all duration-300">
               Booking A Consultation

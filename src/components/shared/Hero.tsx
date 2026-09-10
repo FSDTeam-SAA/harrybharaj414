@@ -70,7 +70,7 @@ const Hero = () => {
                 </Link>
                 <Link 
                 // href={"https://topmate.io/harry_singh12"} 
-                href={"https://calendly.com/harrysingh-destinyabroad/30min"}
+                href={"https://topmate.io/harry_singh12/929425"}
                 target="_blank">
                   <Button
                     size="lg"
@@ -83,7 +83,7 @@ const Hero = () => {
 
                 <Link
                   // href={"https://topmate.io/harry_singh12/1974489"}
-                  href={"https://buy.stripe.com/eVq28sb0fbv297dgs26Na05"}
+                  href={"https://topmate.io/harry_singh12/2275677"}
                   target="_blank">
                   <Button
                     size="lg"

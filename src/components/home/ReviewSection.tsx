@@ -305,7 +305,7 @@ export default function ReviewSection() {
                     <div className="relative group w-full flex justify-center">
                         <Link
                             // href="https://topmate.io/harry_singh12/1974489"
-                            href="https://buy.stripe.com/eVq28sb0fbv297dgs26Na05"
+                            href="https://topmate.io/harry_singh12/2275677"
                             target="_blank"
                             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 sm:gap-2.5 bg-gradient-to-r from-[#F5C036] via-[#FFE79A] to-[#E5A91D] hover:scale-[1.02] active:scale-[0.98] text-black font-extrabold tracking-wide py-3 sm:py-4 px-6 sm:px-10 rounded-xl shadow-[0_8px_25px_rgba(229,169,29,0.35)] hover:shadow-[0_12px_35px_rgba(229,169,29,0.65)] transition-all duration-300 cursor-pointer text-[11px] sm:text-sm md:text-base whitespace-nowrap relative overflow-hidden uppercase border border-[#E5A91D]/80"
                         >

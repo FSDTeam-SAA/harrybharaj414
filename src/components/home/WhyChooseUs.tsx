@@ -100,7 +100,7 @@ const WhyChooseUs = () => {
               </li>
             </ul>
             {/* <Link href={"https://topmate.io/harry_singh12"} target="_blank"> */}
-              <Link href={"https://calendly.com/harrysingh-destinyabroad/30min"} target="_blank">
+              <Link href={"https://topmate.io/harry_singh12/929425"} target="_blank">
               <Button
                 className="mt-8 border-2 border-blue-600 bg-[#1A73E8] text-white font-semibold hover:bg-blue-700 transition-all duration-300 cursor-pointer"
                 aria-label="Book a consultation with our visa experts"
