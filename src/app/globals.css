@@ -121,8 +121,6 @@
   }
 }
 
-
-
 /* extra added for video  */
 
 .line-clamp-2 {
@@ -137,4 +135,526 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Home gateway hero */
+.gateway-hero {
+  position: relative;
+  overflow: hidden;
+  background: #eef8ff;
+  color: #06265a;
+  font-family: var(--font-geist-sans);
+}
+.gateway-hero__backdrop {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 390px;
+  background:
+    linear-gradient(90deg, #f7fcffdf 0%, #edf9ffd4 50%, #d8efff85 100%),
+    url("/immigration-hero-background.png") center/cover no-repeat;
+}
+.gateway-hero__intro {
+  position: relative;
+  z-index: 1;
+  max-width: 1240px;
+  margin: auto;
+  padding: 42px 28px 135px;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+.gateway-hero__copy {
+  max-width: 690px;
+}
+.eyebrow {
+  margin: 0 0 10px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #1262af;
+}
+.gateway-hero h1 {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.05;
+  letter-spacing: -1.8px;
+  font-weight: 900;
+}
+.gateway-hero h1 span {
+  color: #0769eb;
+}
+.gateway-hero__copy i {
+  display: block;
+  width: 125px;
+  height: 5px;
+  margin: 10px 0 7px;
+  background: #ffca28;
+  border-radius: 6px;
+}
+.subtitle {
+  margin: 0;
+  color: #506b8e;
+  font-size: 16px;
+  font-weight: 600;
+}
+.trust-badges {
+  display: flex;
+  gap: 13px;
+  margin-top: 18px;
+}
+.trust-badges span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  border-radius: 22px;
+  padding: 9px 14px;
+  font-size: 10px;
+  font-weight: 800;
+  box-shadow: 0 6px 14px #2864a01c;
+}
+.trust-badges svg {
+  width: 18px;
+  color: #18ac67;
+}
+.trust-badges span + span svg {
+  color: #f5a800;
+}
+.guidance-card {
+  width: 410px;
+  min-height: 190px;
+  padding: 24px 30px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #03265b, #02173e);
+  color: white;
+  box-shadow: 0 12px 25px #00275b40;
+}
+.guidance-card h2 {
+  font-size: 24px;
+  line-height: 1.02;
+  margin: 8px 0 12px;
+  letter-spacing: 0.4px;
+}
+.guidance-card p:not(.eyebrow) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-size: 12px;
+}
+.guidance-card p svg {
+  width: 16px;
+  color: #ffd03c;
+  fill: #ffd03c;
+}
+.guidance-card > span {
+  float: right;
+  margin-top: 4px;
+  color: #fff;
+  font-family: cursive;
+  font-size: 14px;
+  line-height: 0.9;
+  transform: rotate(-6deg);
+}
+.payment-panel {
+  position: relative;
+  z-index: 2;
+  max-width: 1210px;
+  margin: -104px auto 0;
+  padding: 10px 14px 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 7px 22px #0a35652e;
+}
+.payment-panel__heading {
+  text-align: center;
+}
+.payment-panel__heading h2 {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 900;
+}
+.payment-panel__heading h2 span {
+  color: #ffbd00;
+}
+.payment-panel__heading p {
+  margin: 0 0 3px;
+  font-size: 11px;
+  color: #506b8e;
+}
+.booking-strip,
+.registration-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 9px 14px;
+  border: 1px solid #bde2ff;
+  background: #f3faff;
+  border-radius: 14px;
+}
+.booking-strip > svg,
+.registration-title > svg {
+  width: 35px;
+  height: 35px;
+  padding: 7px;
+  border-radius: 50%;
+  background: #d8efff;
+  color: #0874d1;
+}
+.booking-strip small,
+.registration-title small {
+  display: block;
+  color: #4380b8;
+  font-size: 8px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+.booking-strip strong,
+.registration-title strong {
+  display: block;
+  font-size: 15px;
+  line-height: 1.05;
+}
+.booking-strip p,
+.registration-title p {
+  margin: 1px 0 0;
+  color: #496482;
+  font-size: 10px;
+}
+.same-consultant {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 0;
+  padding: 9px 16px;
+  border-radius: 9px;
+  background: linear-gradient(90deg, #052a64, #042052);
+  color: white;
+  font-size: 10px;
+}
+.same-consultant svg {
+  color: #ffcd28;
+  width: 22px;
+}
+.same-consultant span {
+  font-size: 9px;
+}
+.payment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+  margin-top: 7px;
+}
+.payment-choice,
+.registration-choice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  padding: 7px 16px;
+  border-radius: 13px;
+  background: linear-gradient(90deg, #0577fc, #0059d9);
+  color: white;
+  box-shadow: 0 4px 10px #0476ce4a;
+  text-decoration: none;
+}
+.payment-choice__icon {
+  display: grid;
+  place-items: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background: #2695ff;
+  font-size: 21px;
+  font-weight: 800;
+}
+.payment-choice strong,
+.payment-choice small,
+.registration-choice strong,
+.registration-choice small {
+  display: block;
+}
+.payment-choice strong,
+.registration-choice strong {
+  font-size: 13px;
+  line-height: 1.1;
+}
+.payment-choice small,
+.registration-choice small {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+.payment-choice em,
+.registration-choice em {
+  margin-left: auto;
+  padding: 5px 9px;
+  border-radius: 12px;
+  background: #053477;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 800;
+  font-style: normal;
+}
+.payment-choice > svg,
+.registration-choice > svg {
+  width: 18px;
+}
+.payment-choice--light {
+  border: 2px solid #1876ed;
+  background: #f7fcff;
+  color: #0751bd;
+}
+.payment-choice--light .payment-choice__icon {
+  background: #e0f1ff;
+}
+.payment-choice--light em {
+  background: #d5ebff;
+  color: #1260b6;
+}
+.registration-block {
+  margin-top: 10px;
+  padding: 8px;
+  border: 1px solid #ffd76a;
+  border-radius: 13px;
+  background: #fff8dd;
+}
+.registration-title {
+  border: 0;
+  background: transparent;
+  padding: 1px 7px;
+}
+.registration-title > svg {
+  color: #956400;
+  background: #ffe7a4;
+}
+.registration-choice {
+  background: linear-gradient(90deg, #ffcd19, #efa400);
+  color: #122552;
+}
+.registration-choice > svg {
+  color: #8b5a00;
+  width: 35px;
+  height: 35px;
+  padding: 7px;
+  border-radius: 50%;
+  background: #ffeb9f;
+}
+.registration-choice--white {
+  border: 2px solid #e9ac18;
+  background: #fff;
+  color: #734600;
+}
+.registration-choice--white em {
+  background: #ebb000;
+  color: #422700;
+}
+.payment-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 9px 2px 0;
+  padding: 9px;
+  border-radius: 8px;
+  background: #04275d;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.payment-note svg {
+  width: 16px;
+  color: #ffd137;
+}
+.gateway-hero__services {
+  position: relative;
+  z-index: 1;
+  max-width: 930px;
+  margin: 13px auto 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.gateway-hero__services span {
+  display: grid;
+  grid-template-columns: 28px auto;
+  column-gap: 7px;
+  align-items: center;
+  font-size: 9px;
+  color: #0c3770;
+}
+.gateway-hero__services svg {
+  grid-row: span 2;
+  width: 23px;
+}
+.gateway-hero__services b {
+  font-size: 9px;
+}
+.gateway-hero__services small {
+  font-size: 8px;
+  color: #617898;
+}
+@media (max-width: 700px) {
+  .gateway-hero__backdrop {
+    height: 250px;
+    background-position: center;
+  }
+  .gateway-hero__intro {
+    padding: 20px 18px 65px;
+  }
+  .gateway-hero h1 {
+    font-size: 23px;
+    letter-spacing: -0.8px;
+  }
+  .eyebrow {
+    display: none;
+  }
+  .subtitle {
+    font-size: 11px;
+    max-width: 280px;
+  }
+  .gateway-hero__copy i {
+    width: 75px;
+    height: 3px;
+    margin: 5px 0;
+  }
+  .trust-badges {
+    gap: 7px;
+    margin-top: 12px;
+  }
+  .trust-badges span {
+    padding: 6px 9px;
+    font-size: 8px;
+  }
+  .trust-badges svg {
+    width: 14px;
+  }
+  .guidance-card {
+    display: none;
+  }
+  .payment-panel {
+    margin: -20px 4px 0;
+    padding: 8px 6px 0;
+    border-radius: 13px;
+  }
+  .payment-panel__heading h2 {
+    font-size: 14px;
+    line-height: 1.05;
+  }
+  .payment-panel__heading p {
+    font-size: 8px;
+    line-height: 1.1;
+    margin: 2px 5px 5px;
+  }
+  .booking-strip,
+  .registration-title {
+    gap: 8px;
+    padding: 6px 8px;
+    border-radius: 9px;
+  }
+  .booking-strip > svg,
+  .registration-title > svg {
+    width: 28px;
+    height: 28px;
+    padding: 6px;
+  }
+  .booking-strip strong,
+  .registration-title strong {
+    font-size: 10px;
+  }
+  .booking-strip small,
+  .registration-title small {
+    font-size: 6px;
+  }
+  .booking-strip p,
+  .registration-title p {
+    font-size: 7px;
+    white-space: nowrap;
+  }
+  .same-consultant {
+    gap: 5px;
+    margin: 4px 0;
+    padding: 6px 8px;
+    font-size: 7px;
+    white-space: nowrap;
+  }
+  .same-consultant svg {
+    width: 14px;
+  }
+  .same-consultant span {
+    font-size: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .payment-grid {
+    gap: 5px;
+    margin-top: 5px;
+  }
+  .payment-choice,
+  .registration-choice {
+    gap: 6px;
+    min-height: 43px;
+    padding: 5px 7px;
+    border-radius: 9px;
+  }
+  .payment-choice__icon {
+    width: 28px;
+    height: 28px;
+    font-size: 15px;
+  }
+  .payment-choice strong,
+  .registration-choice strong {
+    font-size: 8px;
+  }
+  .payment-choice small,
+  .registration-choice small {
+    font-size: 6px;
+    line-height: 1.05;
+  }
+  .payment-choice em,
+  .registration-choice em {
+    padding: 3px 5px;
+    font-size: 5px;
+    white-space: nowrap;
+  }
+  .payment-choice > svg,
+  .registration-choice > svg {
+    width: 12px;
+    flex: none;
+  }
+  .registration-block {
+    margin-top: 6px;
+    padding: 5px;
+    border-radius: 9px;
+  }
+  .registration-title {
+    padding: 0 3px;
+  }
+  .registration-choice > svg {
+    width: 27px;
+    height: 27px;
+    padding: 5px;
+  }
+  .payment-note {
+    margin: 6px 0 0;
+    padding: 6px;
+    font-size: 6px;
+    line-height: 1.1;
+    letter-spacing: 0.35px;
+  }
+  .payment-note svg {
+    width: 12px;
+    flex: none;
+  }
+  .gateway-hero__services {
+    display: none;
+  }
+}
+
+/* Keep the skyline equally visible across the banner. */
+.gateway-hero__backdrop {
+  background-image:
+    linear-gradient(90deg, #f7fcffa3 0%, #edf9ff9c 50%, #d8efff85 100%),
+    url("/immigration-hero-background.png");
 }

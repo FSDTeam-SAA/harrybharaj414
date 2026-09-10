@@ -2,8 +2,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { Button } from "../ui/button";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,13 @@ const NavBar = () => {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <Image src="/logo5.png" alt="Destiny Abroad logo" width={150} height={60} priority />
+          <Image
+            src="/logo5.png"
+            alt="Destiny Abroad logo"
+            width={150}
+            height={60}
+            priority
+          />
         </Link>
 
         {/* Desktop Menu */}
@@ -44,6 +51,14 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
+          <div>
+            <button className="flex items-center space-x-2 px-6 py-3 bg-blue-600 text-white rounded-4xl hover:bg-blue-700 transition cursor-pointer">
+              <Link href="https://topmate.io/harry_singh12/929425" target="_blank" rel="noopener noreferrer">
+                Book a Consultation
+              </Link>
+              <ArrowRight />
+            </button>
+          </div>
         </ul>
 
         {/* Hamburger Icon (Mobile) */}
@@ -87,6 +102,14 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
+        <div className="mt-8">
+          <button className="flex items-center space-x-2 px-6 py-3 bg-blue-600 text-white rounded-4xl hover:bg-blue-700 transition cursor-pointer">
+            <Link href="https://topmate.io/harry_singh12/929425" onClick={toggleMenu}>
+              Book a Consultation{" "}
+            </Link>
+            <ArrowRight />
+          </button>
+        </div>
       </div>
     </nav>
   );

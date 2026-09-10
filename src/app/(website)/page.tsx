@@ -1,5 +1,6 @@
 import HomeAbout from "@/components/about/HomeAbout";
 import HomeContact from "@/components/contact/HomeContact";
+import { HeroSection } from "@/components/home/HeroSection";
 import HomeLegalDisclamer from "@/components/home/HomeLegalDisclamer";
 import HowItWorks from "@/components/home/HowItWorks";
 import MyAchievement from "@/components/home/MyAchievement";
@@ -29,6 +30,7 @@ export default function Home() {
   return (
     <div className="">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
+      <HeroSection />
       <ReviewSection />
       <Hero />
       <MyAchievement />

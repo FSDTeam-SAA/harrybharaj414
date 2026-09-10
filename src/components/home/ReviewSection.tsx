@@ -174,7 +174,7 @@ const TestimonialVideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl, thumbnai
                 <Star className="w-4 h-4 text-blue-600 fill-blue-600 shrink-0" />
                 <div className="flex flex-col text-left">
                     <span className="text-[10px] sm:text-xs font-bold text-gray-900 leading-tight">
-                        Trusted by <span className="text-blue-600 font-extrabold">3217+</span>
+                        Trusted by <span className="text-blue-600 font-extrabold">3400+</span>
                     </span>
                     <span className="text-[8px] sm:text-[10px] text-gray-500 font-semibold leading-tight">Happy Clients</span>
                 </div>
