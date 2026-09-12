@@ -105,19 +105,19 @@ const SuccessStory = () => {
             </div>
 
             {/* Stats Section */}
-            <p className="text-[#1A73E8] text-[24px] pl-8 pb-4  font-bold uppercase tracking-wide mt-8">
+            <p className="text-[#1A73E8] text-[24px] pb-4 md:pl-8 font-bold uppercase tracking-wide mt-8">
               Our Achievements
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 md:pl-8 gap-6">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 md:pl-8">
               {stats.map((stat, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg shadow-md p-6 text-center border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+                  className="min-w-0 overflow-hidden bg-white rounded-lg border border-gray-100 p-4 text-center shadow-md transition-shadow duration-300 hover:shadow-lg sm:p-6"
                 >
-                  <div className="text-2xl lg:text-3xl font-bold text-blue-600 mb-2">
+                  <div className="mb-2 break-words text-2xl font-bold text-blue-600 lg:text-3xl">
                     {stat.number ? `${stat.number} +` : ""}
                   </div>
-                  <p className="text-[#343A40] text-sm lg:text-base">
+                  <p className="break-words [overflow-wrap:anywhere] text-sm text-[#343A40] lg:text-base">
                     {stat.label}
                   </p>
                 </div>
