@@ -52,9 +52,9 @@ const HomeAbout = () => {
             </p> */}
 
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
-              <li> Licensed UAE LLC .</li>
-              <li>Personalized, case-by-case guidance .</li>
-              <li>Documentation prepared to embassy standards .</li>
+              <li> Licensed UAE LLC.</li>
+              <li>Personalized, case-by-case guidance.</li>
+              <li>Documentation prepared to embassy standards.</li>
             </ul>
             <Link href={"/about"} target="_blank">
               <Button className="border-2 border-blue-500 text-blue-600 hover:bg-white cursor-pointer bg-transparent hover:scale-105 transition-all duration-300">
